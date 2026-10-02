@@ -1,0 +1,65 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{{- $title := "" -}}
+{{- if .IsHome -}}
+  {{- $title = site.Title -}}
+{{- else if .Title -}}
+  {{- $title = printf "%s - %s" .Title site.Params.brandShort -}}
+{{- else -}}
+  {{- $title = site.Title -}}
+{{- end -}}
+<title>{{ $title }}</title>
+
+{{- $desc := "" -}}
+{{- with .Description -}}
+  {{- $desc = . -}}
+{{- else -}}
+  {{- with .Summary -}}
+    {{- $desc = . -}}
+  {{- else -}}
+    {{- $desc = site.Params.description -}}
+  {{- end -}}
+{{- end -}}
+<meta name="description" content="{{ $desc | plainify | htmlUnescape | truncate 160 }}">
+
+{{- /* Canonical URL: Strictly use https://jichangreview.cfd */ -}}
+{{- $canonical := "" -}}
+{{- if .IsHome -}}
+  {{- $canonical = "https://jichangreview.cfd/" -}}
+{{- else -}}
+  {{- $canonical = printf "https://jichangreview.cfd%s" .RelPermalink -}}
+{{- end -}}
+<link rel="canonical" href="{{ $canonical }}">
+
+{{- if eq .Kind "404" -}}
+<meta name="robots" content="noindex, follow">
+{{- else -}}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+{{- end -}}
+
+<!-- Open Graph -->
+<meta property="og:locale" content="zh_CN">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc | plainify | htmlUnescape | truncate 160 }}">
+<meta property="og:url" content="{{ $canonical }}">
+<meta property="og:site_name" content="{{ site.Params.brandShort }}">
+<meta property="og:image" content="https://jichangreview.cfd/favicon.svg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc | plainify | htmlUnescape | truncate 160 }}">
+<meta name="twitter:image" content="https://jichangreview.cfd/favicon.svg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="{{ site.Params.brandShort }}" href="https://jichangreview.cfd/index.xml">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Structured Data -->
+{{ partial "structured-data.html" . }}

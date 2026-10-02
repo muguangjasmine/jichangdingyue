@@ -1,0 +1,117 @@
+{{- $canonical := "" -}}
+{{- if .IsHome -}}
+  {{- $canonical = "https://jichangreview.cfd/" -}}
+{{- else -}}
+  {{- $canonical = printf "https://jichangreview.cfd%s" .RelPermalink -}}
+{{- end -}}
+
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.Params.brandShort }}",
+  "url": "https://jichangreview.cfd/",
+  "description": "{{ site.Params.description }}",
+  "inLanguage": "zh-CN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://jichangreview.cfd/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{- end -}}
+
+<!-- Breadcrumbs Schema -->
+{{- if not .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首页",
+      "item": "https://jichangreview.cfd/"
+    }
+    {{- if .Section -}}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ with site.GetPage (printf "/%s" .Section) }}{{ .Title }}{{ else }}{{ .Section }}{{ end }}",
+      "item": "https://jichangreview.cfd/{{ .Section }}/"
+    }
+    {{- end -}}
+    {{- if and .IsPage (ne .RelPermalink (printf "/%s/" .Section)) -}}
+    ,{
+      "@type": "ListItem",
+      "position": {{ if .Section }}3{{ else }}2{{ end }},
+      "name": "{{ .Title }}",
+      "item": "{{ $canonical }}"
+    }
+    {{- end -}}
+  ]
+}
+</script>
+{{- end -}}
+
+<!-- Article Schema -->
+{{- if and .IsPage (not (eq .Section "faq")) -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ $canonical }}"
+  },
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}",
+  "inLanguage": "zh-CN",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ with .Lastmod }}{{ .Format "2006-01-02T15:04:05Z07:00" }}{{ else }}{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}{{ end }}",
+  "author": {
+    "@type": "Organization",
+    "name": "{{ site.Params.brandShort }}",
+    "url": "https://jichangreview.cfd/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.Params.brandShort }}",
+    "url": "https://jichangreview.cfd/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jichangreview.cfd/favicon.svg"
+    }
+  }
+}
+</script>
+{{- end -}}
+
+<!-- FAQPage Schema for FAQ page -->
+{{- if or (eq .Section "faq") (eq .RelPermalink "/faq/") -}}
+{{- $faqs := site.Data.faqs -}}
+{{- if $faqs -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $faq := $faqs -}}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $faq.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ printf "%s\n排查步骤：\n1. %s\n2. %s\n3. %s" $faq.answer (index $faq.steps 0) (index $faq.steps 1) (index $faq.steps 2) | jsonify }}
+      }
+    }
+    {{- end -}}
+  ]
+}
+</script>
+{{- end -}}
+{{- end -}}

@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="docs-layout-container container">
+  {{ partial "sidebar.html" . }}
+
+  <section class="doc-content-wrapper faq-page-wrapper">
+    {{ partial "breadcrumbs.html" . }}
+
+    <header class="section-list-header">
+      <h1 class="section-title">机场常见问题解答｜50个高频疑问与新手排障指南</h1>
+      <p class="section-lead">本页面精选新手在购买机场、挑选套餐、配置客户端、导入订阅、解决节点全红及访问ChatGPT/Claude过程中最常遇到的 50 个技术疑问。所有问题与解答均经过编辑部实测整理，支持全页检索与定位。</p>
+    </header>
+
+    {{ partial "faq-list.html" . }}
+
+    <div class="faq-footer-help">
+      <h3>没有找到你遇到的问题？</h3>
+      <p>你可以加入我们的 Telegram 交流群组，与广大节点用户和编辑实时交流排障技巧：</p>
+      <a href="{{ site.Params.telegramUrl | safeURL }}" target="_blank" rel="sponsored nofollow noopener" class="btn-faq-tg">
+        进入 Telegram 交流频道 &raquo;
+      </a>
+    </div>
+  </section>
+
+  {{ partial "toc.html" . }}
+</div>
+{{ end }}

@@ -1,0 +1,84 @@
+baseURL: "https://jichangreview.cfd/"
+locale: "zh-CN"
+defaultContentLanguage: "zh-cn"
+title: "2026机场测评与机场推荐｜新手套餐、节点与机场测评 - 机场检测站"
+summaryLength: 140
+hasCJKLanguage: true
+pagination:
+  pagerSize: 12
+enableRobotsTXT: true
+disableKinds: ["taxonomy", "term"]
+disableAliases: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  section:
+    - HTML
+    - RSS
+  page:
+    - HTML
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      strikethrough: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+
+params:
+  brandName: "机场检测站"
+  brandShort: "机场检测站"
+  brandDomain: "jichangreview.cfd"
+  brandSubtitle: "机场检测站｜机场测评与新手选择指南"
+  siteTopic: "本站定位为‘机场测评 + 机场评测 + 新手选择 + 套餐对比 + 客户端使用教程’的纯静态知识库。重点抢占‘机场测评、机场评测、机场review、机场值不值得买、机场套餐测评、机场怎么选、机场优缺点、机场适合谁’等 Review 型搜索意图。"
+  description: "机场检测站专为第一次使用机场的新手整理2026机场测评、机场推荐、套餐价格、流量、线路节点、优惠码、客户端教程与订阅导入指南，帮助你快速比较不同机场并找到适合自己的方案。"
+  heroH1: "新手怎么选机场？价格、流量、线路一次看懂，不用再到处查资料"
+  heroTitle: ""
+  heroSubtitle: "从机场价格、套餐流量、线路节点、客户端兼容到AI使用情况，机场检测站把常见机场资料整理成容易看懂的测评与对比，让第一次购买机场也能快速知道该看什么、怎么选。"
+  footerDescription: "机场检测站（jichangreview.cfd）专注2026机场测评、机场评测、梯子推荐、新手机场选择、套餐价格与流量比较，以及Clash Verge Rev、Shadowrocket小火箭、v2rayN等客户端订阅教程。本站持续整理机场价格、节点线路、优惠码、AI使用核验和订阅故障排查资料，帮助第一次接触机场的用户更快了解套餐差异和使用方法。"
+  telegramUrl: "https://t.me/+w5kTkVtU25UzOTVl"
+  affiliateDisclosureText: "本站部分注册链接可能属于推广链接，我们可能获得佣金。不会增加你的购买价格。套餐、优惠、线路与可用状态可能变化，请以服务商当前页面为准。"
+  lastVerifiedDate: "2026-10-01"
+  currentYear: 2026
+
+menu:
+  main:
+    - identifier: "home"
+      name: "首页"
+      url: "/"
+      weight: 1
+    - identifier: "reviews"
+      name: "机场测评"
+      url: "/reviews/"
+      weight: 2
+    - identifier: "airports"
+      name: "机场资料库"
+      url: "/airports/"
+      weight: 3
+    - identifier: "choose"
+      name: "新手怎么选"
+      url: "/choose/"
+      weight: 4
+    - identifier: "plans"
+      name: "套餐对比"
+      url: "/plans/"
+      weight: 5
+    - identifier: "clients"
+      name: "客户端教程"
+      url: "/clients/"
+      weight: 6
+    - identifier: "faq"
+      name: "常见问题"
+      url: "/faq/"
+      weight: 7
+    - identifier: "contact"
+      name: "联系我们"
+      url: "https://t.me/+w5kTkVtU25UzOTVl"
+      weight: 8

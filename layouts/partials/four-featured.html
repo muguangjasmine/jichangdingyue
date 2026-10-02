@@ -1,0 +1,82 @@
+{{- $mode := .mode | default "default" -}}
+{{- $airports := site.Data.four_featured -}}
+<section class="four-featured-section" aria-label="重点推荐机场对比">
+  <div class="featured-header-badge">
+    <span class="badge-icon">★</span>
+    <span class="badge-text">2026 编辑部重点核验服务商（按资料展示排序，非绝对速度排名）</span>
+  </div>
+
+  <div class="featured-grid">
+    {{- range $index, $a := $airports -}}
+    <div class="featured-card featured-rank-{{ add $index 1 }}">
+      <div class="card-top-bar">
+        <div class="card-index-tag">0{{ add $index 1 }}</div>
+        <div class="card-title-box">
+          <h3 class="card-airport-name">{{ $a.name }}</h3>
+          <span class="card-positioning">{{ $a.positioning }}</span>
+        </div>
+      </div>
+
+      <div class="card-pricing-badge">
+        <div class="price-val">{{ $a.price }}</div>
+        <div class="traffic-val">{{ $a.traffic }}</div>
+      </div>
+
+      <div class="card-specs-list">
+        <div class="spec-row">
+          <span class="spec-label">线路资料：</span>
+          <span class="spec-value"><strong>{{ $a.line }}</strong></span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">适合人群：</span>
+          <span class="spec-value">{{ $a.suitable }}</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">核心特点：</span>
+          <span class="spec-value">{{ index $a.pros 0 }}</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">使用限制：</span>
+          <span class="spec-value text-muted-note">{{ index $a.cons 0 }}</span>
+        </div>
+      </div>
+
+      <!-- 优惠码区域（严格与注册链接中的邀请code分离） -->
+      <div class="featured-coupon-box">
+        <div class="coupon-display">
+          <span class="coupon-title">优惠码：</span>
+          <strong class="coupon-code">{{ $a.coupon }}</strong>
+          {{- if and $a.coupon (ne $a.coupon "待核实") (ne $a.coupon "以结算页为准") -}}
+          <button type="button" class="btn-copy-mini" data-code="{{ $a.coupon }}" aria-label="复制优惠码">复制</button>
+          {{- end -}}
+        </div>
+        <div class="coupon-notice">{{ $a.coupon_note }}</div>
+      </div>
+
+      <!-- CTA 注册按钮（文案区分，触控高度至少44px，带完整rel属性） -->
+      <div class="card-cta-row">
+        {{- $ctaText := index $a.cta_texts 0 -}}
+        {{- if eq $mode "budget" -}}
+          {{- $ctaText = index $a.cta_texts 3 -}}
+        {{- else if eq $mode "beginner" -}}
+          {{- $ctaText = index $a.cta_texts 1 -}}
+        {{- else if eq $mode "data" -}}
+          {{- $ctaText = index $a.cta_texts 2 -}}
+        {{- end -}}
+        <a href="{{ $a.aff_url }}" target="_blank" rel="sponsored nofollow noopener" class="btn-primary-cta">
+          <span>{{ $ctaText }}</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="/airports/{{ $a.slug }}/" class="btn-secondary-link">查看详情参数 &raquo;</a>
+      </div>
+    </div>
+    {{- end -}}
+  </div>
+
+  <div class="featured-disclaimer">
+    <p><strong>商业与推广披露：</strong>本站部分注册链接包含推广邀请参数，我们可能从中获得佣金，但绝不会增加你的购买费用。展示顺序为编辑部整理对比需要，严禁视为绝对不可撼动的排名。网络线路状态与优惠随时可能调整，请以服务商结算页实时数据为准。</p>
+  </div>
+</section>

@@ -1,0 +1,80 @@
+{{ define "main" }}
+<div class="docs-layout-container container">
+  <!-- Left Sidebar (Geekblog Docs Sidebar) -->
+  {{ partial "sidebar.html" . }}
+
+  <!-- Center Content Area -->
+  <article class="doc-content-wrapper">
+    {{ partial "breadcrumbs.html" . }}
+
+    <header class="doc-header">
+      <h1 class="doc-title">{{ .Title }}</h1>
+      <div class="doc-meta-bar">
+        <span class="meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          最后更新：{{ with .Lastmod }}{{ .Format "2006-01-02" }}{{ else }}{{ .Date.Format "2006-01-02" }}{{ end }}
+        </span>
+        <span class="meta-sep">&middot;</span>
+        <span class="meta-item">
+          资料核验：{{ site.Params.lastVerifiedDate }}
+        </span>
+        <span class="meta-sep">&middot;</span>
+        <span class="meta-item">
+          阅读时间：约 {{ .ReadingTime }} 分钟
+        </span>
+      </div>
+    </header>
+
+    <div class="doc-body markdown-body">
+      {{ .Content }}
+    </div>
+
+    <!-- 底部推广披露 -->
+    <div class="article-aff-disclosure">
+      <p><strong>资料核验与推广说明：</strong>{{ site.Params.affiliateDisclosureText }}</p>
+    </div>
+
+    <!-- 上一篇 / 下一篇 -->
+    <nav class="doc-pagination-nav" aria-label="上下篇导航">
+      <div class="nav-prev">
+        {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}" rel="prev">
+          <span class="nav-sub">上一篇</span>
+          <span class="nav-title">&laquo; {{ .Title }}</span>
+        </a>
+        {{ end }}
+      </div>
+      <div class="nav-next">
+        {{ with .NextInSection }}
+        <a href="{{ .RelPermalink }}" rel="next">
+          <span class="nav-sub">下一篇</span>
+          <span class="nav-title">{{ .Title }} &raquo;</span>
+        </a>
+        {{ end }}
+      </div>
+    </nav>
+
+    <!-- 相关文章 -->
+    {{- $related := site.RegularPages.Related . | first 3 -}}
+    {{- if not $related -}}
+      {{- $related = where (where site.RegularPages "Section" .Section) "Permalink" "ne" .Permalink | first 3 -}}
+    {{- end -}}
+    {{- if $related -}}
+    <div class="related-docs-section">
+      <h3 class="related-heading">相关知识库文章</h3>
+      <div class="related-grid">
+        {{ range $related }}
+        <a href="{{ .RelPermalink }}" class="related-card">
+          <span class="related-card-title">{{ .Title }}</span>
+          <span class="related-card-desc">{{ .Summary | plainify | truncate 60 }}</span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    {{- end -}}
+  </article>
+
+  <!-- Right TOC (Geekblog Table of Contents) -->
+  {{ partial "toc.html" . }}
+</div>
+{{ end }}

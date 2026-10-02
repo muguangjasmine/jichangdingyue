@@ -1,0 +1,13 @@
+# Node dependencies
+node_modules/
+
+# Hugo lock and resource caches
+.hugo_build.lock
+resources/_gen/
+
+# Local archives
+*.zip
+
+# System files
+.DS_Store
+Thumbs.db

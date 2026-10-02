@@ -1,0 +1,15 @@
+{
+  "name": "jichangreview-cfd",
+  "version": "1.0.0",
+  "description": "机场点测｜机场测评与新手选择指南 - jichangreview.cfd",
+  "scripts": {
+    "build": ".\\hugo.cmd --cleanDestinationDir --minify",
+    "serve": ".\\hugo.cmd server -D",
+    "generate": "node scripts/generate-data.js && node scripts/generate-content.js",
+    "verify": "node scripts/verify-site.js",
+    "zip": "node scripts/create-zip.js"
+  },
+  "devDependencies": {
+    "hugo-extended": "^0.166.0"
+  }
+}

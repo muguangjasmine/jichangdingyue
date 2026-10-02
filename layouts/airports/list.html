@@ -1,0 +1,65 @@
+{{ define "main" }}
+<div class="docs-layout-container container">
+  {{ partial "sidebar.html" . }}
+
+  <section class="doc-content-wrapper airports-page-wrapper">
+    {{ partial "breadcrumbs.html" . }}
+
+    <header class="section-list-header">
+      <h1 class="section-title">2026机场大全｜28家机场资料库与参数对比</h1>
+      <p class="section-lead">本资料库汇总收录 28 家主流机场公开套餐价格、月流量、IEPL/IPLC专线线路、客户端支持与AI服务核验状态。所有数据均经过编辑部核验，动态未确定信息统一标注“待核实”，拒绝盲目虚构排名。</p>
+    </header>
+
+    <div class="airports-notice-box">
+      <strong>资料查阅提示：</strong>
+      <span>表内优惠码仅供参考，实际有效性请以服务商结算页为准；注册链接中包含的 <code>?code=XXXX</code> 为系统来源标识，并非折扣优惠券。</span>
+    </div>
+
+    <!-- 28家对比总表 -->
+    {{ partial "airports-table-28.html" . }}
+
+    <!-- 28家单体卡片网格 -->
+    <div class="airports-grid-section">
+      <h2 class="grid-section-title">28家机场单体测评与核验详情</h2>
+      <div class="airports-cards-grid">
+        {{- range site.Data.airports -}}
+        <div class="airport-entry-card" id="airport-{{ .slug }}">
+          <div class="card-entry-header">
+            <h3 class="entry-title">
+              <a href="/airports/{{ .slug }}/">{{ .name }}</a>
+            </h3>
+            {{- if .is_featured -}}
+            <span class="badge-featured-mini">重点核验</span>
+            {{- end -}}
+          </div>
+          <div class="entry-pricing-row">
+            <span class="entry-price">{{ .price }}</span>
+            <span class="entry-traffic">{{ .traffic }}</span>
+          </div>
+          <div class="entry-line">
+            <span class="lbl">线路：</span><strong>{{ .line }}</strong>
+          </div>
+          <div class="entry-desc">
+            <span class="lbl">适合：</span>{{ .suitable }}
+          </div>
+          <div class="entry-coupon-row">
+            <span class="lbl">优惠码：</span>
+            <code class="coupon-val">{{ .coupon }}</code>
+          </div>
+          <div class="entry-actions">
+            <a href="/airports/{{ .slug }}/" class="btn-entry-detail">查看完整测评</a>
+            <a href="{{ .aff_url }}" target="_blank" rel="sponsored nofollow noopener" class="btn-entry-aff">官网注册 &raquo;</a>
+          </div>
+        </div>
+        {{- end -}}
+      </div>
+    </div>
+
+    <div class="airports-aff-footer">
+      <p><strong>免责与推广披露：</strong>{{ site.Params.affiliateDisclosureText }}</p>
+    </div>
+  </section>
+
+  {{ partial "toc.html" . }}
+</div>
+{{ end }}

@@ -1,0 +1,32 @@
+{{- $index := slice -}}
+{{- range where site.Pages "Kind" "in" (slice "page" "section" "home") -}}
+  {{- if and (ne .RelPermalink "/404.html") (not (in .RelPermalink "/tags/")) (not (in .RelPermalink "/categories/")) -}}
+    {{- $canonical := "" -}}
+    {{- if .IsHome -}}
+      {{- $canonical = "/" -}}
+    {{- else -}}
+      {{- $canonical = .RelPermalink -}}
+    {{- end -}}
+    {{- $title := .Title -}}
+    {{- if .IsHome }}{{ $title = site.Params.heroH1 }}{{ end -}}
+    {{- $summary := .Description | default .Summary | plainify | htmlUnescape -}}
+    {{- $content := .Plain | default "" | htmlUnescape | truncate 600 -}}
+    {{- $keywords := slice .Title .Section -}}
+    {{- if .Params.keywords -}}
+      {{- $keywords = $keywords | append .Params.keywords -}}
+    {{- end -}}
+    {{- $item := dict "title" $title "permalink" $canonical "summary" $summary "content" $content "keywords" $keywords -}}
+    {{- $index = $index | append $item -}}
+  {{- end -}}
+{{- end -}}
+{{- /* Also append the 50 FAQs to index.json so questions and answers can be searched instantly */ -}}
+{{- range site.Data.faqs -}}
+  {{- $faqItem := dict "title" (printf "FAQ: %s" .question) "permalink" (printf "/faq/#faq-%d" .id) "summary" .answer "content" (delimit .steps " ") "keywords" (slice "FAQ" .category "排障" "问题") -}}
+  {{- $index = $index | append $faqItem -}}
+{{- end -}}
+{{- /* Also append 28 airport names to index.json */ -}}
+{{- range site.Data.airports -}}
+  {{- $apItem := dict "title" (printf "%s 测评资料" .name) "permalink" (printf "/airports/%s/" .slug) "summary" (printf "%s 参考价格：%s，流量：%s，线路：%s" .name .price .traffic .line) "content" (printf "%s %s %s %s %s" .suitable .pros .cons .clients .line) "keywords" (slice .name .shortName .line "机场测评") -}}
+  {{- $index = $index | append $apItem -}}
+{{- end -}}
+{{- $index | jsonify -}}

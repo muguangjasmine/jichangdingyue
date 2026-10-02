@@ -1,0 +1,58 @@
+{{- $airports := site.Data.airports -}}
+<div class="airports-database-wrapper">
+  <div class="database-filters-bar">
+    <div class="filter-hint">
+      共收录 <strong>{{ len $airports }}</strong> 家机场资料，包含价格、月流量、专线线路与优惠码。点击品牌可进入深度测评。
+    </div>
+  </div>
+
+  <div class="responsive-table-wrapper">
+    <table class="airports-data-table">
+      <thead>
+        <tr>
+          <th class="col-num">序号</th>
+          <th class="col-brand">机场品牌</th>
+          <th class="col-price">参考价格</th>
+          <th class="col-traffic">月流量</th>
+          <th class="col-line">线路类型</th>
+          <th class="col-coupon">优惠码</th>
+          <th class="col-ai">AI/ChatGPT支持</th>
+          <th class="col-actions">直达操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- range $index, $a := $airports -}}
+        <tr class="{{ if $a.is_featured }}row-featured{{ end }}">
+          <td class="col-num">{{ add $index 1 }}</td>
+          <td class="col-brand">
+            <a href="/airports/{{ $a.slug }}/" class="brand-link">
+              <strong>{{ $a.name }}</strong>
+            </a>
+            {{- if $a.is_featured -}}
+            <span class="badge-featured-mini">主推</span>
+            {{- end -}}
+          </td>
+          <td class="col-price"><span class="price-tag">{{ $a.price }}</span></td>
+          <td class="col-traffic">{{ $a.traffic }}</td>
+          <td class="col-line"><span class="line-badge">{{ $a.line }}</span></td>
+          <td class="col-coupon">
+            <code class="coupon-code-text">{{ $a.coupon }}</code>
+          </td>
+          <td class="col-ai">
+            {{- if reflect.IsMap $a.ai_status -}}
+              <span class="ai-status-text">{{ $a.ai_status.chatgpt }}</span>
+            {{- else -}}
+              <span class="ai-status-text">待核实</span>
+            {{- end -}}
+          </td>
+          <td class="col-actions">
+            <a href="{{ $a.aff_url }}" target="_blank" rel="sponsored nofollow noopener" class="btn-table-cta">
+              官网直达
+            </a>
+          </td>
+        </tr>
+        {{- end -}}
+      </tbody>
+    </table>
+  </div>
+</div>

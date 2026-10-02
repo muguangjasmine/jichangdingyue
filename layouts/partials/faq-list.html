@@ -1,0 +1,54 @@
+{{- $faqs := site.Data.faqs -}}
+<div class="faq-list-container">
+  <div class="faq-nav-notice">
+    本站 FAQ 共 50 条高频问答，方便直接阅读与浏览器内全文检索。
+  </div>
+
+  {{- /* Group FAQs by category */ -}}
+  {{- $categories := slice -}}
+  {{- range $faqs -}}
+    {{- if not (in $categories .category) -}}
+      {{- $categories = $categories | append .category -}}
+    {{- end -}}
+  {{- end -}}
+
+  <div class="faq-categories-index">
+    <span class="faq-index-title">分类快速跳转：</span>
+    <div class="faq-tags-cloud">
+      {{- range $categories -}}
+      <a href="#cat-{{ . | urlize }}" class="faq-cat-tag">{{ . }}</a>
+      {{- end -}}
+    </div>
+  </div>
+
+  <div class="faq-items-wrapper">
+    {{- range $cat := $categories -}}
+    <div class="faq-category-group" id="cat-{{ $cat | urlize }}">
+      <h3 class="faq-cat-title">{{ $cat }}</h3>
+      <div class="faq-cat-cards">
+        {{- range where $faqs "category" $cat -}}
+        <article class="faq-card-item" id="faq-{{ .id }}">
+          <h4 class="faq-question">
+            <span class="faq-q-badge">Q{{ .id }}</span>
+            <span class="faq-q-text">{{ .question }}</span>
+          </h4>
+          <div class="faq-answer-block">
+            <p class="faq-direct-ans">{{ .answer }}</p>
+            {{- if .steps -}}
+            <div class="faq-steps-box">
+              <strong class="faq-steps-label">具体步骤 / 排查方法：</strong>
+              <ol class="faq-steps-list">
+                {{- range .steps -}}
+                <li>{{ . }}</li>
+                {{- end -}}
+              </ol>
+            </div>
+            {{- end -}}
+          </div>
+        </article>
+        {{- end -}}
+      </div>
+    </div>
+    {{- end -}}
+  </div>
+</div>

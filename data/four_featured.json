@@ -1,0 +1,179 @@
+[
+  {
+    "id": "laddercloud",
+    "slug": "laddercloud",
+    "name": "梯子云 LadderCloud",
+    "shortName": "梯子云",
+    "price": "¥25/月",
+    "price_num": 25,
+    "cycle": "月付 / 季付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "125GB/月",
+    "traffic_gb": 125,
+    "line": "企业专线资料",
+    "nodes": "常用核心节点（香港、日本、新加坡、美国等，以订阅实际拉取为准）",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN, Mihomo Party, sing-box",
+    "ai_status": {
+      "chatgpt": "支持常规Web访问与APP（需选用美/新/日等对应节点）",
+      "claude": "依赖纯净IP，需测试对应节点连通性，以实际拉取为准",
+      "gemini": "支持常规地区节点访问"
+    },
+    "suitable": "第一次买机场、希望月付试水、日常网页浏览与轻量流媒体、需要简单套餐的新手",
+    "not_suitable": "需要海量GB下载、追求超低年付（如十几元包年）的用户",
+    "pros": [
+      "月付25元门槛低，无需一次性承担年付沉没成本",
+      "企业专线线路资料，晚高峰波动相对普通直连更可控",
+      "套餐规则简单清晰，125GB月流量适合绝大多数新手日常使用",
+      "全主流客户端通用订阅支持，导入方便"
+    ],
+    "cons": [
+      "不提供超大TB级离线下载套餐",
+      "优惠码活动有周期性，需在结算页二次确认"
+    ],
+    "coupon": "tiziyun",
+    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "aff_url": "https://tiziyun3.ladderaff.com/#/?code=KVyNkFYU",
+    "last_verified": "2026-10-01",
+    "is_featured": true,
+    "featured_order": 1,
+    "positioning": "常规月付入门首选",
+    "cta_texts": [
+      "查看梯子云套餐",
+      "进入梯子云官网",
+      "注册梯子云",
+      "查看当前价格"
+    ]
+  },
+  {
+    "id": "twilight",
+    "slug": "twilight",
+    "name": "暮光加速",
+    "shortName": "暮光加速",
+    "price": "¥20/月",
+    "price_num": 20,
+    "cycle": "月付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "120GB/月",
+    "traffic_gb": 120,
+    "line": "IEPL纯专线资料",
+    "nodes": "常用热门地区节点（以官网订阅为准）",
+    "clients": "Clash, Shadowrocket, v2rayN, sing-box",
+    "ai_status": {
+      "chatgpt": "常用节点可用，以客户端节点状态为准",
+      "claude": "待核实",
+      "gemini": "可用（需对应地区节点）"
+    },
+    "suitable": "注重预算控制、想要20元档纯专线线路的新手与轻中度用户",
+    "not_suitable": "需要无限制并发连接与多公网IP的团队用户",
+    "pros": [
+      "20元月付在IEPL专线类型中性价比突出",
+      "纯专线架构，晚高峰网络稳定性表现相对平稳",
+      "120GB流量覆盖日常查资料、追剧与AI交互"
+    ],
+    "cons": [
+      "低价档位同时在线设备数有限制",
+      "节点可能随运营商维护短暂切换"
+    ],
+    "coupon": "mm88",
+    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "aff_url": "https://varnexa.twilightaff.com/#/?code=9wp1Pt82",
+    "last_verified": "2026-10-01",
+    "is_featured": true,
+    "featured_order": 2,
+    "positioning": "预算、价格与专线套餐平衡",
+    "cta_texts": [
+      "查看暮光加速",
+      "查看暮光套餐",
+      "注册暮光加速",
+      "查看当前优惠"
+    ]
+  },
+  {
+    "id": "flycat",
+    "slug": "flycat",
+    "name": "飞猫云 FlyCat",
+    "shortName": "飞猫云",
+    "price": "¥84/年起",
+    "price_num": 84,
+    "cycle": "年付（另有其他套餐资料）",
+    "cycle_type": "yearly",
+    "traffic": "约50GB/月（年付档）",
+    "traffic_gb": 50,
+    "line": "IEPL内网专线资料",
+    "nodes": "亚太主流节点与欧美常用节点",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN, Mihomo Party",
+    "ai_status": {
+      "chatgpt": "支持常规网页端与APP端",
+      "claude": "部分节点支持，以实际拉取为准",
+      "gemini": "支持"
+    },
+    "suitable": "轻量使用、低频上网、查收邮件与海外资讯、希望年付省心不折腾的用户",
+    "not_suitable": "每天重度刷4K长视频、大文件高频下载的用户",
+    "pros": [
+      "年付84元折算每月仅7元，轻量用户试错成本极低",
+      "IEPL内网专线，延迟表现平稳，晚高峰丢包少",
+      "年付无需每月手动续费，适合备用与长线轻量使用"
+    ],
+    "cons": [
+      "入门档每月约50GB流量，重度流媒体可能不够",
+      "年付属于一次性预付，需先确认自身使用频次"
+    ],
+    "coupon": "flycat888",
+    "coupon_note": "优惠有效性以结算页为准，优惠活动可能调整。",
+    "aff_url": "https://flycat1.flycatvipaff.cc/#/?code=TgFJ4DF5",
+    "last_verified": "2026-10-01",
+    "is_featured": true,
+    "featured_order": 3,
+    "positioning": "轻量年付、低频用户优选",
+    "cta_texts": [
+      "查看飞猫云年付",
+      "进入飞猫云",
+      "注册飞猫云",
+      "查看当前套餐"
+    ]
+  },
+  {
+    "id": "breezenet",
+    "slug": "breezenet",
+    "name": "微风网络 BreezeNet",
+    "shortName": "微风网络",
+    "price": "约¥27/月",
+    "price_num": 27,
+    "cycle": "月付 / 年付 / 不限时流量包",
+    "cycle_type": "flexible",
+    "traffic": "约200GB/月",
+    "traffic_gb": 200,
+    "line": "BGP专线资料",
+    "nodes": "亚太高带宽节点、欧美多地节点",
+    "clients": "Clash, Shadowrocket, v2rayN, sing-box, Mihomo",
+    "ai_status": {
+      "chatgpt": "大部分主流节点可用",
+      "claude": "待核实",
+      "gemini": "可用"
+    },
+    "suitable": "流量需求较大、经常观看4K流媒体、多设备共用或想买不限时流量包的用户",
+    "not_suitable": "每月仅需10GB以内的极低频用户",
+    "pros": [
+      "200GB大月流量配置，视频与多任务并发更从容",
+      "BGP多线接入，国内入口网络自适应良好",
+      "套餐形态多样，提供月付、年付及不限时流量包选择"
+    ],
+    "cons": [
+      "月付价格略高于20元入门档",
+      "具体优惠码需在结算页实时核查"
+    ],
+    "coupon": "以结算页为准",
+    "coupon_note": "优惠以当前注册页和结算页为准，优惠活动可能调整。",
+    "aff_url": "https://edp01.breezenetaff.com/#/?code=3PgTsmnp",
+    "last_verified": "2026-10-01",
+    "is_featured": true,
+    "featured_order": 4,
+    "positioning": "大流量、丰富套餐与长期使用",
+    "cta_texts": [
+      "查看微风网络",
+      "查看Breeze套餐",
+      "注册微风网络",
+      "查看当前价格"
+    ]
+  }
+]

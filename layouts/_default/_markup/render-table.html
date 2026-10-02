@@ -1,0 +1,6 @@
+<div class="responsive-table-wrapper" role="region" aria-label="文章表格，可横向滚动" tabindex="0">
+  <table class="data-table">
+    <thead>{{ range .THead }}<tr>{{ range . }}<th{{ with .Alignment }} style="text-align: {{ . }}"{{ end }}>{{ .Text }}</th>{{ end }}</tr>{{ end }}</thead>
+    <tbody>{{ range .TBody }}<tr>{{ range . }}<td{{ with .Alignment }} style="text-align: {{ . }}"{{ end }}>{{ .Text }}</td>{{ end }}</tr>{{ end }}</tbody>
+  </table>
+</div>

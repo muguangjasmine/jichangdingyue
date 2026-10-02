@@ -1,0 +1,63 @@
+{{ define "main" }}
+<div class="docs-layout-container container">
+  <!-- Left Sidebar -->
+  {{ partial "sidebar.html" . }}
+
+  <!-- Center Content Area -->
+  <section class="doc-content-wrapper section-list-wrapper">
+    {{ partial "breadcrumbs.html" . }}
+
+    <header class="section-list-header">
+      <h1 class="section-title">{{ .Title }}</h1>
+      {{ with .Description }}
+      <p class="section-lead">{{ . }}</p>
+      {{ else }}
+      <p class="section-lead">{{ .Summary }}</p>
+      {{ end }}
+    </header>
+
+    {{ with .Content }}
+    <div class="section-intro markdown-body">
+      {{ . }}
+    </div>
+    {{ end }}
+
+    <div class="articles-list-grid">
+      {{ range .Pages.ByWeight }}
+      <article class="article-item-card">
+        <h2 class="article-card-h2">
+          <a href="{{ .RelPermalink }}" class="card-link-title">{{ .Title }}</a>
+        </h2>
+        <div class="article-card-meta">
+          <span>更新日期：{{ with .Lastmod }}{{ .Format "2006-01-02" }}{{ else }}{{ .Date.Format "2006-01-02" }}{{ end }}</span>
+          <span class="sep">&middot;</span>
+          <span>分类：{{ $.Title }}</span>
+        </div>
+        <p class="article-card-summary">
+          {{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 110 }}{{ end }}
+        </p>
+        <div class="article-card-footer">
+          <a href="{{ .RelPermalink }}" class="read-more-link">阅读完整指南 &raquo;</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Right TOC / Nav -->
+  <aside class="toc-sidebar">
+    <div class="toc-card">
+      <div class="toc-header">
+        <span>专栏导览</span>
+      </div>
+      <div class="toc-body">
+        <ul class="quick-nav-list">
+          {{ range .Pages.ByWeight }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </aside>
+</div>
+{{ end }}
