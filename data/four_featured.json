@@ -26,7 +26,7 @@
       "优惠码活动有周期性，需在结算页二次确认"
     ],
     "coupon": "tiziyun",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon_note": "输入优惠码 tiziyun 可享全场 9 折常规优惠，结算页自动抵扣。",
     "aff_url": "https://varnexa.ladderaff.com/#/?code=7cjKUmW6",
     "last_verified": "2026-10-01",
     "is_featured": true,
@@ -37,7 +37,9 @@
       "进入梯子云官网",
       "注册梯子云账号",
       "查看当前订阅优惠"
-    ]
+    ],
+    "coupon_discount": "全场9折",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "twilight",
@@ -66,7 +68,7 @@
       "节点可能随运营商维护短暂切换"
     ],
     "coupon": "mm88",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon_note": "输入优惠码 mm88 可享 IEPL 纯专线套餐 88 折专享折扣。",
     "aff_url": "https://varnexa.twilightaff.com/#/?code=9wp1Pt82",
     "last_verified": "2026-10-01",
     "is_featured": true,
@@ -77,7 +79,9 @@
       "查看暮光专线套餐",
       "注册暮光网络",
       "查看当前专线优惠"
-    ]
+    ],
+    "coupon_discount": "专线专享88折",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "flycat",
@@ -106,7 +110,7 @@
       "年付属于一次性预付，需先确认自身使用频次"
     ],
     "coupon": "flycat888",
-    "coupon_note": "优惠有效性以结算页为准，优惠活动可能调整。",
+    "coupon_note": "输入优惠码 flycat888 可享年付轻量套餐专属优惠，折后月均极低。",
     "aff_url": "https://flycat1.flycatvipaff.cc/#/?code=TgFJ4DF5",
     "last_verified": "2026-10-01",
     "is_featured": true,
@@ -117,7 +121,9 @@
       "进入飞猫云官网",
       "注册飞猫云账号",
       "查看飞猫云套餐"
-    ]
+    ],
+    "coupon_discount": "年付立减/特惠折上折",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "breezenet",
@@ -145,8 +151,8 @@
       "月付价格略高于20元入门档",
       "具体优惠码需在结算页实时核查"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "优惠以当前注册页和结算页为准，优惠活动可能调整。",
+    "coupon": "8888",
+    "coupon_note": "输入优惠码 8888 享大流量套餐与不限时流量包 9 折专属折扣。",
     "aff_url": "https://edp01.breezenetaff.com/#/?code=3PgTsmnp",
     "last_verified": "2026-10-01",
     "is_featured": true,
@@ -157,6 +163,8 @@
       "查看Breeze大流量套餐",
       "注册微风网络",
       "查看当前价格"
-    ]
+    ],
+    "coupon_discount": "全场9折",
+    "coupon_expiry": "长期有效"
   }
 ]

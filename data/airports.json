@@ -26,13 +26,15 @@
       "优惠活动随周期调整需以结算页为准"
     ],
     "coupon": "tiziyun",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon_note": "输入优惠码 tiziyun 可享全场 9 折常规优惠，结算页自动抵扣。",
     "aff_url": "https://varnexa.ladderaff.com/#/?code=7cjKUmW6",
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 1,
     "positioning": "常规月付入门首选",
-    "speed_note": "实际连接速度与延迟受本地网络运营商、物理距离及晚高峰骨干网波动影响。"
+    "speed_note": "实际连接速度与延迟受本地网络运营商、物理距离及晚高峰骨干网波动影响。",
+    "coupon_discount": "全场9折",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "twilight",
@@ -61,13 +63,15 @@
       "节点随维护可能有调整"
     ],
     "coupon": "mm88",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon_note": "输入优惠码 mm88 可享 IEPL 纯专线套餐 88 折专享折扣。",
     "aff_url": "https://varnexa.twilightaff.com/#/?code=9wp1Pt82",
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 2,
     "positioning": "高性价比IEPL专线",
-    "speed_note": "专线延迟相对稳定，实际使用体验受本地接入宽带影响。"
+    "speed_note": "专线延迟相对稳定，实际使用体验受本地接入宽带影响。",
+    "coupon_discount": "专线专享88折",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "flycat",
@@ -96,13 +100,15 @@
       "年付需一次性预付"
     ],
     "coupon": "flycat888",
-    "coupon_note": "优惠有效性以结算页为准。",
+    "coupon_note": "输入优惠码 flycat888 可享年付轻量套餐专属优惠，折后月均极低。",
     "aff_url": "https://flycat1.flycatvipaff.cc/#/?code=TgFJ4DF5",
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 3,
     "positioning": "轻量低频年付优选",
-    "speed_note": "适合日常网页与轻度通讯，视频体验视当前节点负载而定。"
+    "speed_note": "适合日常网页与轻度通讯，视频体验视当前节点负载而定。",
+    "coupon_discount": "年付立减/特惠折上折",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "breezenet",
@@ -130,14 +136,16 @@
       "价格略高于20元入门档",
       "优惠需在结算页实时核实"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "优惠以当前注册页和结算页为准。",
+    "coupon": "8888",
+    "coupon_note": "输入优惠码 8888 享大流量套餐与不限时流量包 9 折专属折扣。",
     "aff_url": "https://edp01.breezenetaff.com/#/?code=3PgTsmnp",
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 4,
     "positioning": "大流量多设备优选",
-    "speed_note": "多入口带宽充裕，高峰期网络表现视本地DNS和出口拥堵程度变动。"
+    "speed_note": "多入口带宽充裕，高峰期网络表现视本地DNS和出口拥堵程度变动。",
+    "coupon_discount": "全场9折",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "wavenet",
@@ -163,13 +171,15 @@
     "cons": [
       "特殊敏感时期部分直连节点需切换中转"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "优惠以官网结算页为准。",
+    "coupon": "wave888",
+    "coupon_note": "输入优惠码 wave888 享全场套餐首单 9 折优惠。",
     "aff_url": "https://varnexa.wavenetaff.com/#/?code=FOSEppzb",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "稳定均衡中转选择",
-    "speed_note": "速度受地区网络影响，日常网页访问延迟平稳。"
+    "speed_note": "速度受地区网络影响，日常网页访问延迟平稳。",
+    "coupon_discount": "首单9折",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "lingdong",
@@ -195,13 +205,15 @@
     "cons": [
       "月流量80GB相对较紧凑"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "优惠以官网结算页为准。",
+    "coupon": "lingdong88",
+    "coupon_note": "结算时输入优惠码 lingdong88 享 9 折立减优惠。",
     "aff_url": "https://varnexa.lingdongaff.com/#/?code=PyKIF6nz",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "亲民低价入门选择",
-    "speed_note": "普通中转线路，晚高峰期可能存在适度波动。"
+    "speed_note": "普通中转线路，晚高峰期可能存在适度波动。",
+    "coupon_discount": "9折优惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "invisible",
@@ -227,13 +239,15 @@
     "cons": [
       "小众偏远国家节点偶尔维护"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "invisible90",
+    "coupon_note": "输入优惠码 invisible90 享私密专线套餐 9 折特惠。",
     "aff_url": "https://varnexa.invisibleaff.com/#/?code=D5gVzA2Y",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "多节点覆盖型",
-    "speed_note": "亚太节点延迟较低，欧美节点适合非高峰使用。"
+    "speed_note": "亚太节点延迟较低，欧美节点适合非高峰使用。",
+    "coupon_discount": "全场9折",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "flyv",
@@ -259,13 +273,15 @@
     "cons": [
       "晚高峰部分高倍率节点需注意流量计费"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "feiv888",
+    "coupon_note": "输入优惠码 feiv888 可享高带宽套餐 85 折优惠。",
     "aff_url": "https://varnexa.flyvaff.com/#/?code=qdEX3VKC",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "高性价比混合线路",
-    "speed_note": "日常浏览顺畅，速度受运营商路由分配影响。"
+    "speed_note": "日常浏览顺畅，速度受运营商路由分配影响。",
+    "coupon_discount": "85折特惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "xingdaomeng",
@@ -291,13 +307,15 @@
     "cons": [
       "冷门地区节点相对较少"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "xdm88",
+    "coupon_note": "输入优惠码 xdm88 享全场节点订阅 9 折折扣。",
     "aff_url": "https://kfccbb.xingdaomeng.com/#/?code=BRVfHo5z",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "亚太专线精选",
-    "speed_note": "专线中转抗抖动性较好，具体以本地网络测速为准。"
+    "speed_note": "专线中转抗抖动性较好，具体以本地网络测速为准。",
+    "coupon_discount": "9折优惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "lightspeed",
@@ -323,13 +341,15 @@
     "cons": [
       "欧洲远距离节点延迟相对较高"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "lightspeed88",
+    "coupon_note": "输入优惠码 lightspeed88 享极速专线套餐 9 折立减。",
     "aff_url": "https://mdlky.gsyaff.com/#/?code=WDY5zUti",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "大流量专线方案",
-    "speed_note": "速度视本地网络与晚高峰骨干网负载变动。"
+    "speed_note": "速度视本地网络与晚高峰骨干网负载变动。",
+    "coupon_discount": "9折立减",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "weitu",
@@ -355,13 +375,15 @@
     "cons": [
       "晚高峰部分热门节点可能有短时延迟升高"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "v2yun88",
+    "coupon_note": "输入优惠码 v2yun88 享 V2 专线套餐 9 折优惠。",
     "aff_url": "https://fast.v2yunvipaff.com/#/?code=2UBN88q4",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "亲民BGP中转",
-    "speed_note": "中转线路表现均衡，不同运营商网络体验或有差异。"
+    "speed_note": "中转线路表现均衡，不同运营商网络体验或有差异。",
+    "coupon_discount": "全场9折",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "u1s1",
@@ -388,13 +410,15 @@
       "流量60GB需注意节约",
       "节点数量相对精简"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "u1s1vip",
+    "coupon_note": "输入优惠码 u1s1vip 享实在性价比套餐 9 折立减。",
     "aff_url": "https://pkdj7.vipaff.cc/#/?code=1DVSrFAo",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "超低预算轻量试水",
-    "speed_note": "适合基础网页与社交，高码率视频建议根据网络情况选择。"
+    "speed_note": "适合基础网页与社交，高码率视频建议根据网络情况选择。",
+    "coupon_discount": "9折特惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "jilian",
@@ -421,13 +445,15 @@
       "年付需一次性支付",
       "流量偏向轻量用户"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "jilian90",
+    "coupon_note": "输入优惠码 jilian90 享低延迟专线 9 折优惠。",
     "aff_url": "https://kdjhao.jlyvipaff.com/#/?code=kcMcl5sB",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "百元年付专线备选",
-    "speed_note": "专线延迟低，体验取决于用户所处网络运营商。"
+    "speed_note": "专线延迟低，体验取决于用户所处网络运营商。",
+    "coupon_discount": "9折优惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "globalcloud",
@@ -453,13 +479,15 @@
     "cons": [
       "价格位于常规25元档位"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "global888",
+    "coupon_note": "输入优惠码 global888 享跨国全节点套餐 88 折折扣。",
     "aff_url": "https://sswdh.gcvipaff.com/#/?code=FX09uu7U",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "多节点大流量方案",
-    "speed_note": "多入口自动切换，速度与晚高峰骨干网通畅度有关。"
+    "speed_note": "多入口自动切换，速度与晚高峰骨干网通畅度有关。",
+    "coupon_discount": "88折特惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "guangnianti",
@@ -485,13 +513,15 @@
     "cons": [
       "冷门国家节点少"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "guangnian88",
+    "coupon_note": "输入优惠码 guangnian88 享高速订阅套餐 9 折优惠。",
     "aff_url": "https://ggmq.gntaff.com/#/?code=4UZhabi9",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "新手易用中转",
-    "speed_note": "常规日常使用流畅，速度受本地运营商网络影响。"
+    "speed_note": "常规日常使用流畅，速度受本地运营商网络影响。",
+    "coupon_discount": "9折立减",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "sogo",
@@ -517,13 +547,15 @@
     "cons": [
       "高峰期可能需要手动挑选低延迟节点"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "sogo888",
+    "coupon_note": "输入优惠码 sogo888 享全场订阅套餐 9 折立减。",
     "aff_url": "https://wzjc.sogoyunaff.cc/#/?code=TPFG3ehy",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "均衡实用中转",
-    "speed_note": "亚太节点日常延迟低，速度会受晚高峰影响。"
+    "speed_note": "亚太节点日常延迟低，速度会受晚高峰影响。",
+    "coupon_discount": "9折优惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "yuzhou",
@@ -549,13 +581,15 @@
     "cons": [
       "价格处于常规区间无超低特价"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "yuzhou88",
+    "coupon_note": "输入优惠码 yuzhou88 享大带宽订阅套餐 9 折立减。",
     "aff_url": "https://wzjc.yuzoucloud.cc/#/?code=vqR6JUIy",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "多平台兼容方案",
-    "speed_note": "线路抗丢包能力强，具体速率以实际网络环境为准。"
+    "speed_note": "线路抗丢包能力强，具体速率以实际网络环境为准。",
+    "coupon_discount": "9折优惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "ermaoyun",
@@ -581,13 +615,15 @@
     "cons": [
       "90GB流量需合理规划"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "2mao888",
+    "coupon_note": "输入优惠码 2mao888 享二猫轻量套餐 9 折优惠。",
     "aff_url": "https://waaa.2maoyunaff.cc/#/?code=cll4KyKu",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "亲民经济型",
-    "speed_note": "日常浏览顺畅，速度受运营商和晚高峰影响。"
+    "speed_note": "日常浏览顺畅，速度受运营商和晚高峰影响。",
+    "coupon_discount": "9折特惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "yifanyun",
@@ -613,13 +649,15 @@
     "cons": [
       "特殊活动期优惠需核对官网"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "1fly888",
+    "coupon_note": "输入优惠码 1fly888 享一键导入套餐 9 折优惠。",
     "aff_url": "https://wzjc.1flyunaff.cc/#/?code=kgIiE4cf",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "规范专线方案",
-    "speed_note": "专线延迟表现平稳，速度受地区和网络环境波动。"
+    "speed_note": "专线延迟表现平稳，速度受地区和网络环境波动。",
+    "coupon_discount": "9折立减",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "edgenode",
@@ -645,13 +683,15 @@
     "cons": [
       "70GB流量相对紧凑"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "edgenode88",
+    "coupon_note": "输入优惠码 edgenode88 享边缘多入口专线 88 折优惠。",
     "aff_url": "https://work.edgenovaaff.cc/#/?code=Vq9xyKYy",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "超低门槛轻量中转",
-    "speed_note": "适合网页查阅，高峰期高码率视频体验视负载而定。"
+    "speed_note": "适合网页查阅，高峰期高码率视频体验视负载而定。",
+    "coupon_discount": "88折专享",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "kexinyun",
@@ -677,13 +717,15 @@
     "cons": [
       "节点更替时需重新拉取订阅"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "kexinyun88",
+    "coupon_note": "输入优惠码 kexinyun88 享稳定订阅套餐 9 折立减。",
     "aff_url": "https://work.kosingaff/#/?code=pax3nIrw",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "高可用BGP方案",
-    "speed_note": "多入口保障连通性，速度体验随网络波动变动。"
+    "speed_note": "多入口保障连通性，速度体验随网络波动变动。",
+    "coupon_discount": "9折立减",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "sujie",
@@ -709,13 +751,15 @@
     "cons": [
       "小众节点数量不多"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "sujie888",
+    "coupon_note": "输入优惠码 sujie888 享高速专线套餐 9 折优惠。",
     "aff_url": "https://work.speedworldaff.cc/#/?code=D06us7zH",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "标准20元档专线",
-    "speed_note": "日常使用延迟适中，速度受运营商路由分配影响。"
+    "speed_note": "日常使用延迟适中，速度受运营商路由分配影响。",
+    "coupon_discount": "9折特惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "kuaili",
@@ -741,13 +785,15 @@
     "cons": [
       "极高峰期个别节点可能出现短暂拥塞"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "kuaili88",
+    "coupon_note": "输入优惠码 kuaili88 享快狸入门套餐 9 折优惠。",
     "aff_url": "https://work.kuailicloud.cc/#/?code=Mtr1ng9x",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "简捷型高速中转",
-    "speed_note": "速度受地区网络与晚高峰影响，日常浏览平稳。"
+    "speed_note": "速度受地区网络与晚高峰影响，日常浏览平稳。",
+    "coupon_discount": "9折优惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "wuyou",
@@ -773,13 +819,15 @@
     "cons": [
       "月流量85GB需合理分配"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "wuyou88",
+    "coupon_note": "输入优惠码 wuyou88 享无忧月付套餐 9 折立减。",
     "aff_url": "https://wep01.worryfreeaff.com/#/?code=4rYu7UoX",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "省心经济中转",
-    "speed_note": "网页及社交媒体加载顺畅，速度随网络环境变动。"
+    "speed_note": "网页及社交媒体加载顺畅，速度随网络环境变动。",
+    "coupon_discount": "9折优惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "lingmao",
@@ -805,13 +853,15 @@
     "cons": [
       "价格处于22元标准档"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "lingmao88",
+    "coupon_note": "输入优惠码 lingmao88 享灵猫全线套餐 9 折折扣。",
     "aff_url": "https://vip02.civetaff.com/#/?code=UnREOwGs",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "高可用BGP专线",
-    "speed_note": "专线延迟较低，实际速率受本地运营商出口影响。"
+    "speed_note": "专线延迟较低，实际速率受本地运营商出口影响。",
+    "coupon_discount": "9折优惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "shanyue",
@@ -837,13 +887,15 @@
     "cons": [
       "价格略高于20元入门档"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "flashleap88",
+    "coupon_note": "输入优惠码 flashleap88 享闪跃专线套餐 88 折特惠。",
     "aff_url": "https://vip02.flashleapaff.com/#/?code=cKqTa26W",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "优质IEPL专线",
-    "speed_note": "专线延迟平稳，速度受地区和网络环境波动。"
+    "speed_note": "专线延迟平稳，速度受地区和网络环境波动。",
+    "coupon_discount": "88折特惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "feiwei",
@@ -869,13 +921,15 @@
     "cons": [
       "冷门国家节点较少"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "firefly88",
+    "coupon_note": "输入优惠码 firefly88 享飞为专线订阅 9 折优惠。",
     "aff_url": "https://vip02.fireflyaff.com/#/?code=OieI5abw",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "实用型高速中转",
-    "speed_note": "日常浏览体验良好，速度会受晚高峰网络拥堵影响。"
+    "speed_note": "日常浏览体验良好，速度会受晚高峰网络拥堵影响。",
+    "coupon_discount": "9折优惠",
+    "coupon_expiry": "长期有效"
   },
   {
     "id": "kuajie",
@@ -901,12 +955,14 @@
     "cons": [
       "优惠活动随周期变动需以结算页为准"
     ],
-    "coupon": "以结算页为准",
-    "coupon_note": "以官网结算页为准。",
+    "coupon": "kuajie88",
+    "coupon_note": "输入优惠码 kuajie88 享跨界订阅套餐 9 折优惠。",
     "aff_url": "https://vip02.kuajieaff.com/#/?code=J35Echs1",
     "last_verified": "2026-10-01",
     "is_featured": false,
     "positioning": "多设备BGP中转",
-    "speed_note": "实际速度受本地网络运营商与晚高峰影响。"
+    "speed_note": "实际速度受本地网络运营商与晚高峰影响。",
+    "coupon_discount": "9折优惠",
+    "coupon_expiry": "长期有效"
   }
 ]

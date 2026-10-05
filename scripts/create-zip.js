@@ -4,28 +4,32 @@ const path = require('path');
 
 const projectRoot = path.join(__dirname, '..');
 const parentDir = path.join(projectRoot, '..');
-const localZip = path.join(projectRoot, 'jichangreview.cfd.zip');
-const parentZip = path.join(parentDir, 'jichangreview.cfd.zip');
-const sourceZip = path.join(parentDir, 'jichangreview.cfd-source.zip');
+const localZip = path.join(projectRoot, 'jichangdingyue.xyz.zip');
+const parentZip = path.join(parentDir, 'jichangdingyue.xyz.zip');
+const sourceZip = path.join(parentDir, 'jichangdingyue.xyz-source.zip');
 
-console.log('🚀 开始执行一键“生成网站”全流程...\n');
+console.log('🚀 开始执行一键“生成网站与打包 ZIP”全流程...\n');
 
-// 1. 生成数据与内容
-console.log('1️⃣ 正在同步全站数据与页面内容...');
-execSync('node scripts/generate-data.js', { cwd: projectRoot, stdio: 'inherit' });
-execSync('node scripts/generate-content.js', { cwd: projectRoot, stdio: 'inherit' });
+// 1. Hugo 生产环境编译
+console.log('1️⃣ 正在使用 Hugo 进行生产环境编译 (--cleanDestinationDir --minify)...');
+try {
+  execSync('hugo --cleanDestinationDir --minify', { cwd: projectRoot, stdio: 'inherit' });
+} catch (e) {
+  console.log('Using hugo.cmd fallback...');
+  const hugoBin = path.join(projectRoot, 'hugo.cmd');
+  execSync(`"${hugoBin}" --cleanDestinationDir --minify`, { cwd: projectRoot, stdio: 'inherit' });
+}
 
-// 2. Hugo 生产构建
-console.log('\n2️⃣ 正在使用 Hugo Extended 进行生产环境编译 (--cleanDestinationDir --minify)...');
-const hugoBin = path.join(projectRoot, 'hugo.cmd');
-execSync(`"${hugoBin}" --cleanDestinationDir --minify`, { cwd: projectRoot, stdio: 'inherit' });
-
-// 3. 运行全站自动化核验
-console.log('\n3️⃣ 正在执行全站指标自动化核验...');
+// 2. 运行全站自动化核验
+console.log('\n2️⃣ 正在执行全站指标自动化核验...');
 execSync('node scripts/verify-site.js', { cwd: projectRoot, stdio: 'inherit' });
 
+// 3. 运行死链核验
+console.log('\n3️⃣ 正在核验全站 Markdown 内链完整性...');
+execSync('node scripts/check-links.js', { cwd: projectRoot, stdio: 'inherit' });
+
 // 4. 打包 public 目录为生产部署包
-console.log('\n4️⃣ 正在将 public/ 目录打包为生产部署压缩包...');
+console.log('\n4️⃣ 正在将 public/ 目录打包为生产部署压缩包 (jichangdingyue.xyz.zip)...');
 const publicPath = path.join(projectRoot, 'public', '*');
 
 [localZip, parentZip].forEach(z => {
@@ -52,7 +56,7 @@ try {
 
 // 5. 打包源码压缩包（排除 node_modules 和 public）
 try {
-  console.log('\n5️⃣ 正在打包完整源码归档...');
+  console.log('\n5️⃣ 正在打包完整源码归档 (jichangdingyue.xyz-source.zip)...');
   if (fs.existsSync(sourceZip)) {
     try { fs.unlinkSync(sourceZip); } catch (e) {}
   }

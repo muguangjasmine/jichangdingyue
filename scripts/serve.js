@@ -55,10 +55,16 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`\n==================================================`);
-  console.log(`🌐 机场Review (jichangreview.cfd) 本地网页服务已启动！`);
+  console.log(`🌐 机场订阅网 (jichangdingyue.xyz) 本地网页服务已启动！`);
   console.log(`🔗 首页入口:       http://localhost:${PORT}/`);
-  console.log(`👉 28家机场资料库: http://localhost:${PORT}/airports/`);
-  console.log(`👉 新手怎么选:     http://localhost:${PORT}/choose/`);
+  console.log(`👉 机场订阅推荐:   http://localhost:${PORT}/recommend/`);
+  console.log(`👉 订阅使用教程:   http://localhost:${PORT}/tutorials/`);
+  console.log(`👉 客户端配置:     http://localhost:${PORT}/clients/`);
+  console.log(`👉 套餐选择:       http://localhost:${PORT}/plans/`);
+  console.log(`👉 线路与节点:     http://localhost:${PORT}/lines/`);
+  console.log(`👉 故障排查:       http://localhost:${PORT}/troubleshooting/`);
+  console.log(`👉 新手指南:       http://localhost:${PORT}/guide/`);
+  console.log(`👉 机场资料库:     http://localhost:${PORT}/airports/`);
   console.log(`👉 常见问题50问:   http://localhost:${PORT}/faq/`);
   console.log(`==================================================\n`);
 });
