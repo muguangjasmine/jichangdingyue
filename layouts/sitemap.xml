@@ -3,7 +3,7 @@
 {{- range where site.Pages "Kind" "in" (slice "page" "section" "home") -}}
   {{- if and (ne .RelPermalink "/404.html") (not (in .RelPermalink "/tags/")) (not (in .RelPermalink "/categories/")) -}}
   <url>
-    <loc>{{ if .IsHome }}https://jichangreview.cfd/{{ else }}{{ printf "https://jichangreview.cfd%s" .RelPermalink }}{{ end }}</loc>
+    <loc>{{ if .IsHome }}https://jichangdingyue.xyz/{{ else }}{{ printf "https://jichangdingyue.xyz%s" .RelPermalink }}{{ end }}</loc>
     {{- if not .Lastmod.IsZero -}}
     <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     {{- else if not .Date.IsZero -}}

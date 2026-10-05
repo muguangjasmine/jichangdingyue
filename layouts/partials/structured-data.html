@@ -1,8 +1,8 @@
 {{- $canonical := "" -}}
 {{- if .IsHome -}}
-  {{- $canonical = "https://jichangreview.cfd/" -}}
+  {{- $canonical = "https://jichangdingyue.xyz/" -}}
 {{- else -}}
-  {{- $canonical = printf "https://jichangreview.cfd%s" .RelPermalink -}}
+  {{- $canonical = printf "https://jichangdingyue.xyz%s" .RelPermalink -}}
 {{- end -}}
 
 {{- if .IsHome -}}
@@ -11,12 +11,12 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "{{ site.Params.brandShort }}",
-  "url": "https://jichangreview.cfd/",
+  "url": "https://jichangdingyue.xyz/",
   "description": "{{ site.Params.description }}",
   "inLanguage": "zh-CN",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://jichangreview.cfd/?s={search_term_string}",
+    "target": "https://jichangdingyue.xyz/?s={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }
@@ -34,14 +34,14 @@
       "@type": "ListItem",
       "position": 1,
       "name": "首页",
-      "item": "https://jichangreview.cfd/"
+      "item": "https://jichangdingyue.xyz/"
     }
     {{- if .Section -}}
     ,{
       "@type": "ListItem",
       "position": 2,
       "name": "{{ with site.GetPage (printf "/%s" .Section) }}{{ .Title }}{{ else }}{{ .Section }}{{ end }}",
-      "item": "https://jichangreview.cfd/{{ .Section }}/"
+      "item": "https://jichangdingyue.xyz/{{ .Section }}/"
     }
     {{- end -}}
     {{- if and .IsPage (ne .RelPermalink (printf "/%s/" .Section)) -}}
@@ -58,7 +58,7 @@
 {{- end -}}
 
 <!-- Article Schema -->
-{{- if and .IsPage (not (eq .Section "faq")) -}}
+{{- if and .IsPage (not (eq .Section "faq")) (ne .RelPermalink "/404.html") -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -75,15 +75,15 @@
   "author": {
     "@type": "Organization",
     "name": "{{ site.Params.brandShort }}",
-    "url": "https://jichangreview.cfd/"
+    "url": "https://jichangdingyue.xyz/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "{{ site.Params.brandShort }}",
-    "url": "https://jichangreview.cfd/",
+    "url": "https://jichangdingyue.xyz/",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jichangreview.cfd/favicon.svg"
+      "url": "https://jichangdingyue.xyz/favicon.svg"
     }
   }
 }

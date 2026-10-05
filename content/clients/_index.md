@@ -7,7 +7,6 @@ last_verified: "2026-10-01"
 layout: "list"
 ---
 
-# 全平台机场客户端使用教程与下载
 
 不同操作系统对应不同的代理客户端。为了获得最佳的使用体验与网络分流效果，建议根据你的设备选择最稳定、更新维护积极的现代客户端。
 
@@ -28,4 +27,3 @@ layout: "list"
 - [2026 机场订阅推荐：新手怎么选](/recommend/best-airport-subscriptions/)
 - [机场节点怎么选择：延迟与地区适配](/guide/how-to-choose-nodes/)
 - [怎么判断机场是否稳定：新手选购指标](/guide/how-to-judge-stability/)
-

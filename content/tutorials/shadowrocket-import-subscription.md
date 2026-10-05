@@ -9,7 +9,6 @@ author: "机场订阅网编辑部"
 layout: "single"
 ---
 
-# 机场订阅怎么导入 Shadowrocket？小火箭一键订阅与扫码配置指南
 
 **Shadowrocket（俗称小火箭）** 是 iOS / iPadOS 苹果生态中体验最流畅、功能最强大的代理工具之一。其极简的操作界面、出色的后台保活和智能分流能力，使其成为 iPhone 用户的首选。
 

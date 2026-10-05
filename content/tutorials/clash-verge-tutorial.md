@@ -9,7 +9,6 @@ author: "机场订阅网编辑部"
 layout: "single"
 ---
 
-# 机场订阅怎么导入 Clash Verge？Clash Verge Rev 电脑端完整教程
 
 **Clash Verge Rev** 是目前 Windows 和 macOS 平台上最受欢迎、更新最活跃的现代化代理客户端。它不仅拥有简洁优雅的中文操作界面，还内置了功能强大的 Mihomo（Clash Meta）内核，支持智能分流与全局 TUN 虚拟网卡模式。
 

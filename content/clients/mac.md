@@ -9,7 +9,6 @@ author: "机场订阅网编辑部"
 layout: "single"
 ---
 
-# Mac 机场使用教程：macOS 苹果电脑配置 Clash Verge 与订阅节点全指南
 
 在 macOS 苹果电脑上（无论是 M1/M2/M3/M4 芯片还是 Intel 处理器），拥有一个高效稳定的代理环境是日常查阅资料、开发编程与影音娱乐的基础。
 

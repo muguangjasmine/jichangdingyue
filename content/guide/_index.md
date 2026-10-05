@@ -7,7 +7,6 @@ last_verified: "2026-10-01"
 layout: "list"
 ---
 
-# 机场订阅新手入门指南与认知专题
 
 如果你是第一次接触科学上网与机场订阅，本专区为你提供体系化、零门槛的入门指导，让你在几分钟内理清所有核心概念。
 
@@ -30,4 +29,3 @@ layout: "list"
 - [怎么判断机场是否稳定：新手选购防坑核心指标](/guide/how-to-judge-stability/)
 - [怎么买机场不容易踩坑：避开虚标、套路与低质商家](/guide/how-to-avoid-pitfalls/)
 - [机场跑路前有什么征兆：新手防跑路自救指南](/guide/airport-exit-scam-signs/)
-

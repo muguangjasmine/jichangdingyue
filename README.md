@@ -1,7 +1,7 @@
-# 机场检测站 (jichangreview.cfd)
+# 机场检测站 (jichangdingyue.xyz)
 
 > 客观数据核验｜机场测评与新手选择指南  
-> 官方线上访问网址：**https://jichangreview.cfd**
+> 官方线上访问网址：**https://jichangdingyue.xyz**
 
 ---
 
@@ -51,7 +51,7 @@ npm run zip
    - **构建命令**：若选 `None` 则留空（直接使用已生成的 `public` 目录）；若选 `Hugo` 填入 `hugo --minify`；
    - **构建输出目录**：`public`；
    - **环境变量**（若使用 Hugo 构建）：`HUGO_VERSION = 0.145.0`；
-3. 绑定自定义域名 `jichangreview.cfd` 并开启自动 HTTPS。
+3. 绑定自定义域名 `jichangdingyue.xyz` 并开启自动 HTTPS。
 
 ### 方式二：GitHub Pages 部署
 1. 仓库已内置 `.github/workflows/deploy.yml` 自动化工作流；

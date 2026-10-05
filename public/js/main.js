@@ -1,5 +1,5 @@
 /**
- * 机场Review (jichangreview.cfd) - 前端核心交互脚本
+ * 机场订阅网 (jichangdingyue.xyz) - 前端核心交互脚本
  * 全站即时搜索 (index.json)、移动端汉堡抽屉、优惠码一键复制
  */
 

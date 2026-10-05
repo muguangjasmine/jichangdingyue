@@ -1,223 +1,553 @@
-// 独立 keyword-map 数据文件：严格防止 SEO 内耗，每页唯一主关键词与清晰搜索意图划分
 module.exports = [
   {
-    url: "/",
-    mainKeyword: "2026机场测评",
-    secondaryKeywords: ["机场测评", "机场推荐", "新手机场推荐", "梯子推荐", "机场套餐对比"],
-    searchIntent: "综合查找2026年机场测评对比、新手选购入门指南与主流机场快速对比",
-    pageType: "首页知识库 Landing Page",
-    targetAirport: "梯子云、暮光加速、飞猫云、微风网络等全库覆盖",
-    targetAudience: "第一次接触机场、不知道怎么挑套餐的小白新手",
-    distinction: "全站总入口与快速对比枢纽，不展开单一机场超长文，重在结构化导航与决策引导"
+    "url": "/",
+    "mainKeyword": "2026机场订阅推荐",
+    "secondaryKeywords": [
+      "机场订阅推荐",
+      "机场订阅教程",
+      "机场订阅链接",
+      "机场订阅怎么用",
+      "梯子推荐"
+    ],
+    "searchIntent": "综合查找2026年机场订阅推荐、新手选购入门指南与主流机场快速对比",
+    "pageType": "首页知识库 Landing Page",
+    "targetAirport": "梯子云、暮光网络、飞猫云、微风网络等全库覆盖",
+    "targetAudience": "第一次接触机场订阅、不知道怎么挑套餐的新手",
+    "distinction": "全站总入口与快速对比枢纽，提供结构化导航与决策引导"
   },
   {
-    url: "/airports/",
-    mainKeyword: "机场大全",
-    secondaryKeywords: ["机场资料库", "机场对比", "2026机场大全", "28家机场资料"],
-    searchIntent: "浏览和横向筛选28家机场基础参数、真实价格、线路类型与核验日期",
-    pageType: "资料库聚合索引页",
-    targetAirport: "全部28家机场",
-    targetAudience: "希望全面比对不同机场参数与配置的理性用户",
-    distinction: "集中呈现28家机场的客观参数表格与卡片，不堆砌主观推荐文案"
+    "url": "/recommend/",
+    "mainKeyword": "机场订阅推荐",
+    "secondaryKeywords": [
+      "稳定机场推荐",
+      "便宜机场推荐",
+      "月付机场推荐",
+      "专线机场推荐"
+    ],
+    "searchIntent": "寻找稳定不卡顿、支持月付、高性价比的成熟机场订阅服务商",
+    "pageType": "推荐聚合专栏",
+    "targetAirport": "四大精选机场",
+    "targetAudience": "希望快速锁定好用机场的新手",
+    "distinction": "按预算与场景精选高性价比机场订阅"
   },
   {
-    url: "/reviews/",
-    mainKeyword: "机场评测",
-    secondaryKeywords: ["机场Review", "机场测评网站", "机场值不值得买", "真实机场测评"],
-    searchIntent: "寻找客观的机场实测分析、真实优缺点与核验结论",
-    pageType: "测评专栏聚合页",
-    targetAirport: "四家重点主推与深度评测机场",
-    targetAudience: "看重服务商细节、线路抗波动表现与AI可用情况的读者",
-    distinction: "承接深度评测专栏入口，重点关注‘值不值得买’与‘优缺点’"
+    "url": "/recommend/best-airport-subscriptions/",
+    "mainKeyword": "2026机场订阅推荐新手怎么选",
+    "secondaryKeywords": [
+      "新手买哪个机场好",
+      "稳定专线机场",
+      "月付机场精选"
+    ],
+    "searchIntent": "新手第一次挑选机场订阅的核心维度与避坑建议",
+    "pageType": "深度推荐文章",
+    "targetAirport": "四大精选机场",
+    "targetAudience": "正在挑选机场订阅的初学者",
+    "distinction": "深度解析四大精选机场的套餐价格、专线特点与优惠码"
   },
   {
-    url: "/choose/",
-    mainKeyword: "机场怎么选",
-    secondaryKeywords: ["新手机场推荐", "第一次买机场怎么选", "机场挑选技巧", "机场选购指南"],
-    searchIntent: "学习挑选机场的方法论与避坑指南，建立正确的选购认知",
-    pageType: "新手选择专题专栏",
-    targetAirport: "梯子云、暮光加速、飞猫云、微风网络",
-    targetAudience: "完全不懂专线、中转、客户端的新手",
-    distinction: "纯教育与决策方法论，从预算、流量、设备、场景4个维度教人做选择"
+    "url": "/tutorials/",
+    "mainKeyword": "机场订阅使用教程",
+    "secondaryKeywords": [
+      "机场订阅怎么导入",
+      "机场订阅使用步骤",
+      "客户端导入订阅"
+    ],
+    "searchIntent": "获取各平台代理客户端导入机场订阅链接的保姆级图文教程",
+    "pageType": "教程聚合专栏",
+    "targetAirport": "通用客户端导入规范",
+    "targetAudience": "买了套餐不知道怎么导入软件的用户",
+    "distinction": "全平台客户端订阅导入操作汇总"
   },
   {
-    url: "/choose/how-to-choose-airport/",
-    mainKeyword: "第一次买机场怎么选",
-    secondaryKeywords: ["新手怎么买机场", "机场选购指标", "机场线路怎么看", "机场节点怎么测"],
-    searchIntent: "新手第一次购机时的核心5大判断标准与避坑清单",
-    pageType: "新手决策深度指南",
-    targetAirport: "四家重点机场",
-    targetAudience: "正在犹豫买哪种配置的初次使用者",
-    distinction: "聚焦指标拆解（价格、月流量、专线、节点、客户端），给出标准决策树"
+    "url": "/tutorials/clash-verge-tutorial/",
+    "mainKeyword": "机场订阅怎么导入Clash Verge",
+    "secondaryKeywords": [
+      "Clash Verge Rev教程",
+      "Clash Verge导入订阅",
+      "Clash Verge配置"
+    ],
+    "searchIntent": "学习在 Windows/Mac 上使用 Clash Verge Rev 导入订阅与开启系统代理",
+    "pageType": "客户端深度教程",
+    "targetAirport": "支持 Clash 订阅的机场",
+    "targetAudience": "使用电脑端 Clash Verge Rev 的用户",
+    "distinction": "详解订阅导入、Service 模式、TUN 网卡接管与规则分流"
   },
   {
-    url: "/choose/airport-for-beginners/",
-    mainKeyword: "新手机场推荐2026",
-    secondaryKeywords: ["小白好上手机场", "零门槛机场", "新手买哪个机场", "新手简单机场"],
-    searchIntent: "寻找配置最简单、不用复杂设置、一键导入即可上手的小白友好机场",
-    pageType: "新手推荐专题",
-    targetAirport: "梯子云 LadderCloud（主推入门）、暮光加速",
-    targetAudience: "害怕配置出错、只想快速稳定上网的新人",
-    distinction: "侧重‘易用性’与‘客服文档完善度’，强调一键导入与简单月付"
+    "url": "/tutorials/shadowrocket-import-subscription/",
+    "mainKeyword": "Shadowrocket怎么导入机场订阅",
+    "secondaryKeywords": [
+      "小火箭导入订阅",
+      "小火箭添加订阅链接",
+      "小火箭配置教程"
+    ],
+    "searchIntent": "学习在 iPhone/iPad 上通过 Shadowrocket 添加订阅与开启代理",
+    "pageType": "iOS客户端深度教程",
+    "targetAirport": "支持通用订阅的机场",
+    "targetAudience": "苹果 iOS 移动端用户",
+    "distinction": "详解小火箭添加订阅、自动更新与分流设置"
   },
   {
-    url: "/choose/monthly-vs-yearly/",
-    mainKeyword: "机场买月付还是年付",
-    secondaryKeywords: ["月付机场对比", "年付机场风险", "机场付费周期选择", "机场一个月多少钱"],
-    searchIntent: "权衡月付低风险与年付折扣之间的利弊，做出稳妥付费决策",
-    pageType: "决策对比指南",
-    targetAirport: "梯子云（月付）、飞猫云（年付）",
-    targetAudience: "纠结于单月购买还是直接包年的用户",
-    distinction: "聚焦‘资金风险控制’与‘沉没成本’，通过真实案例分析付周期区别"
+    "url": "/tutorials/clash-import-subscription/",
+    "mainKeyword": "机场订阅怎么导入Clash",
+    "secondaryKeywords": [
+      "Clash导入订阅链接",
+      "Clash订阅配置",
+      "Clash节点导入"
+    ],
+    "searchIntent": "掌握标准 Clash 客户端导入订阅与节点切换的完整流程",
+    "pageType": "通用教程",
+    "targetAirport": "支持 Clash 的机场",
+    "targetAudience": "各类 Clash 衍生客户端用户",
+    "distinction": "详解 URL 导入、配置文件更新与常见错误解决"
   },
   {
-    url: "/choose/how-much-data/",
-    mainKeyword: "机场多少流量够用",
-    secondaryKeywords: ["100GB流量够用吗", "机场流量计算", "每月多少GB合适", "机场流量怎么看"],
-    searchIntent: "根据自身看视频、工作和AI使用习惯精确估算每月所需流量",
-    pageType: "流量规划指南",
-    targetAirport: "飞猫云（50GB）、梯子云（125GB）、微风网络（200GB）",
-    targetAudience: "不知道自己每月会消耗多少GB流量的读者",
-    distinction: "列举网页、YouTube 1080P/4K、Twitter、ChatGPT 的详细流量消耗公式表"
+    "url": "/clients/",
+    "mainKeyword": "机场客户端配置",
+    "secondaryKeywords": [
+      "代理软件下载",
+      "全平台机场客户端",
+      "客户端使用教程"
+    ],
+    "searchIntent": "了解并下载 Windows/macOS/Android/iOS 全平台主流代理客户端",
+    "pageType": "客户端专栏索引",
+    "targetAirport": "全客户端覆盖",
+    "targetAudience": "需要为多设备寻找合适客户端的用户",
+    "distinction": "横向对比各操作系统最适合的开源现代客户端"
   },
   {
-    url: "/plans/",
-    mainKeyword: "机场套餐测评",
-    secondaryKeywords: ["机场价格对比", "机场流量对比", "机场套餐怎么选", "机场套餐价格"],
-    searchIntent: "了解各价位套餐分布、流量梯队与专线溢价，横向挑选合适档位",
-    pageType: "套餐对比专栏",
-    targetAirport: "全库28家代表性套餐",
-    targetAudience: "按预算明确找套餐的买家",
-    distinction: "以‘价格区间’与‘单位GB单价’为核心维度进行全景横向比较"
+    "url": "/clients/windows/",
+    "mainKeyword": "Windows机场使用教程",
+    "secondaryKeywords": [
+      "Windows代理客户端",
+      "PC电脑翻墙设置",
+      "Win11机场教程"
+    ],
+    "searchIntent": "Windows 10/11 电脑下载客户端、导入订阅与系统代理设置",
+    "pageType": "操作系统专属指南",
+    "targetAirport": "通用平台",
+    "targetAudience": "Windows 电脑用户",
+    "distinction": "详解 PC 端安装、订阅拉取与网络故障自救"
   },
   {
-    url: "/plans/under-20/",
-    mainKeyword: "20元左右机场推荐",
-    secondaryKeywords: ["25元机场推荐", "便宜机场推荐", "低价机场哪个好", "低预算专线机场"],
-    searchIntent: "寻找20元左右极低预算但兼顾IEPL/IPLC专线品质的方案",
-    pageType: "低预算专栏",
-    targetAirport: "暮光加速（¥20/月）、飞V（¥18/月）、边缘节点（¥15/月）",
-    targetAudience: "每月预算控制在20元上下的学生与轻度用户",
-    distinction: "重点分析20元价位下专线与中转的取舍，拒绝低于5元的劣质跑路盘"
+    "url": "/clients/android/",
+    "mainKeyword": "安卓机场使用教程",
+    "secondaryKeywords": [
+      "Android机场客户端",
+      "安卓手机导入订阅",
+      "安卓分应用代理"
+    ],
+    "searchIntent": "安卓手机安装客户端、导入订阅并设置后台保活与分应用代理",
+    "pageType": "操作系统专属指南",
+    "targetAirport": "通用平台",
+    "targetAudience": "安卓手机用户",
+    "distinction": "详解 APK 安装、系统自启权限与分流设置"
   },
   {
-    url: "/plans/monthly/",
-    mainKeyword: "机场月付推荐",
-    secondaryKeywords: ["便宜月付机场", "月付专线机场", "适合月付的机场", "常规月付机场"],
-    searchIntent: "专门寻找支持按月付费、随时可换、试错成本最低的可靠机场",
-    pageType: "月付专栏",
-    targetAirport: "梯子云（¥25/月）、暮光加速（¥20/月）、隐形人（¥24/月）",
-    targetAudience: "排斥年付预付费、崇尚灵活付费的务实用户",
-    distinction: "只收录月付机制友好、月单价在18-25元之间的稳定服务商"
+    "url": "/clients/iphone/",
+    "mainKeyword": "iPhone小火箭机场教程",
+    "secondaryKeywords": [
+      "苹果手机机场教程",
+      "iOS小火箭设置",
+      "iPhone代理客户端"
+    ],
+    "searchIntent": "iPhone 获取海外 Apple ID、下载小火箭与配置订阅",
+    "pageType": "操作系统专属指南",
+    "targetAirport": "通用平台",
+    "targetAudience": "苹果手机小白用户",
+    "distinction": "详解 iOS 账号准备、应用下载与节点分流"
   },
   {
-    url: "/plans/yearly/",
-    mainKeyword: "机场年付套餐推荐",
-    secondaryKeywords: ["百元年付机场", "轻量年付机场", "年付省心机场", "低频长效梯子"],
-    searchIntent: "寻找一年百元左右、单月折算不到8元、适合长期轻量使用的方案",
-    pageType: "年付专栏",
-    targetAirport: "飞猫云（¥84/年）、唯兔云（¥79.9/年）、极连云（¥96/年）",
-    targetAudience: "使用频次较低但需要常年备用的白领、科研人员",
-    distinction: "侧重低总价（80-100元内）的轻量年付，强调备用机与低频容灾价值"
+    "url": "/clients/mac/",
+    "mainKeyword": "Mac机场使用教程",
+    "secondaryKeywords": [
+      "macOS代理客户端",
+      "苹果电脑Clash教程",
+      "Mac科学上网"
+    ],
+    "searchIntent": "Mac 苹果电脑安装 Clash Verge Rev 并配置系统代理",
+    "pageType": "操作系统专属指南",
+    "targetAirport": "通用平台",
+    "targetAudience": "Mac 用户",
+    "distinction": "详解 M系列芯片适配、权限授权与节点管理"
   },
   {
-    url: "/plans/high-data/",
-    mainKeyword: "机场大流量套餐推荐",
-    secondaryKeywords: ["200GB机场推荐", "4K流媒体机场", "多设备大流量机场", "不限时流量包"],
-    searchIntent: "重度4K视频追剧、多设备共享或需要200GB以上大月流量的方案",
-    pageType: "大流量专栏",
-    targetAirport: "微风网络（200GB）、浪网（200GB）、Sogo云（150GB）",
-    targetAudience: "追剧狂人、多端并发重度家庭用户",
-    distinction: "着重分析大流量下的带宽充裕度、倍率规则以及高峰限速情况"
+    "url": "/clients/client-overview/",
+    "mainKeyword": "机场客户端有哪些",
+    "secondaryKeywords": [
+      "常用代理软件对比",
+      "Clash与小火箭对比",
+      "客户端推荐"
+    ],
+    "searchIntent": "横向比对各平台常用代理软件优缺点与系统推荐",
+    "pageType": "客户端横向盘点",
+    "targetAirport": "通用平台",
+    "targetAudience": "在多款软件中犹豫的用户",
+    "distinction": "全景表格对比各客户端核心特性"
   },
   {
-    url: "/clients/",
-    mainKeyword: "机场客户端教程",
-    secondaryKeywords: ["机场订阅导入", "机场客户端下载", "梯子软件使用", "机场订阅链接怎么用"],
-    searchIntent: "获取各平台（Win/Mac/iOS/Android）官方开源客户端的下载与导入指南",
-    pageType: "客户端聚合专栏",
-    targetAirport: "通用客户端规范",
-    targetAudience: "不会配置软件、不知道客户端在哪下载的新手",
-    distinction: "汇总6大客户端与4大操作系统生态，提供正规安全下载指引"
+    "url": "/plans/",
+    "mainKeyword": "机场套餐选择",
+    "secondaryKeywords": [
+      "机场价格对比",
+      "机场流量选择",
+      "月付年付对比"
+    ],
+    "searchIntent": "根据预算与实际流量需求挑选最适合的机场套餐",
+    "pageType": "套餐专栏索引",
+    "targetAirport": "全库套餐",
+    "targetAudience": "按预算找套餐的买家",
+    "distinction": "系统分析月付、年付与不限时流量包的优劣"
   },
   {
-    url: "/clients/clash-verge-rev/",
-    mainKeyword: "Clash Verge Rev教程",
-    secondaryKeywords: ["Clash Verge Rev怎么导入机场", "Clash导入机场失败", "Clash新手教程"],
-    searchIntent: "学习Clash Verge Rev在Windows/macOS上的下载、订阅导入与系统代理设置",
-    pageType: "单个客户端详细教程",
-    targetAirport: "主流支持Clash配置的机场",
-    targetAudience: "使用PC/Mac桌面电脑的Clash新用户",
-    distinction: "专攻Clash Verge Rev的界面、TUN模式、内核切换与订阅更新操作"
+    "url": "/plans/how-to-choose-plan/",
+    "mainKeyword": "机场套餐怎么选",
+    "secondaryKeywords": [
+      "如何选择机场套餐",
+      "套餐性价比对比",
+      "买多大流量合适"
+    ],
+    "searchIntent": "掌握挑选机场套餐的核心公式与方法论",
+    "pageType": "套餐深度指南",
+    "targetAirport": "四大精选机场",
+    "targetAudience": "不知道买多大套餐的用户",
+    "distinction": "按使用频次与预算给出选购决策树"
   },
   {
-    url: "/clients/shadowrocket/",
-    mainKeyword: "Shadowrocket教程",
-    secondaryKeywords: ["Shadowrocket怎么添加机场", "小火箭怎么导入订阅", "小火箭订阅失败"],
-    searchIntent: "解决iPhone/iPad下载小火箭、添加Subscribe订阅及分流模式的实操指南",
-    pageType: "单个客户端详细教程",
-    targetAirport: "支持通用订阅的机场",
-    targetAudience: "苹果iOS移动端用户",
-    distinction: "专讲iOS海外ID购买、添加订阅、节点测速、分流规则配置与省电优化"
+    "url": "/plans/100g-plan-guide/",
+    "mainKeyword": "100G机场流量够不够",
+    "secondaryKeywords": [
+      "每月100G流量够用吗",
+      "机场流量消耗测算",
+      "流量规划"
+    ],
+    "searchIntent": "测算日常网页、社交与视频实际消耗，评估 100G 是否够用",
+    "pageType": "流量专题文章",
+    "targetAirport": "四大精选机场",
+    "targetAudience": "对 GB 概念不明确的用户",
+    "distinction": "给出详细的单项活动流量消耗对照表"
   },
   {
-    url: "/clients/v2rayn/",
-    mainKeyword: "v2rayN教程",
-    secondaryKeywords: ["v2rayN怎么导入机场", "v2rayN设置", "v2rayN更新订阅", "v2rayN节点全红"],
-    searchIntent: "在Windows电脑上下载、解压、配置v2rayN并开启系统代理的步骤",
-    pageType: "单个客户端详细教程",
-    targetAirport: "支持VLESS/Trojan/Vmess的机场",
-    targetAudience: "Windows极客或轻量级低资源电脑用户",
-    distinction: "专讲v2rayN核心包下载、路由绕过大陆设置、托盘图标状态与排障"
+    "url": "/plans/monthly-vs-yearly/",
+    "mainKeyword": "机场月付还是年付好",
+    "secondaryKeywords": [
+      "月付年付优缺点",
+      "避免年付跑路",
+      "机场付款策略"
+    ],
+    "searchIntent": "权衡月付低门槛与年付折扣，制定安全的付款策略",
+    "pageType": "付款策略文章",
+    "targetAirport": "四大精选机场",
+    "targetAudience": "犹豫是否年付的用户",
+    "distinction": "聚焦资金安全与试错成本控制"
   },
   {
-    url: "/clients/android/",
-    mainKeyword: "Android机场订阅怎么用",
-    secondaryKeywords: ["安卓机场客户端", "安卓手机怎么用小火箭替代品", "安卓科学上网设置"],
-    searchIntent: "安卓手机安装ClashMeta或v2rayNG、导入机场订阅并设置分应用的流程",
-    pageType: "操作系统专属指南",
-    targetAirport: "通用机场平台",
-    targetAudience: "小米、华为、OPPO、vivo、三星等安卓手机用户",
-    distinction: "聚焦安卓端APK安装、后台保活、分应用代理放行微信等系统级操作"
+    "url": "/lines/",
+    "mainKeyword": "机场线路与专线解析",
+    "secondaryKeywords": [
+      "IEPL与IPLC区别",
+      "直连与中转区别",
+      "晚高峰变慢原因"
+    ],
+    "searchIntent": "搞懂直连、中转、IEPL/IPLC 专线底层原理与晚高峰卡顿真相",
+    "pageType": "线路专栏索引",
+    "targetAirport": "专线与中转线路",
+    "targetAudience": "想搞懂底层技术名词的进阶用户",
+    "distinction": "通俗大白话解析线路架构差异"
   },
   {
-    url: "/clients/iphone/",
-    mainKeyword: "iPhone机场怎么使用",
-    secondaryKeywords: ["苹果手机翻墙设置", "iOS导入机场订阅", "苹果手机代理客户端"],
-    searchIntent: "iPhone从海外Apple ID准备到客户端选型、节点连接的全流程图文指引",
-    pageType: "操作系统专属指南",
-    targetAirport: "通用机场平台",
-    targetAudience: "持有iPhone但从未接触过外区应用商店的纯小白",
-    distinction: "详细解释iOS系统沙盒机制、海外账号安全登录防锁机、小火箭与Sing-box选型"
+    "url": "/lines/direct-vs-relay/",
+    "mainKeyword": "机场直连和中转有什么区别",
+    "secondaryKeywords": [
+      "直连中转对比",
+      "BGP中转机场",
+      "晚高峰直连卡顿"
+    ],
+    "searchIntent": "深入理解直连机房与国内中转机房的稳定性与晚高峰差异",
+    "pageType": "线路专题文章",
+    "targetAirport": "中转与直连服务商",
+    "targetAudience": "遇到晚高峰卡顿的用户",
+    "distinction": "图文对比数据转发路径与丢包率"
   },
   {
-    url: "/clients/windows/",
-    mainKeyword: "Windows机场怎么使用",
-    secondaryKeywords: ["电脑怎么连机场", "电脑梯子客户端", "Windows系统代理设置"],
-    searchIntent: "Windows 10/11环境下客户端选型、开机自启、TUN网卡接管与网络修复",
-    pageType: "操作系统专属指南",
-    targetAirport: "通用机场平台",
-    targetAudience: "使用Win10/Win11笔记本和台式机的办公与娱乐用户",
-    distinction: "深度解析Windows系统代理注册表残留、休眠断网修复、网络重置命令"
+    "url": "/lines/iepl-vs-iplc/",
+    "mainKeyword": "IEPL和IPLC有什么区别",
+    "secondaryKeywords": [
+      "IEPL专线机场",
+      "IPLC内网专线",
+      "企业跨境专线"
+    ],
+    "searchIntent": "掌握内网专线核心优势，辨别真假专线宣传",
+    "pageType": "专线深度解析",
+    "targetAirport": "专线服务商",
+    "targetAudience": "对网络稳定性有极高要求的用户",
+    "distinction": "剖析光纤物理通道、不过公网防火墙原理"
   },
   {
-    url: "/faq/",
-    mainKeyword: "机场常见问题",
-    secondaryKeywords: ["机场FAQ", "机场节点全红怎么办", "机场订阅更新失败", "机场连不上排障"],
-    searchIntent: "快速查询和解决从购买、连接、客户端报错到AI解锁的50个高频技术故障",
-    pageType: "全景常见问题专题页",
-    targetAirport: "全库覆盖",
-    targetAudience: "遇到连接异常或有疑问需要自助排查的读者",
-    distinction: "50个精选FAQ全部默认展开，不折叠，支持即时分类检索与快速定位"
+    "url": "/lines/peak-hours-slow/",
+    "mainKeyword": "机场晚高峰为什么变慢",
+    "secondaryKeywords": [
+      "晚高峰丢包卡顿",
+      "晚上8点机场变慢",
+      "抗晚高峰机场"
+    ],
+    "searchIntent": "了解晚高峰 20:00-23:00 骨干网拥塞真相与提速自救方案",
+    "pageType": "晚高峰专题",
+    "targetAirport": "专线抗拥堵机场",
+    "targetAudience": "晚上看视频卡顿的用户",
+    "distinction": "揭秘公网出口大堵车与 QoS 压制机制"
   },
   {
-    url: "/contact/",
-    mainKeyword: "联系我们",
-    secondaryKeywords: ["机场测评交流", "Telegram频道", "提交测评反馈", "机场测评群"],
-    searchIntent: "加入官方Telegram社群获取最新节点公告、反馈资料变更或交流使用经验",
-    pageType: "联系与社区页面",
-    targetAirport: "本站编辑部与读者社群",
-    targetAudience: "希望互动交流或提交勘误信息的读者",
-    distinction: "提供透明的Telegram官方联络通道与资料更新说明"
+    "url": "/troubleshooting/",
+    "mainKeyword": "机场订阅故障排查",
+    "secondaryKeywords": [
+      "订阅更新失败",
+      "节点全部超时",
+      "订阅链接打不开"
+    ],
+    "searchIntent": "自助排查与快速修复机场订阅使用中最常见的网络连接故障",
+    "pageType": "故障排查专栏",
+    "targetAirport": "全库覆盖",
+    "targetAudience": "遇到订阅报错的用户",
+    "distinction": "提供黄金 4 步排障法与具体报错代码解决方案"
+  },
+  {
+    "url": "/troubleshooting/subscription-link-failed/",
+    "mainKeyword": "机场订阅链接打不开怎么办",
+    "secondaryKeywords": [
+      "订阅地址无法访问",
+      "订阅下载超时",
+      "订阅链接报错"
+    ],
+    "searchIntent": "解决复制的订阅链接无法拉取节点、Download Timeout 等问题",
+    "pageType": "排障专题文章",
+    "targetAirport": "通用平台",
+    "targetAudience": "卡在第一步导入的用户",
+    "distinction": "梳理域名污染、客户端填错等 5 大根因"
+  },
+  {
+    "url": "/troubleshooting/subscription-update-error/",
+    "mainKeyword": "机场订阅更新失败怎么办",
+    "secondaryKeywords": [
+      "Fetch Error排查",
+      "订阅更新超时",
+      "节点不更新修复"
+    ],
+    "searchIntent": "修复客户端右键更新订阅时的各种报错提示",
+    "pageType": "排障专题文章",
+    "targetAirport": "通用平台",
+    "targetAudience": "日常更新订阅报错的用户",
+    "distinction": "提供排障清单与代理缓存重置技巧"
+  },
+  {
+    "url": "/troubleshooting/nodes-timeout/",
+    "mainKeyword": "机场节点全部超时怎么办",
+    "secondaryKeywords": [
+      "节点全红排查",
+      "节点显示-1ms",
+      "无法连接外网自救"
+    ],
+    "searchIntent": "解决节点全部超时变红、无法建立连接的紧急自救方案",
+    "pageType": "排障专题文章",
+    "targetAirport": "通用平台",
+    "targetAudience": "网络突然断开的用户",
+    "distinction": "核心讲解系统时间偏差与系统代理冲突修复"
+  },
+  {
+    "url": "/guide/",
+    "mainKeyword": "机场订阅新手入门指南",
+    "secondaryKeywords": [
+      "机场订阅原理",
+      "节点选择技巧",
+      "防坑防跑路"
+    ],
+    "searchIntent": "零基础系统建立对机场订阅、节点选择与避坑防跑路的完整认知",
+    "pageType": "新手指南专栏",
+    "targetAirport": "全库覆盖",
+    "targetAudience": "刚接触科学上网的零基础新人",
+    "distinction": "体系化呈现入门必备概念"
+  },
+  {
+    "url": "/guide/what-is-airport-subscription/",
+    "mainKeyword": "机场订阅是什么意思",
+    "secondaryKeywords": [
+      "机场订阅原理",
+      "科学上网机场概念",
+      "什么是订阅"
+    ],
+    "searchIntent": "通俗搞懂什么是机场、什么是订阅以及与传统梯子的区别",
+    "pageType": "入门科普文章",
+    "targetAirport": "通用平台",
+    "targetAudience": "第一次听闻机场概念的新人",
+    "distinction": "用大白话比喻解释机场与订阅机制"
+  },
+  {
+    "url": "/guide/what-is-subscription-link/",
+    "mainKeyword": "机场订阅链接是什么",
+    "secondaryKeywords": [
+      "订阅链接格式",
+      "订阅地址原理",
+      "Base64订阅"
+    ],
+    "searchIntent": "了解订阅链接的数据结构与客户端解析原理",
+    "pageType": "入门科普文章",
+    "targetAirport": "通用平台",
+    "targetAudience": "对链接格式有疑问的用户",
+    "distinction": "详解 URL 传参、Token 安全与节点下发"
+  },
+  {
+    "url": "/guide/how-to-use-subscription-url/",
+    "mainKeyword": "机场订阅地址怎么使用",
+    "secondaryKeywords": [
+      "订阅链接使用步骤",
+      "复制订阅到上网",
+      "订阅教程"
+    ],
+    "searchIntent": "掌握从复制链接到开启代理一键上网的标准动作",
+    "pageType": "入门操作指南",
+    "targetAirport": "通用平台",
+    "targetAudience": "需要快速指引的新手",
+    "distinction": "标准三步走操作示范"
+  },
+  {
+    "url": "/guide/subscription-update-frequency/",
+    "mainKeyword": "机场订阅多久更新一次",
+    "secondaryKeywords": [
+      "订阅更新机制",
+      "自动更新设置",
+      "为什么更新订阅"
+    ],
+    "searchIntent": "了解节点更新机制，设置客户端自动同步频率",
+    "pageType": "使用习惯指南",
+    "targetAirport": "通用平台",
+    "targetAudience": "日常长期使用的用户",
+    "distinction": "平衡节点有效性与多余请求开销"
+  },
+  {
+    "url": "/guide/first-time-buying-checklist/",
+    "mainKeyword": "新手第一次买机场注意什么",
+    "secondaryKeywords": [
+      "买机场避坑清单",
+      "第一次买机场",
+      "正确选购姿势"
+    ],
+    "searchIntent": "获取新手第一次选购机场的 5要5不要 避坑清单",
+    "pageType": "避坑清单文章",
+    "targetAirport": "四大精选机场",
+    "targetAudience": "准备下单的新手买家",
+    "distinction": "给出清晰实用的选购前后 Checklist"
+  },
+  {
+    "url": "/guide/how-to-choose-nodes/",
+    "mainKeyword": "机场节点怎么选择",
+    "secondaryKeywords": [
+      "节点延迟怎么看",
+      "节点倍率说明",
+      "如何选优质节点"
+    ],
+    "searchIntent": "根据延迟数字、倍率标识与所在宽带挑选最适合节点",
+    "pageType": "节点选择指南",
+    "targetAirport": "全库覆盖",
+    "targetAudience": "面对海量节点不知道选哪个的用户",
+    "distinction": "教用户看懂节点命名规范与测速工具"
+  },
+  {
+    "url": "/guide/hk-jp-sg-nodes/",
+    "mainKeyword": "香港日本新加坡节点怎么选",
+    "secondaryKeywords": [
+      "热门节点对比",
+      "香港节点延迟",
+      "新加坡抗拥堵"
+    ],
+    "searchIntent": "对比亚太热门节点特性，掌握晚高峰分流与大带宽下载策略",
+    "pageType": "地区节点对比",
+    "targetAirport": "全库覆盖",
+    "targetAudience": "希望优化连接体验的用户",
+    "distinction": "横向比对港/日/新/美核心特征"
+  },
+  {
+    "url": "/guide/how-to-judge-stability/",
+    "mainKeyword": "怎么判断机场是否稳定",
+    "secondaryKeywords": [
+      "稳定机场指标",
+      "机场稳定性测试",
+      "如何判断好机场"
+    ],
+    "searchIntent": "从线路类型、抖动、多入口容灾到运营机制判断稳定性",
+    "pageType": "稳定性评估指南",
+    "targetAirport": "四大精选机场",
+    "targetAudience": "饱受掉线困扰的用户",
+    "distinction": "提供 5 大客观衡量指标与试水方法"
+  },
+  {
+    "url": "/guide/how-to-avoid-pitfalls/",
+    "mainKeyword": "怎么买机场不容易踩坑",
+    "secondaryKeywords": [
+      "机场防坑指南",
+      "避开虚标小机场",
+      "机场选购避坑"
+    ],
+    "searchIntent": "识别不良商家的虚标口号、超低价年付陷阱与跑路风险",
+    "pageType": "深度避坑文章",
+    "targetAirport": "全库覆盖",
+    "targetAudience": "想避开套路盘的谨慎买家",
+    "distinction": "总结 6 大避坑黄金法则"
+  },
+  {
+    "url": "/guide/airport-exit-scam-signs/",
+    "mainKeyword": "机场跑路前有什么征兆",
+    "secondaryKeywords": [
+      "机场跑路前兆",
+      "防跑路自救",
+      "小机场跑路特征"
+    ],
+    "searchIntent": "通过超大折扣促销、群组禁言、节点大面积断连等征兆提前避险",
+    "pageType": "安全预警文章",
+    "targetAirport": "全库覆盖",
+    "targetAudience": "关注资金安全的用户",
+    "distinction": "列举 5 大典型跑路前兆与止损方法"
+  },
+  {
+    "url": "/airports/",
+    "mainKeyword": "28家机场资料库",
+    "secondaryKeywords": [
+      "机场大全",
+      "机场价格表",
+      "机场对比表",
+      "专线机场列表"
+    ],
+    "searchIntent": "浏览和横向比对28家机场的基础价格、月流量、专线线路与优惠码",
+    "pageType": "资料库聚合索引页",
+    "targetAirport": "全部28家机场",
+    "targetAudience": "希望全面比对各家配置的读者",
+    "distinction": "集中呈现客观参数表格与直达链接"
+  },
+  {
+    "url": "/faq/",
+    "mainKeyword": "常见问题50问",
+    "secondaryKeywords": [
+      "机场FAQ",
+      "常见问题解答",
+      "节点超时解答",
+      "客户端报错解答"
+    ],
+    "searchIntent": "快速查询和解决从选购、订阅导入、全平台客户端设置到节点超时的50个高频问题",
+    "pageType": "常见问题全景页",
+    "targetAirport": "全库覆盖",
+    "targetAudience": "遇到任何疑问或故障的读者",
+    "distinction": "50个高频问答全部默认直接展开，支持即时分类检索"
+  },
+  {
+    "url": "/contact/",
+    "mainKeyword": "联系我们",
+    "secondaryKeywords": [
+      "Telegram交流频道",
+      "反馈建议",
+      "提交纠错"
+    ],
+    "searchIntent": "加入官方 Telegram 交流社群获取最新通知与提交资料纠错",
+    "pageType": "联系与社区页面",
+    "targetAirport": "官方社群",
+    "targetAudience": "希望互动交流或反馈的读者",
+    "distinction": "提供唯一的官方 Telegram 交流入口"
   }
 ];

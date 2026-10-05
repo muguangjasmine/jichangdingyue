@@ -1,7 +1,7 @@
 {
   "name": "jichangreview-cfd",
   "version": "1.0.0",
-  "description": "机场点测｜机场测评与新手选择指南 - jichangreview.cfd",
+  "description": "机场点测｜机场测评与新手选择指南 - jichangdingyue.xyz",
   "scripts": {
     "build": ".\\hugo.cmd --cleanDestinationDir --minify",
     "serve": ".\\hugo.cmd server -D",

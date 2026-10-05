@@ -7,7 +7,6 @@ last_verified: "2026-10-01"
 layout: "list"
 ---
 
-# 机场订阅使用教程与客户端导入指南
 
 在购买机场套餐后，很多新手常常卡在**“如何把订阅链接导入软件”**这一步。本专区提供详尽的图文使用教程，覆盖 Windows、macOS、iOS、Android 全平台主流客户端。
 
@@ -27,4 +26,3 @@ layout: "list"
 - [机场订阅地址怎么使用：从复制到上网](/guide/how-to-use-subscription-url/)
 - [机场订阅链接打不开怎么办：域名污染与故障排查](/troubleshooting/subscription-link-failed/)
 - [机场订阅更新失败怎么办：超时与报错修复](/troubleshooting/subscription-update-error/)
-

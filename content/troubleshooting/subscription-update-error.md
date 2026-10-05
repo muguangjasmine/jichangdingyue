@@ -9,7 +9,6 @@ author: "机场订阅网编辑部"
 layout: "single"
 ---
 
-# 机场订阅更新失败怎么办？常见更新报错与一键修复方法
 
 在使用 [Clash Verge Rev 教程](/tutorials/clash-verge-tutorial/)、[Shadowrocket 小火箭](/tutorials/shadowrocket-import-subscription/) 或 v2rayN 时，很多用户在点击“更新订阅”后，界面弹出了红色的错误提示：**“更新订阅失败”、“Fetch Error”、“Connect Timeout”**。
 

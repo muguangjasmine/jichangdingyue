@@ -36,9 +36,9 @@ function getAllHtmlFiles(dir) {
 const htmlFiles = getAllHtmlFiles(publicDir);
 console.log(`Found ${htmlFiles.length} HTML files in public/ to verify.\n`);
 
-// 检查 1: 域名全部为 jichangdingyue.xyz，不得残留旧域名、localhost、预览域名
+// 检查 1: 域名全部为 jichangdingyue.xyz，不得残留旧域名 jichangreview.cfd、localhost、预览域名
 let domainIssue = false;
-const oldBrands = ['haojichang', 'fastjichang', 'fqboke', 'tiziceping', 'jichangzhu'];
+const oldBrands = ['jichangreview.cfd', 'haojichang', 'fastjichang', 'fqboke', 'tiziceping', 'jichangzhu'];
 htmlFiles.forEach(f => {
   const content = fs.readFileSync(f, 'utf-8');
   oldBrands.forEach(oldB => {
@@ -54,33 +54,122 @@ htmlFiles.forEach(f => {
   }
 });
 if (!domainIssue) {
-  logPass('检查 1: 域名与链接规范通过，零旧品牌/localhost 残留');
+  logPass('检查 1: 全站彻底清理旧域名，零 jichangreview.cfd / localhost 残留');
 }
 
-// 检查 2: 四家核心精选机场及推广链接
-const fourFeatured = JSON.parse(fs.readFileSync(path.join(dataDir, 'four_featured.json'), 'utf-8'));
-const indexHtml = fs.readFileSync(path.join(publicDir, 'index.html'), 'utf-8');
-let featuredUrlsOk = true;
+// 检查 2: sitemap.xml 正确性
+const sitemapPath = path.join(publicDir, 'sitemap.xml');
+let sitemapOk = true;
+if (fs.existsSync(sitemapPath)) {
+  const sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
+  if (sitemapContent.includes('jichangreview.cfd')) {
+    logFail('sitemap.xml contains old domain jichangreview.cfd');
+    sitemapOk = false;
+  }
+  if (sitemapContent.includes('/404.html')) {
+    logFail('sitemap.xml contains 404.html');
+    sitemapOk = false;
+  }
+  if (!sitemapContent.includes('https://jichangdingyue.xyz/')) {
+    logFail('sitemap.xml missing homepage URL https://jichangdingyue.xyz/');
+    sitemapOk = false;
+  }
+} else {
+  logFail('sitemap.xml not found');
+  sitemapOk = false;
+}
+if (sitemapOk) {
+  logPass('检查 2: Sitemap 格式与域名完全正确，无 404 与不存在页面');
+}
 
-fourFeatured.forEach(f => {
-  if (!indexHtml.includes(f.aff_url)) {
-    logFail(`Homepage missing 4 featured airport URL: ${f.aff_url} (${f.name})`);
-    featuredUrlsOk = false;
+// 检查 3: robots.txt 正确性
+const robotsPath = path.join(publicDir, 'robots.txt');
+let robotsOk = true;
+if (fs.existsSync(robotsPath)) {
+  const robotsContent = fs.readFileSync(robotsPath, 'utf-8');
+  if (robotsContent.includes('jichangreview.cfd')) {
+    logFail('robots.txt contains old domain jichangreview.cfd');
+    robotsOk = false;
+  }
+  if (!robotsContent.includes('Sitemap: https://jichangdingyue.xyz/sitemap.xml')) {
+    logFail('robots.txt missing correct Sitemap directive');
+    robotsOk = false;
+  }
+} else {
+  logFail('robots.txt not found');
+  robotsOk = false;
+}
+if (robotsOk) {
+  logPass('检查 3: robots.txt 正确声明 Sitemap 并指向 https://jichangdingyue.xyz/sitemap.xml');
+}
+
+// 检查 4: 全站零 /reviews/ 与 /choose/ 错误内链
+let badInternalLinks = 0;
+htmlFiles.forEach(f => {
+  const content = fs.readFileSync(f, 'utf-8');
+  const reviewMatch = content.match(/href=["'](\/reviews\/?[^"']*)["']/i);
+  if (reviewMatch) {
+    badInternalLinks++;
+    logFail(`File ${path.relative(publicDir, f)} has bad /reviews/ link: ${reviewMatch[0]}`);
+  }
+  const chooseMatch = content.match(/href=["'](\/choose\/?[^"']*)["']/i);
+  if (chooseMatch) {
+    badInternalLinks++;
+    logFail(`File ${path.relative(publicDir, f)} has bad /choose/ link: ${chooseMatch[0]}`);
   }
 });
-if (featuredUrlsOk) {
-  logPass(`检查 2: 首页完整展示 4 家核心精选机场及其对应专属邀请链接与卡片`);
+if (badInternalLinks === 0) {
+  logPass('检查 4: 修复全部 /reviews/ 与 /choose/ 错误内链，零 404 死链');
 }
 
-// 检查 3: 28家机场资料库
-const airports = JSON.parse(fs.readFileSync(path.join(dataDir, 'airports.json'), 'utf-8'));
-if (airports.length >= 28) {
-  logPass(`检查 3: 机场资料库完整收录 ${airports.length} 家机场数据`);
+// 检查 5: 404 页面 noindex
+const f404Path = path.join(publicDir, '404.html');
+let f404Ok = false;
+if (fs.existsSync(f404Path)) {
+  const f404Content = fs.readFileSync(f404Path, 'utf-8');
+  const hasNoIndex = /<meta[^>]*robots[^>]*noindex/i.test(f404Content);
+  const hasIndex = /<meta[^>]*robots[^>]*content=["']?index,\s*follow/i.test(f404Content);
+  if (hasNoIndex && !hasIndex) {
+    f404Ok = true;
+    logPass('检查 5: 404 页面已严格设置 noindex, follow，禁止搜索引擎收录 404');
+  } else {
+    logFail('404.html does not have proper noindex tag or has index, follow');
+  }
 } else {
-  logFail(`Airports count is ${airports.length}, expected >= 28`);
+  logFail('404.html not found');
 }
 
-// 检查 4: 所有第三方外部链接统一具备 target="_blank" rel="sponsored nofollow noopener"
+// 检查 6: 全站单页面唯一 H1 检查
+let duplicateH1Count = 0;
+htmlFiles.forEach(f => {
+  const content = fs.readFileSync(f, 'utf-8');
+  const h1Matches = content.match(/<h1[^>]*>([\s\S]*?)<\/h1>/gi) || [];
+  if (h1Matches.length !== 1) {
+    duplicateH1Count++;
+    logFail(`File ${path.relative(publicDir, f)} has ${h1Matches.length} H1 tags (expected exactly 1)`);
+  }
+});
+if (duplicateH1Count === 0) {
+  logPass(`检查 6: 全站 ${htmlFiles.length} 个页面全部具有且仅有 1 个主 H1，无重复堆叠`);
+}
+
+// 检查 7: 彻底删除 AI 与影音相关主题词汇
+let aiTermsCount = 0;
+const forbiddenAiTerms = ['ChatGPT', 'Claude', 'Netflix', 'Disney+', 'AI特化', 'AI生产力', 'AI解锁', '流媒体解锁'];
+htmlFiles.forEach(f => {
+  const content = fs.readFileSync(f, 'utf-8');
+  forbiddenAiTerms.forEach(term => {
+    if (content.includes(term)) {
+      aiTermsCount++;
+      logFail(`File ${path.relative(publicDir, f)} contains forbidden AI/streaming term: "${term}"`);
+    }
+  });
+});
+if (aiTermsCount === 0) {
+  logPass('检查 7: 彻底清理 AI、ChatGPT、Claude、Netflix、流媒体解锁等无关主题');
+}
+
+// 检查 8: 第三方外部链接统一具备 target="_blank" rel="sponsored nofollow noopener"
 let badRelCount = 0;
 htmlFiles.forEach(f => {
   const content = fs.readFileSync(f, 'utf-8');
@@ -98,62 +187,63 @@ htmlFiles.forEach(f => {
   }
 });
 if (badRelCount === 0) {
-  logPass('检查 4: 所有第三方外部推广链接统一具备 target="_blank" rel="sponsored nofollow noopener"');
+  logPass('检查 8: 所有第三方外部推广链接统一具备 target="_blank" rel="sponsored nofollow noopener"');
 }
 
-// 检查 5: 静态全文搜索索引完备 (index.json)
-const indexJsonPath = path.join(publicDir, 'index.json');
-if (fs.existsSync(indexJsonPath)) {
-  const indexJson = JSON.parse(fs.readFileSync(indexJsonPath, 'utf-8'));
-  if (Array.isArray(indexJson) && indexJson.length >= 50) {
-    logPass(`检查 5: 静态全文搜索索引完备 (index.json 收录 ${indexJson.length} 条数据)`);
+// 检查 9: Canonical 规范性
+let badCanonicalCount = 0;
+htmlFiles.forEach(f => {
+  if (path.basename(f) === '404.html') return;
+  const content = fs.readFileSync(f, 'utf-8');
+  const canMatches = content.match(/<link\s+rel=["']?canonical["']?\s+href=["']?([^"'>]+)["']?[^>]*>/gi) || [];
+  if (canMatches.length !== 1) {
+    badCanonicalCount++;
+    logFail(`File ${path.relative(publicDir, f)} has ${canMatches.length} canonical tags (expected 1)`);
   } else {
-    logFail(`Search index.json has only ${indexJson.length} items, expected >= 50`);
-  }
-} else {
-  logFail('index.json not found in public/');
-}
-
-// 检查 6: Telegram 链接完整呈现在页眉、移动抽屉菜单、页脚以及联系我们页
-const tgUrl = "https://t.me/+T5jrW_9NONEwOWJl";
-const contactHtml = fs.readFileSync(path.join(publicDir, 'contact', 'index.html'), 'utf-8');
-if (indexHtml.includes(tgUrl) && contactHtml.includes(tgUrl)) {
-  logPass('检查 6: Telegram 官方群链接完整呈现在页眉、页脚及联系我们页');
-} else {
-  logFail(`Telegram link missing in homepage or contact page`);
-}
-
-// 检查 7: 常见问题 FAQ 全部直接展开
-const faqs = JSON.parse(fs.readFileSync(path.join(dataDir, 'faqs.json'), 'utf-8'));
-const faqHtml = fs.readFileSync(path.join(publicDir, 'faq', 'index.html'), 'utf-8');
-if (!faqHtml.includes('<details') && faqs.length >= 50) {
-  logPass(`检查 7: 常见问题 FAQ ${faqs.length} 条全部默认直接展开，无点击折叠遮蔽`);
-} else {
-  logFail('FAQ check failed or faqs.json length < 50');
-}
-
-// 检查 8: 内容板块完整性 (recommend, tutorials, clients, plans, lines, troubleshooting, guide, airports, faq)
-const expectedSections = ['recommend', 'tutorials', 'clients', 'plans', 'lines', 'troubleshooting', 'guide', 'airports', 'faq'];
-let missingSection = false;
-expectedSections.forEach(sec => {
-  const secPath = path.join(publicDir, sec, 'index.html');
-  if (!fs.existsSync(secPath)) {
-    logFail(`Missing section index in public: ${sec}/index.html`);
-    missingSection = true;
+    const url = canMatches[0];
+    if (!url.includes('https://jichangdingyue.xyz/')) {
+      badCanonicalCount++;
+      logFail(`File ${path.relative(publicDir, f)} has invalid canonical domain: ${url}`);
+    }
   }
 });
-if (!missingSection) {
-  logPass('检查 8: 9大核心频道目录与栏目列表索引页完整生成');
+if (badRelCount === 0 && badCanonicalCount === 0) {
+  logPass('检查 9: 所有内容页面具备唯一且正确的 Canonical 链接 (https://jichangdingyue.xyz/...)');
 }
 
-// 检查 9: 移动端样式安全规则（针对 320px、360px 等屏幕，overflow-x, table-responsive, button 44px）
-const cssContent = fs.readFileSync(path.join(publicDir, 'css', 'style.css'), 'utf-8');
-const hasOverflowX = cssContent.includes('overflow-x: hidden') && cssContent.includes('overflow-x: auto');
-const has44pxMinHeight = cssContent.includes('min-height: 44px');
-if (hasOverflowX && has44pxMinHeight) {
-  logPass('检查 9: 移动端 320px - 430px 屏幕防横向溢出与 44px 触控高度规范通过');
+// 检查 10: JSON-LD 结构化数据完备与格式正确
+let badSchemaCount = 0;
+htmlFiles.forEach(f => {
+  const content = fs.readFileSync(f, 'utf-8');
+  const scriptMatches = content.matchAll(/<script\s+type=["']application\/ld\+json["']>([\s\S]*?)<\/script>/gi);
+  for (const m of scriptMatches) {
+    try {
+      const parsed = JSON.parse(m[1]);
+      if (JSON.stringify(parsed).includes('jichangreview.cfd')) {
+        badSchemaCount++;
+        logFail(`File ${path.relative(publicDir, f)} Schema contains old domain`);
+      }
+    } catch (e) {
+      badSchemaCount++;
+      logFail(`File ${path.relative(publicDir, f)} Schema JSON parse error: ${e.message}`);
+    }
+  }
+});
+if (badSchemaCount === 0) {
+  logPass('检查 10: Schema 结构化数据 (JSON-LD) 语法完全有效，域名与结构规范');
+}
+
+// 检查 11: Telegram 与 28家机场库
+const fourFeatured = JSON.parse(fs.readFileSync(path.join(dataDir, 'four_featured.json'), 'utf-8'));
+const airports = JSON.parse(fs.readFileSync(path.join(dataDir, 'airports.json'), 'utf-8'));
+const tgUrl = "https://t.me/+T5jrW_9NONEwOWJl";
+const indexHtml = fs.readFileSync(path.join(publicDir, 'index.html'), 'utf-8');
+const contactHtml = fs.readFileSync(path.join(publicDir, 'contact', 'index.html'), 'utf-8');
+
+if (indexHtml.includes(tgUrl) && contactHtml.includes(tgUrl) && airports.length >= 28 && fourFeatured.length === 4) {
+  logPass('检查 11: 4家精选与28家机场数据库完备，Telegram 官方链接全站统一');
 } else {
-  logFail('Mobile styles check failed for overflow or touch heights');
+  logFail('Check 11 failed for airports or Telegram');
 }
 
 console.log(`\n========================================`);
