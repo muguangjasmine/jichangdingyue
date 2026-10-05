@@ -115,7 +115,7 @@ if (fs.existsSync(indexJsonPath)) {
 }
 
 // 检查 6: Telegram 链接完整呈现在页眉、移动抽屉菜单、页脚以及联系我们页
-const tgUrl = "https://t.me/+w5kTkVtU25UzOTVl";
+const tgUrl = "https://t.me/+T5jrW_9NONEwOWJl";
 const contactHtml = fs.readFileSync(path.join(publicDir, 'contact', 'index.html'), 'utf-8');
 if (indexHtml.includes(tgUrl) && contactHtml.includes(tgUrl)) {
   logPass('检查 6: Telegram 官方群链接完整呈现在页眉、页脚及联系我们页');

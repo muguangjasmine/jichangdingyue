@@ -10,7 +10,7 @@ layout: "single"
 
 为了保持最高效、私密与即时的沟通，本站官方交流与读者反馈主要通过 Telegram 开展：
 
-- **官方交流频道与群组：** [https://t.me/+w5kTkVtU25UzOTVl](https://t.me/+w5kTkVtU25UzOTVl)
+- **官方交流频道与群组：** [https://t.me/+T5jrW_9NONEwOWJl](https://t.me/+T5jrW_9NONEwOWJl)
 - **加入方式：** 点击上述链接直接跳转 Telegram 应用加入。
 
 ## 交流群包含哪些内容？
