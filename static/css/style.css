@@ -1495,14 +1495,17 @@ button, input {
   margin-bottom: 36px;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1fr;
-  gap: 36px;
+.footer-main-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
   width: 100%;
 }
 
 .footer-col-brand {
+  flex: 0 1 340px;
+  max-width: 360px;
   display: flex;
   flex-direction: column;
 }
@@ -1552,6 +1555,18 @@ button, input {
   border: 1px solid #334155;
 }
 
+.footer-nav-columns {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  justify-content: flex-end;
+}
+
+.footer-nav-col {
+  min-width: 150px;
+}
+
 .footer-heading {
   font-size: 0.94rem;
   font-weight: 700;
@@ -1565,6 +1580,12 @@ button, input {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  list-style: none;
 }
 
 .footer-links a {
@@ -2785,9 +2806,18 @@ button, input {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
+  .footer-main-row {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .footer-col-brand {
+    max-width: 100%;
+  }
+
+  .footer-nav-columns {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -2845,6 +2875,13 @@ button, input {
   }
 }
 
+@media (max-width: 768px) {
+  .footer-nav-columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
 @media (max-width: 640px) {
   .hero-h1 {
     font-size: 1.3rem;
@@ -2872,9 +2909,9 @@ button, input {
     width: 100%;
   }
 
-  .footer-grid {
+  .footer-nav-columns {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
   }
 
   .footer-bottom-inner {
