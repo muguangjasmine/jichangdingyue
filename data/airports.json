@@ -10,69 +10,55 @@
     "cycle_type": "monthly",
     "traffic": "125GB/月",
     "traffic_gb": 125,
-    "line": "企业专线资料",
-    "nodes": "常用核心节点（香港、日本、新加坡、美国等，以订阅实际拉取为准）",
-    "clients": "Clash Verge Rev, Shadowrocket, v2rayN, Mihomo Party, sing-box",
-    "ai_status": {
-      "chatgpt": "支持常规Web访问与APP（需选用美/新/日等对应节点）",
-      "claude": "依赖纯净IP，需测试对应节点连通性，以实际拉取为准",
-      "gemini": "支持常规地区节点访问"
-    },
-    "suitable": "第一次买机场、希望月付试水、日常网页浏览与轻量流媒体、需要简单套餐的新手",
-    "not_suitable": "需要海量GB下载、追求超低年付（如十几元包年）的用户",
+    "line": "企业高速专线",
+    "nodes": "香港、日本、新加坡、美国等主流核心节点",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN, sing-box, Mihomo",
+    "suitable": "第一次买机场订阅、希望月付试水、日常查资料与学术办公的新手",
+    "not_suitable": "需要海量TB级离线下载、追求十几元超低年付的用户",
     "pros": [
-      "月付25元门槛低，无需一次性承担年付沉没成本",
-      "企业专线线路资料，晚高峰波动相对普通直连更可控",
-      "套餐规则简单清晰，125GB月流量适合绝大多数新手日常使用",
-      "全主流客户端通用订阅支持，导入方便"
+      "月付25元门槛低，无长期沉没成本",
+      "企业专线网络抖动低，晚高峰较平稳",
+      "125GB月流量适合新手日常使用",
+      "支持全平台通用订阅一键导入"
     ],
     "cons": [
-      "不提供超大TB级离线下载套餐",
-      "优惠码活动有周期性，需在结算页二次确认"
+      "不提供TB级大流量包",
+      "优惠活动随周期调整需以结算页为准"
     ],
     "coupon": "tiziyun",
     "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
-    "aff_url": "https://tiziyun3.ladderaff.com/#/?code=KVyNkFYU",
+    "aff_url": "https://varnexa.ladderaff.com/#/?code=7cjKUmW6",
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 1,
     "positioning": "常规月付入门首选",
-    "cta_texts": [
-      "查看梯子云套餐",
-      "进入梯子云官网",
-      "注册梯子云",
-      "查看当前价格"
-    ]
+    "speed_note": "实际连接速度与延迟受本地网络运营商、物理距离及晚高峰骨干网波动影响。"
   },
   {
     "id": "twilight",
     "slug": "twilight",
-    "name": "暮光加速",
-    "shortName": "暮光加速",
+    "name": "暮光网络 Twilight",
+    "shortName": "暮光网络",
     "price": "¥20/月",
     "price_num": 20,
     "cycle": "月付 / 年付",
     "cycle_type": "monthly",
     "traffic": "120GB/月",
     "traffic_gb": 120,
-    "line": "IEPL纯专线资料",
-    "nodes": "常用热门地区节点（以官网订阅为准）",
-    "clients": "Clash, Shadowrocket, v2rayN, sing-box",
-    "ai_status": {
-      "chatgpt": "常用节点可用，以客户端节点状态为准",
-      "claude": "待核实",
-      "gemini": "可用（需对应地区节点）"
-    },
+    "line": "IEPL纯专线",
+    "nodes": "亚太热门地区与欧美常用节点",
+    "clients": "Clash, Shadowrocket, v2rayN, sing-box, Clash Verge",
     "suitable": "注重预算控制、想要20元档纯专线线路的新手与轻中度用户",
     "not_suitable": "需要无限制并发连接与多公网IP的团队用户",
     "pros": [
-      "20元月付在IEPL专线类型中性价比突出",
-      "纯专线架构，晚高峰网络稳定性表现相对平稳",
-      "120GB流量覆盖日常查资料、追剧与AI交互"
+      "20元月付在IEPL专线中性价比突出",
+      "纯专线架构晚高峰丢包少",
+      "120GB流量覆盖日常使用",
+      "标准订阅格式兼容性强"
     ],
     "cons": [
-      "低价档位同时在线设备数有限制",
-      "节点可能随运营商维护短暂切换"
+      "入门套餐同时在线设备有限制",
+      "节点随维护可能有调整"
     ],
     "coupon": "mm88",
     "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
@@ -80,13 +66,8 @@
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 2,
-    "positioning": "预算、价格与专线套餐平衡",
-    "cta_texts": [
-      "查看暮光加速",
-      "查看暮光套餐",
-      "注册暮光加速",
-      "查看当前优惠"
-    ]
+    "positioning": "高性价比IEPL专线",
+    "speed_note": "专线延迟相对稳定，实际使用体验受本地接入宽带影响。"
   },
   {
     "id": "flycat",
@@ -95,42 +76,33 @@
     "shortName": "飞猫云",
     "price": "¥84/年起",
     "price_num": 84,
-    "cycle": "年付（另有其他套餐资料）",
+    "cycle": "年付（折合¥7/月）",
     "cycle_type": "yearly",
-    "traffic": "约50GB/月（年付档）",
+    "traffic": "约50GB/月",
     "traffic_gb": 50,
-    "line": "IEPL内网专线资料",
+    "line": "IEPL内网专线",
     "nodes": "亚太主流节点与欧美常用节点",
     "clients": "Clash Verge Rev, Shadowrocket, v2rayN, Mihomo Party",
-    "ai_status": {
-      "chatgpt": "支持常规网页端与APP端",
-      "claude": "部分节点支持，以实际拉取为准",
-      "gemini": "支持"
-    },
-    "suitable": "轻量使用、低频上网、查收邮件与海外资讯、希望年付省心不折腾的用户",
-    "not_suitable": "每天重度刷4K长视频、大文件高频下载的用户",
+    "suitable": "轻量低频上网、查收邮件、希望百元年付省心备用的用户",
+    "not_suitable": "重度刷高码率视频、大文件高频下载用户",
     "pros": [
-      "年付84元折算每月仅7元，轻量用户试错成本极低",
-      "IEPL内网专线，延迟表现平稳，晚高峰丢包少",
-      "年付无需每月手动续费，适合备用与长线轻量使用"
+      "年付84元折算月费极低",
+      "IEPL内网专线延迟稳定",
+      "无需每月手动续费更省心",
+      "一键导入订阅格式规范"
     ],
     "cons": [
-      "入门档每月约50GB流量，重度流媒体可能不够",
-      "年付属于一次性预付，需先确认自身使用频次"
+      "月流量50GB适合轻量使用",
+      "年付需一次性预付"
     ],
     "coupon": "flycat888",
-    "coupon_note": "优惠有效性以结算页为准，优惠活动可能调整。",
+    "coupon_note": "优惠有效性以结算页为准。",
     "aff_url": "https://flycat1.flycatvipaff.cc/#/?code=TgFJ4DF5",
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 3,
-    "positioning": "轻量年付、低频用户优选",
-    "cta_texts": [
-      "查看飞猫云年付",
-      "进入飞猫云",
-      "注册飞猫云",
-      "查看当前套餐"
-    ]
+    "positioning": "轻量低频年付优选",
+    "speed_note": "适合日常网页与轻度通讯，视频体验视当前节点负载而定。"
   },
   {
     "id": "breezenet",
@@ -139,42 +111,97 @@
     "shortName": "微风网络",
     "price": "约¥27/月",
     "price_num": 27,
-    "cycle": "月付 / 年付 / 不限时流量包",
+    "cycle": "月付 / 年付 / 不限时包",
     "cycle_type": "flexible",
     "traffic": "约200GB/月",
     "traffic_gb": 200,
-    "line": "BGP专线资料",
+    "line": "BGP多线专线",
     "nodes": "亚太高带宽节点、欧美多地节点",
     "clients": "Clash, Shadowrocket, v2rayN, sing-box, Mihomo",
-    "ai_status": {
-      "chatgpt": "大部分主流节点可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "流量需求较大、经常观看4K流媒体、多设备共用或想买不限时流量包的用户",
+    "suitable": "流量需求较大、经常观看高清视频、多设备共用或想买不限时包的用户",
     "not_suitable": "每月仅需10GB以内的极低频用户",
     "pros": [
-      "200GB大月流量配置，视频与多任务并发更从容",
-      "BGP多线接入，国内入口网络自适应良好",
-      "套餐形态多样，提供月付、年付及不限时流量包选择"
+      "200GB大月流量配置从容",
+      "BGP多线接入适应国内各运营商",
+      "套餐形态灵活多样",
+      "支持多协议客户端快速拉取"
     ],
     "cons": [
-      "月付价格略高于20元入门档",
-      "具体优惠码需在结算页实时核查"
+      "价格略高于20元入门档",
+      "优惠需在结算页实时核实"
     ],
     "coupon": "以结算页为准",
-    "coupon_note": "优惠以当前注册页和结算页为准，优惠活动可能调整。",
+    "coupon_note": "优惠以当前注册页和结算页为准。",
     "aff_url": "https://edp01.breezenetaff.com/#/?code=3PgTsmnp",
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 4,
-    "positioning": "大流量、丰富套餐与长期使用",
-    "cta_texts": [
-      "查看微风网络",
-      "查看Breeze套餐",
-      "注册微风网络",
-      "查看当前价格"
-    ]
+    "positioning": "大流量多设备优选",
+    "speed_note": "多入口带宽充裕，高峰期网络表现视本地DNS和出口拥堵程度变动。"
+  },
+  {
+    "id": "wavenet",
+    "slug": "wavenet",
+    "name": "浪网 WaveNet",
+    "shortName": "浪网",
+    "price": "¥22/月",
+    "price_num": 22,
+    "cycle": "月付 / 季付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "100GB/月",
+    "traffic_gb": 100,
+    "line": "优质中转/专线",
+    "nodes": "香港、日本、新加坡、美国、台湾等热门节点",
+    "clients": "Clash, Shadowrocket, v2rayN, sing-box",
+    "suitable": "日常查阅网页、代码托管、社交媒体浏览的平衡型用户",
+    "not_suitable": "需要多公网IP或超大带宽批量抓取任务的用户",
+    "pros": [
+      "节点覆盖广，主流国家地区齐全",
+      "中转调度优化良好",
+      "订阅地址更新维护稳定"
+    ],
+    "cons": [
+      "特殊敏感时期部分直连节点需切换中转"
+    ],
+    "coupon": "以结算页为准",
+    "coupon_note": "优惠以官网结算页为准。",
+    "aff_url": "https://varnexa.wavenetaff.com/#/?code=FOSEppzb",
+    "last_verified": "2026-10-01",
+    "is_featured": false,
+    "positioning": "稳定均衡中转选择",
+    "speed_note": "速度受地区网络影响，日常网页访问延迟平稳。"
+  },
+  {
+    "id": "lingdong",
+    "slug": "lingdong",
+    "name": "灵动云",
+    "shortName": "灵动云",
+    "price": "¥18/月",
+    "price_num": 18,
+    "cycle": "月付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "80GB/月",
+    "traffic_gb": 80,
+    "line": "高速中转线路",
+    "nodes": "亚太常用节点与欧美备用节点",
+    "clients": "Clash Verge, Shadowrocket, v2rayN",
+    "suitable": "学生群体、轻度上网、预算在20元以内的用户",
+    "not_suitable": "重度高码率4K视频用户",
+    "pros": [
+      "18元月付价格亲民",
+      "客户端导入简单快捷",
+      "节点延迟表现均衡"
+    ],
+    "cons": [
+      "月流量80GB相对较紧凑"
+    ],
+    "coupon": "以结算页为准",
+    "coupon_note": "优惠以官网结算页为准。",
+    "aff_url": "https://varnexa.lingdongaff.com/#/?code=PyKIF6nz",
+    "last_verified": "2026-10-01",
+    "is_featured": false,
+    "positioning": "亲民低价入门选择",
+    "speed_note": "普通中转线路，晚高峰期可能存在适度波动。"
   },
   {
     "id": "invisible",
@@ -183,101 +210,30 @@
     "shortName": "隐形人",
     "price": "¥24/月",
     "price_num": 24,
-    "cycle": "月付",
+    "cycle": "月付 / 季付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "144GB/月",
-    "traffic_gb": 144,
-    "line": "VLESS Reality",
-    "nodes": "亚太与欧美主流节点",
-    "clients": "v2rayN, v2rayNG, sing-box, Clash Verge Rev",
-    "ai_status": {
-      "chatgpt": "常用节点可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "喜欢新型抗封锁协议、重视协议隐匿性的技术敏感型用户",
-    "not_suitable": "使用极老旧不支持VLESS客户端的用户",
+    "traffic": "120GB/月",
+    "traffic_gb": 120,
+    "line": "多线BGP中转",
+    "nodes": "港日新美韩英等多国节点",
+    "clients": "Clash, Shadowrocket, sing-box, v2rayN",
+    "suitable": "注重多地区节点覆盖、多设备同步使用的个人用户",
+    "not_suitable": "追求十几元年付极致低价的用户",
     "pros": [
-      "采用VLESS Reality新型协议，抗阻断能力较强",
-      "144GB月流量充裕",
-      "24元月付性价比较好"
+      "多国节点丰富",
+      "BGP多线入口容灾能力好",
+      "订阅链接解析快"
     ],
     "cons": [
-      "老客户端可能需要升级才支持Reality协议"
+      "小众偏远国家节点偶尔维护"
     ],
-    "coupon": "yxr888",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://varnexa.invisibleaff.com/#/?code=D5gVzA2Y",
     "last_verified": "2026-10-01",
-    "is_featured": false
-  },
-  {
-    "id": "wavenet",
-    "slug": "wavenet",
-    "name": "浪网 WaveNet",
-    "shortName": "浪网",
-    "price": "¥24/月",
-    "price_num": 24,
-    "cycle": "月付",
-    "cycle_type": "monthly",
-    "traffic": "200GB/月",
-    "traffic_gb": 200,
-    "line": "AI特化资料",
-    "nodes": "美、新、日等AI常用高可用节点",
-    "clients": "Clash Verge, Shadowrocket, sing-box",
-    "ai_status": {
-      "chatgpt": "有特化节点可用",
-      "claude": "部分可用，以实际拉取为准",
-      "gemini": "可用"
-    },
-    "suitable": "主要使用ChatGPT、Claude与生成式AI工具，需要稳定原生IP的用户",
-    "not_suitable": "仅在国内打游戏的非海外网络用户",
-    "pros": [
-      "宣传含AI特化优化，提供200GB大月流量",
-      "月付24元性价比优异"
-    ],
-    "cons": [
-      "AI节点受平台风控影响可能阶段性变动，无法承诺100%永久解锁"
-    ],
-    "coupon": "wave888",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
-    "aff_url": "https://varnexa.wavenetaff.com/#/?code=FKzHpUPS",
-    "last_verified": "2026-10-01",
-    "is_featured": false
-  },
-  {
-    "id": "lingdong",
-    "slug": "lingdong",
-    "name": "灵动云",
-    "shortName": "灵动云",
-    "price": "¥20/月",
-    "price_num": 20,
-    "cycle": "月付",
-    "cycle_type": "monthly",
-    "traffic": "150GB/月",
-    "traffic_gb": 150,
-    "line": "VLESS",
-    "nodes": "港、日、新、美常规节点",
-    "clients": "sing-box, Clash, v2rayN",
-    "ai_status": {
-      "chatgpt": "支持常规访问",
-      "claude": "待核实",
-      "gemini": "支持"
-    },
-    "suitable": "预算20元以内、追求大流量与现代协议的日常新手",
-    "not_suitable": "超重度企业级大吞吐用户",
-    "pros": [
-      "20元给到150GB大流量",
-      "支持VLESS协议，传输效率高"
-    ],
-    "cons": [
-      "节点数量偏向主流精简配置"
-    ],
-    "coupon": "ld88",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
-    "aff_url": "https://varnexa.lingdongaff.com/#/?code=PyKIF6nz",
-    "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "多节点覆盖型",
+    "speed_note": "亚太节点延迟较低，欧美节点适合非高峰使用。"
   },
   {
     "id": "flyv",
@@ -286,202 +242,159 @@
     "shortName": "飞V",
     "price": "¥18/月",
     "price_num": 18,
-    "cycle": "月付",
+    "cycle": "月付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "120GB/月",
-    "traffic_gb": 120,
-    "line": "1.0x计费资料",
-    "nodes": "亚太及欧美常用节点，全1.0x倍率资料",
-    "clients": "Clash, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "支持常规地区节点",
-      "claude": "待核实",
-      "gemini": "支持"
-    },
-    "suitable": "18元极低月付预算、反感高倍率扣流量偷跑的实用派用户",
-    "not_suitable": "对延迟有极端电竞级要求的用户",
+    "traffic": "100GB/月",
+    "traffic_gb": 100,
+    "line": "专线+中转混合",
+    "nodes": "香港、日本、新加坡、美国",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN",
+    "suitable": "低预算、追求18元档100GB月流量的新手",
+    "not_suitable": "企业多用户并发办公",
     "pros": [
-      "月付18元门槛低",
-      "标明1.0x计费不偷跑流量，计算清晰"
+      "18元月付性价比高",
+      "100GB流量满足主流需求",
+      "订阅更新稳定"
     ],
     "cons": [
-      "高峰期备用节点池相对紧凑"
+      "晚高峰部分高倍率节点需注意流量计费"
     ],
-    "coupon": "flyv99",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://varnexa.flyvaff.com/#/?code=qdEX3VKC",
     "last_verified": "2026-10-01",
-    "is_featured": false
-  },
-  {
-    "id": "globalcloud",
-    "slug": "globalcloud",
-    "name": "全球云",
-    "shortName": "全球云",
-    "price": "¥20/月",
-    "price_num": 20,
-    "cycle": "月付",
-    "cycle_type": "monthly",
-    "traffic": "120GB/月",
-    "traffic_gb": 120,
-    "line": "BGP跨境资料",
-    "nodes": "常用跨国骨干节点",
-    "clients": "Clash, Shadowrocket, v2rayN, Mihomo",
-    "ai_status": {
-      "chatgpt": "常用节点可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "需要兼顾国内外连接的多网络环境新手",
-    "not_suitable": "只接受纯内网IPLC专线的小众群体",
-    "pros": [
-      "BGP跨境骨干网络容灾能力较强",
-      "20元常规月付套餐亲民"
-    ],
-    "cons": [
-      "晚高峰受公网跨境骨干波动影响稍大于内网专线"
-    ],
-    "coupon": "qq88",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
-    "aff_url": "https://sswdh.gcvipaff.com/#/?code=mJ7fJ5dI",
-    "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "高性价比混合线路",
+    "speed_note": "日常浏览顺畅，速度受运营商路由分配影响。"
   },
   {
     "id": "xingdaomeng",
     "slug": "xingdaomeng",
     "name": "星岛梦",
     "shortName": "星岛梦",
-    "price": "约¥8/月（年付折算）",
-    "price_num": 8,
-    "cycle": "年付折算",
-    "cycle_type": "yearly",
-    "traffic": "60GB/月",
-    "traffic_gb": 60,
-    "line": "大带宽专线资料",
-    "nodes": "港、台、日、美常规节点",
-    "clients": "Clash, Shadowrocket, sing-box",
-    "ai_status": {
-      "chatgpt": "可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "年付预算有限、寻求单月8元折算价的轻度上网用户",
-    "not_suitable": "只想要单月付款随时更换的用户",
+    "price": "¥20/月",
+    "price_num": 20,
+    "cycle": "月付 / 季付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "100GB/月",
+    "traffic_gb": 100,
+    "line": "IEPL专线中转",
+    "nodes": "亚太精选节点与美西高带宽节点",
+    "clients": "Clash, Shadowrocket, v2rayN, Mihomo",
+    "suitable": "追求节点连接稳定度、日常学习办公的常规用户",
+    "not_suitable": "超大文件BT下载用户",
     "pros": [
-      "年付折算月均仅约8元",
-      "专线接入网络延迟相对平稳"
+      "专线节点连通率较高",
+      "订阅导入格式标准",
+      "月付价格适中"
     ],
     "cons": [
-      "需一次性按年结算，每月60GB适合轻中度使用"
+      "冷门地区节点相对较少"
     ],
-    "coupon": "nmw888",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://kfccbb.xingdaomeng.com/#/?code=BRVfHo5z",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "亚太专线精选",
+    "speed_note": "专线中转抗抖动性较好，具体以本地网络测速为准。"
   },
   {
     "id": "lightspeed",
     "slug": "lightspeed",
-    "name": "光速云 LightSpeed",
+    "name": "光速云",
     "shortName": "光速云",
-    "price": "¥8/月起（年付折算）",
-    "price_num": 8,
-    "cycle": "年付折算",
-    "cycle_type": "yearly",
-    "traffic": "60GB/月",
-    "traffic_gb": 60,
-    "line": "IPLC专线资料",
-    "nodes": "亚太专线节点及欧美节点",
-    "clients": "Clash Verge, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "常规节点可用",
-      "claude": "待核实",
-      "gemini": "支持"
-    },
-    "suitable": "看重IPLC专线不经过GFW审查机制、且希望低年付成本的用户",
-    "not_suitable": "需要按月短期付费测试的用户",
+    "price": "¥22/月",
+    "price_num": 22,
+    "cycle": "月付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "130GB/月",
+    "traffic_gb": 130,
+    "line": "高速专线网络",
+    "nodes": "香港、日本、新加坡、美国、德国",
+    "clients": "Clash, Shadowrocket, v2rayN",
+    "suitable": "需要较多月流量、喜欢多节点切换的日常上网用户",
+    "not_suitable": "只需几十兆极小流量的极轻量用户",
     "pros": [
-      "IPLC专线延迟低且敏感时期稳定性高",
-      "年付折算门槛友好"
+      "130GB月流量充足",
+      "专线节点延迟适中",
+      "支持Shadowrocket二维码订阅"
     ],
     "cons": [
-      "入门档月流量60GB需合理规划使用"
+      "欧洲远距离节点延迟相对较高"
     ],
-    "coupon": "AMM",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://mdlky.gsyaff.com/#/?code=WDY5zUti",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "大流量专线方案",
+    "speed_note": "速度视本地网络与晚高峰骨干网负载变动。"
   },
   {
     "id": "weitu",
     "slug": "weitu",
-    "name": "唯兔云",
+    "name": "唯兔云（V2云）",
     "shortName": "唯兔云",
-    "price": "¥79.9/年",
-    "price_num": 79.9,
-    "cycle": "年付",
-    "cycle_type": "yearly",
-    "traffic": "45GB/月",
-    "traffic_gb": 45,
-    "line": "IPLC专线资料",
-    "nodes": "核心亚太地区专线节点",
-    "clients": "Clash, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "部分节点可用",
-      "claude": "待核实",
-      "gemini": "支持"
-    },
-    "suitable": "年预算百元以内、作为主力低频机或长效备用机的小白",
-    "not_suitable": "重度视频与大容量下载用户",
+    "price": "¥19/月",
+    "price_num": 19,
+    "cycle": "月付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "90GB/月",
+    "traffic_gb": 90,
+    "line": "BGP中转线路",
+    "nodes": "常用亚太节点及北美节点",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN",
+    "suitable": "20元以内月付预算、日常使用主流社交与网页的用户",
+    "not_suitable": "需要TB级流量的团队",
     "pros": [
-      "79.9元包年价格非常具备吸引力",
-      "IPLC线路保障基础连通性"
+      "19元月付性价比较好",
+      "后台界面操作直观",
+      "支持主流订阅协议"
     ],
     "cons": [
-      "每月45GB流量不可结转，流量额度偏小"
+      "晚高峰部分热门节点可能有短时延迟升高"
     ],
-    "coupon": "rabbit",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://fast.v2yunvipaff.com/#/?code=2UBN88q4",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "亲民BGP中转",
+    "speed_note": "中转线路表现均衡，不同运营商网络体验或有差异。"
   },
   {
     "id": "u1s1",
     "slug": "u1s1",
-    "name": "U1S1",
+    "name": "U1S1（有一说一）",
     "shortName": "U1S1",
-    "price": "¥20/月",
-    "price_num": 20,
-    "cycle": "月付",
+    "price": "¥15/月",
+    "price_num": 15,
+    "cycle": "月付 / 季付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "120GB/月",
-    "traffic_gb": 120,
-    "line": "IEPL专线资料",
-    "nodes": "港、日、新、美IEPL节点",
-    "clients": "Clash, Shadowrocket, sing-box",
-    "ai_status": {
-      "chatgpt": "支持",
-      "claude": "待核实",
-      "gemini": "支持"
-    },
-    "suitable": "20元常规月付、偏好IEPL专线传输的小白日常用户",
-    "not_suitable": "需要明确大额年付折扣的用户",
+    "traffic": "60GB/月",
+    "traffic_gb": 60,
+    "line": "经济中转线路",
+    "nodes": "香港、日本、美国核心节点",
+    "clients": "Clash, Shadowrocket, v2rayN",
+    "suitable": "追求低单价、月流量消耗较少的新手入门试用",
+    "not_suitable": "重度高频多设备同时在线用户",
     "pros": [
-      "20元月付适中，120GB满足常规流媒体与网页浏览",
-      "IEPL专线丢包率低"
+      "15元超低月付门槛",
+      "配置简单清晰",
+      "基础网页秒开"
     ],
     "cons": [
-      "暂无大额年付折扣方案，建议月付使用"
+      "流量60GB需注意节约",
+      "节点数量相对精简"
     ],
-    "coupon": "akaka",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://pkdj7.vipaff.cc/#/?code=1DVSrFAo",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "超低预算轻量试水",
+    "speed_note": "适合基础网页与社交，高码率视频建议根据网络情况选择。"
   },
   {
     "id": "jilian",
@@ -490,509 +403,510 @@
     "shortName": "极连云",
     "price": "¥96/年",
     "price_num": 96,
-    "cycle": "年付",
+    "cycle": "年付 / 月付",
     "cycle_type": "yearly",
-    "traffic": "60GB/月",
+    "traffic": "约60GB/月",
     "traffic_gb": 60,
-    "line": "IPLC专线资料",
-    "nodes": "常用亚太IPLC线路",
-    "clients": "Clash, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "常规可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "百元以内年付预算、注重IPLC专线防封锁特性的用户",
-    "not_suitable": "只愿意月付几元体验的新人",
+    "line": "IEPL专线",
+    "nodes": "亚太主流专线节点",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN",
+    "suitable": "百元以内年付预算、需要长期低频稳定备用的用户",
+    "not_suitable": "重度大文件下载用户",
     "pros": [
-      "96元年付在IPLC专线中性价比较高",
-      "60GB月流量日常查资料完全够用"
+      "年付百元档位专线性价比高",
+      "无需频繁月度续费",
+      "专线节点网络抖动小"
     ],
     "cons": [
-      "仅支持年付档位周期"
+      "年付需一次性支付",
+      "流量偏向轻量用户"
     ],
-    "coupon": "JLY888",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://kdjhao.jlyvipaff.com/#/?code=kcMcl5sB",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "百元年付专线备选",
+    "speed_note": "专线延迟低，体验取决于用户所处网络运营商。"
+  },
+  {
+    "id": "globalcloud",
+    "slug": "globalcloud",
+    "name": "全球云",
+    "shortName": "全球云",
+    "price": "¥25/月",
+    "price_num": 25,
+    "cycle": "月付 / 季付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "150GB/月",
+    "traffic_gb": 150,
+    "line": "BGP多线+专线",
+    "nodes": "多国节点覆盖，亚太及欧美多地",
+    "clients": "Clash, Shadowrocket, v2rayN, sing-box",
+    "suitable": "对多地区节点有需求、日常用量较大的进阶用户",
+    "not_suitable": "预算极其有限的极低价用户",
+    "pros": [
+      "150GB大月流量",
+      "全球节点覆盖丰富",
+      "多线负载均衡机制完善"
+    ],
+    "cons": [
+      "价格位于常规25元档位"
+    ],
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
+    "aff_url": "https://sswdh.gcvipaff.com/#/?code=FX09uu7U",
+    "last_verified": "2026-10-01",
+    "is_featured": false,
+    "positioning": "多节点大流量方案",
+    "speed_note": "多入口自动切换，速度与晚高峰骨干网通畅度有关。"
   },
   {
     "id": "guangnianti",
     "slug": "guangnianti",
     "name": "光年梯",
     "shortName": "光年梯",
-    "price": "¥18/月",
-    "price_num": 18,
-    "cycle": "月付",
+    "price": "¥20/月",
+    "price_num": 20,
+    "cycle": "月付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "110GB/月",
-    "traffic_gb": 110,
-    "line": "IPLC专线资料",
-    "nodes": "港日新美等专线节点",
-    "clients": "Clash, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "常用节点可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "月付预算20元以内且指定需要IPLC专线的用户",
-    "not_suitable": "超重度4K流媒体追剧党",
+    "traffic": "100GB/月",
+    "traffic_gb": 100,
+    "line": "高速中转线路",
+    "nodes": "香港、日本、新加坡、美国常用节点",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN",
+    "suitable": "追求简单易用、订阅导入快捷的新手用户",
+    "not_suitable": "需定制高级私有分流规则的极客用户",
     "pros": [
-      "18元月付享IPLC专线资料待遇",
-      "110GB流量月付无压力"
+      "操作界面友好",
+      "订阅链接更新速度快",
+      "常见亚太节点延迟表现良好"
     ],
     "cons": [
-      "高峰期如果节点调度拥挤需手动切换节点"
+      "冷门国家节点少"
     ],
-    "coupon": "gnt6666",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://ggmq.gntaff.com/#/?code=4UZhabi9",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "新手易用中转",
+    "speed_note": "常规日常使用流畅，速度受本地运营商网络影响。"
   },
   {
     "id": "sogo",
     "slug": "sogo",
     "name": "Sogo云",
     "shortName": "Sogo云",
-    "price": "¥25/月",
-    "price_num": 25,
-    "cycle": "月付",
+    "price": "¥21/月",
+    "price_num": 21,
+    "cycle": "月付 / 季付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "150GB/月",
-    "traffic_gb": 150,
-    "line": "专线+中转资料",
-    "nodes": "多地区专线与优质中转节点",
-    "clients": "Clash Verge Rev, Shadowrocket, sing-box",
-    "ai_status": {
-      "chatgpt": "支持",
-      "claude": "待核实",
-      "gemini": "支持"
-    },
-    "suitable": "看重150GB大容量与专线中转混合架构稳定性的用户",
-    "not_suitable": "寻求10元以下低预算的用户",
+    "traffic": "110GB/月",
+    "traffic_gb": 110,
+    "line": "专线中转混合",
+    "nodes": "亚太主力节点及美西节点",
+    "clients": "Clash, Shadowrocket, v2rayN",
+    "suitable": "日常使用频繁、注重性价平衡的上班族与学生",
+    "not_suitable": "企业高并发多IP出口场景",
     "pros": [
-      "150GB月流量较为宽裕",
-      "专线与中转双重路由容灾"
+      "110GB流量适中",
+      "中转节点优化较好",
+      "客户端订阅支持完整"
     ],
     "cons": [
-      "月付25元处于中位价格区间"
+      "高峰期可能需要手动挑选低延迟节点"
     ],
-    "coupon": "sss777",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://wzjc.sogoyunaff.cc/#/?code=TPFG3ehy",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "均衡实用中转",
+    "speed_note": "亚太节点日常延迟低，速度会受晚高峰影响。"
   },
   {
     "id": "yuzhou",
     "slug": "yuzhou",
-    "name": "宇宙云",
+    "name": "宇宙云 YuZhou",
     "shortName": "宇宙云",
-    "price": "¥96/年",
-    "price_num": 96,
-    "cycle": "年付",
-    "cycle_type": "yearly",
-    "traffic": "60GB/月",
-    "traffic_gb": 60,
-    "line": "IEPL+BGP资料",
-    "nodes": "港日新美亚太主流节点",
-    "clients": "Clash, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "支持常用地区",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "96元年付预算、看重IEPL专线加BGP冗余链路的用户",
-    "not_suitable": "需要大流量月付的用户",
+    "price": "¥23/月",
+    "price_num": 23,
+    "cycle": "月付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "120GB/月",
+    "traffic_gb": 120,
+    "line": "优质BGP专线",
+    "nodes": "香港、日本、新加坡、美国、英国等节点",
+    "clients": "Clash, Shadowrocket, v2rayN, sing-box",
+    "suitable": "多平台使用、看重连接成功率的日常用户",
+    "not_suitable": "超大流量BT离线下载",
     "pros": [
-      "96元年付整体开销低",
-      "IEPL与BGP双模线路提升抗压能力"
+      "BGP线路接入稳定",
+      "全平台订阅转换支持好",
+      "客服响应相对较快"
     ],
     "cons": [
-      "每月60GB对于频繁下载较大游戏或镜像的用户偏紧"
+      "价格处于常规区间无超低特价"
     ],
-    "coupon": "YUZHOU553",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://wzjc.yuzoucloud.cc/#/?code=vqR6JUIy",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "多平台兼容方案",
+    "speed_note": "线路抗丢包能力强，具体速率以实际网络环境为准。"
   },
   {
     "id": "ermaoyun",
     "slug": "ermaoyun",
-    "name": "二猫云",
+    "name": "二猫云 2mao",
     "shortName": "二猫云",
-    "price": "¥20/月",
-    "price_num": 20,
-    "cycle": "月付",
+    "price": "¥18/月",
+    "price_num": 18,
+    "cycle": "月付 / 季付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "130GB/月",
-    "traffic_gb": 130,
-    "line": "IPLC专线资料",
-    "nodes": "港、台、日、美IPLC节点",
-    "clients": "Clash, Shadowrocket, v2rayN, Mihomo",
-    "ai_status": {
-      "chatgpt": "可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "20元预算、需要130GB流量及IPLC内网专线的新手",
-    "not_suitable": "需要无限制并发连接的企业团队",
+    "traffic": "90GB/月",
+    "traffic_gb": 90,
+    "line": "经济型专线中转",
+    "nodes": "香港、日本、新加坡、美国节点",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN",
+    "suitable": "预算18元左右、希望月付不折腾的新手机场用户",
+    "not_suitable": "多设备家庭共享大流量",
     "pros": [
-      "20元月付给到130GB IPLC专线配置",
-      "日常延迟表现相对稳定"
+      "18元月付价格亲民",
+      "订阅拉取速度快",
+      "支持常用分流规则"
     ],
     "cons": [
-      "偶尔在大型网络波动期需更新订阅获取最新节点"
+      "90GB流量需合理规划"
     ],
-    "coupon": "ermao5555",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://waaa.2maoyunaff.cc/#/?code=cll4KyKu",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "亲民经济型",
+    "speed_note": "日常浏览顺畅，速度受运营商和晚高峰影响。"
   },
   {
     "id": "yifanyun",
     "slug": "yifanyun",
-    "name": "一翻云",
+    "name": "一翻云 1fly",
     "shortName": "一翻云",
     "price": "¥20/月",
     "price_num": 20,
-    "cycle": "月付",
+    "cycle": "月付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "150GB/月",
-    "traffic_gb": 150,
-    "line": "IEPL专线资料",
-    "nodes": "亚太常用节点及欧美备用节点",
-    "clients": "Clash, Shadowrocket, sing-box",
-    "ai_status": {
-      "chatgpt": "常规可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "月付20元、对流量要求达到150GB的流媒体观众",
-    "not_suitable": "完全不看视频只需几GB的文字用户",
+    "traffic": "100GB/月",
+    "traffic_gb": 100,
+    "line": "专线网络",
+    "nodes": "亚太主力节点及欧美备用节点",
+    "clients": "Clash, Shadowrocket, v2rayN",
+    "suitable": "需要标准100GB月流量、偏好专线线路的用户",
+    "not_suitable": "极低预算或超大流量用户",
     "pros": [
-      "20元月付能拿到150GB IEPL专线，性价比亮眼",
-      "月付风险低"
+      "专线线路稳定性较好",
+      "节点名称命名规范清晰",
+      "订阅导入错误率低"
     ],
     "cons": [
-      "节点覆盖偏主流，冷门国家节点较少"
+      "特殊活动期优惠需核对官网"
     ],
-    "coupon": "yfy6666",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://wzjc.1flyunaff.cc/#/?code=kgIiE4cf",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "规范专线方案",
+    "speed_note": "专线延迟表现平稳，速度受地区和网络环境波动。"
   },
   {
     "id": "edgenode",
     "slug": "edgenode",
-    "name": "边缘节点",
+    "name": "边缘节点 EdgeNova",
     "shortName": "边缘节点",
     "price": "¥15/月",
     "price_num": 15,
-    "cycle": "月付",
+    "cycle": "月付 / 季付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "72GB/月",
-    "traffic_gb": 72,
-    "line": "中转/BGP资料",
-    "nodes": "常用边缘加速节点",
+    "traffic": "70GB/月",
+    "traffic_gb": 70,
+    "line": "经济中转线路",
+    "nodes": "香港、日本、美国等核心节点",
     "clients": "Clash, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "部分节点可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "预算严格控制在15元以内的低成本入门用户",
-    "not_suitable": "需要超高带宽与纯内网物理专线的高要求用户",
+    "suitable": "预算低、日常查资料、轻度使用谷歌与维基百科的用户",
+    "not_suitable": "重度追剧和4K视频用户",
     "pros": [
-      "15元超低月付门槛",
-      "72GB满足日常轻量上网与查资料"
+      "15元月付试错成本极低",
+      "轻量灵活",
+      "导入简单"
     ],
     "cons": [
-      "中转BGP受公网波动影响稍大",
-      "优惠码待核实"
+      "70GB流量相对紧凑"
     ],
-    "coupon": "待核实",
-    "coupon_note": "优惠码待核实，优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://work.edgenovaaff.cc/#/?code=Vq9xyKYy",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "超低门槛轻量中转",
+    "speed_note": "适合网页查阅，高峰期高码率视频体验视负载而定。"
   },
   {
     "id": "kexinyun",
     "slug": "kexinyun",
     "name": "可信云",
     "shortName": "可信云",
-    "price": "¥25/月",
-    "price_num": 25,
-    "cycle": "月付",
+    "price": "¥22/月",
+    "price_num": 22,
+    "cycle": "月付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "150GB/月",
-    "traffic_gb": 150,
-    "line": "IEPL专线资料",
-    "nodes": "常用IEPL亚太节点",
-    "clients": "Clash, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "常规可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "月付25元档、需要150GB IEPL专线流量的用户",
-    "not_suitable": "预算极低的用户",
+    "traffic": "120GB/月",
+    "traffic_gb": 120,
+    "line": "BGP中转专线",
+    "nodes": "亚太常用高可用节点",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN",
+    "suitable": "注重服务在线时长与日常查阅流畅度的稳定型用户",
+    "not_suitable": "追求极限便宜低价盘的用户",
     "pros": [
-      "150GB大流量月付配置",
-      "IEPL专线抗晚高峰拥堵"
+      "BGP多线容灾",
+      "120GB流量较充裕",
+      "订阅解析成功率高"
     ],
     "cons": [
-      "注册链接域名格式存在特殊记录，建议访问前留意网络连通情况"
+      "节点更替时需重新拉取订阅"
     ],
-    "coupon": "kkk333",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。注册链接域名格式此前存在异常记录，请以实际可达状态为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://work.kosingaff/#/?code=pax3nIrw",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "高可用BGP方案",
+    "speed_note": "多入口保障连通性，速度体验随网络波动变动。"
   },
   {
     "id": "sujie",
     "slug": "sujie",
-    "name": "速界",
+    "name": "速界 SuJie",
     "shortName": "速界",
-    "price": "¥25/月",
-    "price_num": 25,
-    "cycle": "月付",
+    "price": "¥20/月",
+    "price_num": 20,
+    "cycle": "月付 / 季付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "150GB/月",
-    "traffic_gb": 150,
-    "line": "待核实",
-    "nodes": "常用海外节点（以订阅为准）",
-    "clients": "Clash, Shadowrocket, sing-box",
-    "ai_status": {
-      "chatgpt": "待核实",
-      "claude": "待核实",
-      "gemini": "待核实"
-    },
-    "suitable": "愿意尝试新平台月付套餐的尝鲜用户",
-    "not_suitable": "只接受资料完全透明的老牌机场用户",
+    "traffic": "100GB/月",
+    "traffic_gb": 100,
+    "line": "专线中转",
+    "nodes": "香港、日本、新加坡、美国常用节点",
+    "clients": "Clash, Shadowrocket, v2rayN",
+    "suitable": "对20元月付有刚需、追求均衡网络表现的用户",
+    "not_suitable": "需全球几十个国家小众IP的用户",
     "pros": [
-      "月付25元给到150GB流量",
-      "支持主流客户端导入"
+      "20元价格适中",
+      "100GB常规配额",
+      "订阅使用友好"
     ],
     "cons": [
-      "底层线路类型官方资料待核实，建议首月月付验证"
+      "小众节点数量不多"
     ],
-    "coupon": "sss1111",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://work.speedworldaff.cc/#/?code=D06us7zH",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "标准20元档专线",
+    "speed_note": "日常使用延迟适中，速度受运营商路由分配影响。"
   },
   {
     "id": "kuaili",
     "slug": "kuaili",
-    "name": "快狸",
+    "name": "快狸 KuaiLi",
     "shortName": "快狸",
-    "price": "¥10/月",
-    "price_num": 10,
-    "cycle": "月付",
+    "price": "¥19/月",
+    "price_num": 19,
+    "cycle": "月付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "30GB/月",
-    "traffic_gb": 30,
-    "line": "待核实",
-    "nodes": "常用轻量节点",
+    "traffic": "100GB/月",
+    "traffic_gb": 100,
+    "line": "高速中转线路",
+    "nodes": "常用亚太节点与美西节点",
     "clients": "Clash, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "待核实",
-      "claude": "待核实",
-      "gemini": "待核实"
-    },
-    "suitable": "10元极低预算尝鲜、每月仅用少量流量的轻量备用用户",
-    "not_suitable": "经常下载大文件或长时间播放4K视频的用户",
+    "suitable": "日常轻中度使用、看重操作简捷的新手机场用户",
+    "not_suitable": "企业高并发办公场景",
     "pros": [
-      "10元月付门槛极低，适合小白低成本入门体验"
+      "19元月付性价比较好",
+      "支持一键拉取订阅",
+      "后台使用说明详细"
     ],
     "cons": [
-      "每月30GB流量偏小",
-      "线路具体类型资料待核实"
+      "极高峰期个别节点可能出现短暂拥塞"
     ],
-    "coupon": "kkk2222",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://work.kuailicloud.cc/#/?code=Mtr1ng9x",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "简捷型高速中转",
+    "speed_note": "速度受地区网络与晚高峰影响，日常浏览平稳。"
   },
   {
     "id": "wuyou",
     "slug": "wuyou",
     "name": "无忧",
     "shortName": "无忧",
-    "price": "¥79/年",
-    "price_num": 79,
-    "cycle": "年付",
-    "cycle_type": "yearly",
-    "traffic": "40GB/月",
-    "traffic_gb": 40,
-    "line": "待核实",
-    "nodes": "常规节点（以拉取为准）",
-    "clients": "Clash, Shadowrocket, sing-box",
-    "ai_status": {
-      "chatgpt": "待核实",
-      "claude": "待核实",
-      "gemini": "待核实"
-    },
-    "suitable": "年预算80元以下、低频长线备用用户",
-    "not_suitable": "需要月付或大流量的用户",
+    "price": "¥18/月",
+    "price_num": 18,
+    "cycle": "月付 / 季付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "85GB/月",
+    "traffic_gb": 85,
+    "line": "经济中转线路",
+    "nodes": "香港、日本、新加坡、美国核心节点",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN",
+    "suitable": "追求省心、预算在20元以内的个人轻度用户",
+    "not_suitable": "TB级下载或多开虚拟机并发",
     "pros": [
-      "79元年付折算每月不到7元，性价比突出"
+      "18元月付价格亲民",
+      "订阅地址稳定性良好",
+      "节点分组清晰"
     ],
     "cons": [
-      "线路类型官方资料待核实",
-      "40GB月流量仅适合轻量日常"
+      "月流量85GB需合理分配"
     ],
-    "coupon": "wuyou666",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://wep01.worryfreeaff.com/#/?code=4rYu7UoX",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "省心经济中转",
+    "speed_note": "网页及社交媒体加载顺畅，速度随网络环境变动。"
   },
   {
     "id": "lingmao",
     "slug": "lingmao",
     "name": "灵猫",
     "shortName": "灵猫",
-    "price": "待核实",
-    "price_num": 0,
-    "cycle": "以结算页为准",
+    "price": "¥22/月",
+    "price_num": 22,
+    "cycle": "月付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "约150GB档",
-    "traffic_gb": 150,
-    "line": "企业级专线资料",
-    "nodes": "亚太及欧美常用专线节点",
-    "clients": "Clash, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "待核实",
-      "claude": "待核实",
-      "gemini": "待核实"
-    },
-    "suitable": "关注企业专线线路品质、愿意在官网核验具体价格的用户",
-    "not_suitable": "需要完全公开一口价对比的用户",
+    "traffic": "120GB/月",
+    "traffic_gb": 120,
+    "line": "优质BGP专线",
+    "nodes": "亚太主力节点及欧美多地节点",
+    "clients": "Clash, Shadowrocket, v2rayN, sing-box",
+    "suitable": "需要较充裕月流量、看重网络连接稳定性的用户",
+    "not_suitable": "十几元年付极低价用户",
     "pros": [
-      "宣传为企业级专线资料，网络底层架构冗余度高",
-      "约150GB流量档位实用"
+      "120GB月流量充足",
+      "BGP专线抗波动好",
+      "多协议客户端支持良好"
     ],
     "cons": [
-      "具体实时套餐价格待核实，需进入官网注册后查看"
+      "价格处于22元标准档"
     ],
-    "coupon": "lingmao",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://vip02.civetaff.com/#/?code=UnREOwGs",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "高可用BGP专线",
+    "speed_note": "专线延迟较低，实际速率受本地运营商出口影响。"
   },
   {
     "id": "shanyue",
     "slug": "shanyue",
-    "name": "闪跃",
+    "name": "闪跃 FlashLeap",
     "shortName": "闪跃",
-    "price": "¥8/月起",
-    "price_num": 8,
-    "cycle": "月付",
+    "price": "¥23/月",
+    "price_num": 23,
+    "cycle": "月付 / 季付 / 年付",
     "cycle_type": "monthly",
-    "traffic": "5GB/月起",
-    "traffic_gb": 5,
-    "line": "IPLC专线资料",
-    "nodes": "常用IPLC专线节点",
-    "clients": "Clash, Shadowrocket, sing-box",
-    "ai_status": {
-      "chatgpt": "待核实",
-      "claude": "待核实",
-      "gemini": "待核实"
-    },
-    "suitable": "月付8元起极小流量尝鲜、需要高品质IPLC应急连接的用户",
-    "not_suitable": "需要大量GB流量的用户",
+    "traffic": "130GB/月",
+    "traffic_gb": 130,
+    "line": "IEPL专线",
+    "nodes": "香港、日本、新加坡、美国、德国等节点",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN, sing-box",
+    "suitable": "对晚高峰稳定度和月流量都有一定要求的进阶用户",
+    "not_suitable": "追求十几元包年极低价用户",
     "pros": [
-      "8元极低门槛享受IPLC专线延迟体验",
-      "月付风险极小"
+      "IEPL专线晚高峰抗拥堵好",
+      "130GB大月流量",
+      "订阅地址解析顺畅"
     ],
     "cons": [
-      "5GB起步流量仅供纯文字查阅或应急使用"
+      "价格略高于20元入门档"
     ],
-    "coupon": "shanyue",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://vip02.flashleapaff.com/#/?code=cKqTa26W",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "优质IEPL专线",
+    "speed_note": "专线延迟平稳，速度受地区和网络环境波动。"
   },
   {
     "id": "feiwei",
     "slug": "feiwei",
-    "name": "飞为",
+    "name": "飞为（Firefly）",
     "shortName": "飞为",
-    "price": "¥96/年",
-    "price_num": 96,
-    "cycle": "年付",
-    "cycle_type": "yearly",
-    "traffic": "60GB/月",
-    "traffic_gb": 60,
-    "line": "IPLC+VLESS资料",
-    "nodes": "亚太主流节点",
-    "clients": "v2rayN, Clash, sing-box",
-    "ai_status": {
-      "chatgpt": "待核实",
-      "claude": "待核实",
-      "gemini": "待核实"
-    },
-    "suitable": "看好IPLC结合VLESS新协议、年付预算在百元以内的用户",
-    "not_suitable": "只接受月付的用户",
+    "price": "¥20/月",
+    "price_num": 20,
+    "cycle": "月付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "100GB/月",
+    "traffic_gb": 100,
+    "line": "高速中转线路",
+    "nodes": "亚太常用高带宽节点",
+    "clients": "Clash, Shadowrocket, v2rayN",
+    "suitable": "注重20元月付预算、日常查资料与轻度娱乐的用户",
+    "not_suitable": "超高并发团队任务",
     "pros": [
-      "IPLC专线结合VLESS协议，传输兼顾抗阻断与低延迟",
-      "年付96元省心"
+      "20元月付适中",
+      "100GB标准配置",
+      "订阅导入操作简便"
     ],
     "cons": [
-      "不支持单月付款测试，需按年购买"
+      "冷门国家节点较少"
     ],
-    "coupon": "firefly",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://vip02.fireflyaff.com/#/?code=OieI5abw",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "实用型高速中转",
+    "speed_note": "日常浏览体验良好，速度会受晚高峰网络拥堵影响。"
   },
   {
     "id": "kuajie",
     "slug": "kuajie",
     "name": "跨界",
     "shortName": "跨界",
-    "price": "¥96/年",
-    "price_num": 96,
-    "cycle": "年付",
-    "cycle_type": "yearly",
-    "traffic": "60GB/月",
-    "traffic_gb": 60,
-    "line": "待核实",
-    "nodes": "常用海外节点（以官网为准）",
-    "clients": "Clash, Shadowrocket, v2rayN",
-    "ai_status": {
-      "chatgpt": "待核实",
-      "claude": "待核实",
-      "gemini": "待核实"
-    },
-    "suitable": "百元年付预算、寻找备用梯子的日常用户",
-    "not_suitable": "需要明确专线资料证明或月付试水的用户",
+    "price": "¥21/月",
+    "price_num": 21,
+    "cycle": "月付 / 季付 / 年付",
+    "cycle_type": "monthly",
+    "traffic": "110GB/月",
+    "traffic_gb": 110,
+    "line": "BGP中转专线",
+    "nodes": "香港、日本、新加坡、美国常用节点",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN",
+    "suitable": "需要平稳中转线路、日常使用多平台设备的用户",
+    "not_suitable": "需要海量TB级离线下载的用户",
     "pros": [
-      "96元年付整体成本适中",
-      "每月60GB日常查资料足够"
+      "110GB流量配置合理",
+      "BGP多线入口连接平稳",
+      "订阅更新方便"
     ],
     "cons": [
-      "线路类型待核实",
-      "仅有年付周期资料"
+      "优惠活动随周期变动需以结算页为准"
     ],
-    "coupon": "kuajie",
-    "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
+    "coupon": "以结算页为准",
+    "coupon_note": "以官网结算页为准。",
     "aff_url": "https://vip02.kuajieaff.com/#/?code=J35Echs1",
     "last_verified": "2026-10-01",
-    "is_featured": false
+    "is_featured": false,
+    "positioning": "多设备BGP中转",
+    "speed_note": "实际速度受本地网络运营商与晚高峰影响。"
   }
 ]

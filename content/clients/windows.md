@@ -1,36 +1,75 @@
 ---
-title: "Windows机场怎么使用？电脑系统代理与断网修复"
-description: "Windows 10/11 电脑客户端选型与配置指南。深入解析系统代理机制、TUN虚拟网卡模式、开机自启与休眠唤醒断网修复技巧。"
-date: 2026-10-01T08:00:00+08:00
-lastmod: 2026-10-01T12:00:00+08:00
-type: "clients"
+title: "Windows 机场使用教程：从下载客户端到导入订阅节点全流程"
+seo_title: "Windows 机场使用教程｜Clash Verge Rev配置、订阅导入与系统代理设置"
+description: "Windows电脑如何配置机场订阅？本文为PC用户提供Clash Verge Rev与v2rayN下载安装、订阅导入、节点选择与系统代理开启保姆级图文教程。"
+keywords: ["Windows 机场使用教程", "Windows 机场客户端", "PC 机场教程", "Clash Verge Windows", "Windows 科学上网", "v2rayN使用教程"]
+date: "2026-10-01"
+last_verified: "2026-10-01"
+author: "机场订阅网编辑部"
 layout: "single"
-weight: 6
-keywords: ["Windows机场怎么使用", "电脑怎么连机场", "电脑梯子客户端", "Windows系统代理设置", "Win电脑翻墙"]
 ---
 
-## 核心步骤摘要
+# Windows 机场使用教程：从下载客户端到导入订阅节点全流程
 
-在 Windows 电脑上使用机场，**最推荐的客户端为 Clash Verge Rev 或 v2rayN**。安装后导入机场订阅，开启“系统代理”与“规则分流”，即可让 Chrome/Edge 浏览器秒开海外受限网站。
+在 Windows 电脑上使用机场订阅上网，是绝大多数上班族、学生和科研人员的刚需。
 
-## 客户端选型与安装
+本文专为 Windows（Win10 / Win11）用户打造，从**挑选客户端软件、安装配置、导入订阅链接到开启系统代理**，手把手带你完成全流程配置。
 
-- **大众首选：Clash Verge Rev：** 界面美观，规则库完善，支持托盘快捷切换；
-- **老电脑/极客首选：v2rayN：** 资源占用极低，核心协议支持完备；
-- 安装时如果 Windows Defender 弹出安全提示，点击“更多信息 -> 仍要运行”即可。
+---
 
-## 必掌握的断网应急修复法
+## 一、Windows 推荐客户端：首选 Clash Verge Rev
 
-Windows 用户最常遇到的问题是“电脑休眠或软件异常退出后打不开任何网页”。**快速修复两步法**：
+对于 Windows 平台，目前最推荐的客户端是 **Clash Verge Rev**。它不仅界面美观纯净无广告，而且内置成熟的 Mihomo 内核，支持智能规则分流与 TUN 全局模式。
 
-1. 打开 Windows 设置 -> 网络和 Internet -> 代理；
-2. 检查“手动设置代理”下的“使用代理服务器”开关，若为开启状态请手动将其关闭，网页即刻恢复正常。
+---
 
-## 常见疑问解答
+## 二、Windows 电脑配置 4 步走实战指南
 
-**Q: 为什么浏览器能上外网，但电脑版微信或游戏不能？**  
-A: 普通“系统代理”只对遵守系统代理协议的浏览器生效。需要让游戏或特定软件走代理，必须在客户端中开启【TUN 模式】。
+### 第 1 步：下载并安装客户端
+1. 获取 Clash Verge Rev 的 Windows x64 安装包（`.exe` 文件）。
+2. 双击安装包，按照向导完成安装，勾选“创建桌面快捷方式”并运行软件。
 
-**Q: 开机自启需要开启吗？**  
-A: 经常需要查阅资料的用户可开启“开机自启”与“静默启动至托盘”，开机无需重复手动打开。
+### 第 2 步：获取并导入机场订阅链接
+1. 登录你的机场后台（如 [梯子云](https://varnexa.ladderaff.com/#/?code=7cjKUmW6) 或 [暮光网络](https://varnexa.twilightaff.com/#/?code=9wp1Pt82)）。
+2. 找到快捷导入区域，点击 **“复制 Clash 订阅”**。详见 [机场订阅链接是什么](/guide/what-is-subscription-link/)。
+3. 打开 Clash Verge Rev，点击左侧菜单的 **“订阅（Profiles）”**。
+4. 在顶部输入框粘贴订阅链接，点击右侧的 **“导入（Import）”**。
+5. 导入成功后，**鼠标左键单击该订阅卡片**激活选中。
 
+### 第 3 步：挑选低延迟优质节点
+1. 点击左侧菜单栏的 **“代理（Proxies）”**。
+2. 确保路由模式保持为 **“规则（Rule）”**。
+3. 点击右上角的测速图标，列表会显示各节点的实际毫秒延迟。
+4. 推荐勾选延迟较低的香港或日本节点。详见 [香港、日本、新加坡节点怎么选](/guide/hk-jp-sg-nodes/)。
+
+### 第 4 步：开启系统代理上网
+1. 在主界面或左下角找到 **“系统代理（System Proxy）”** 开关，点击将其切换为 **开启**。
+2. 打开 Chrome 或 Edge 浏览器，访问 Google 或 YouTube 验证连接。
+
+---
+
+## 三、Windows 常见使用技巧与排障
+
+1. **电脑休眠后无法上网**：
+   - 唤醒电脑后若网页打不开，将系统代理开关关掉重新打开一次即可。
+2. **节点测速全部超时显示 -1ms**：
+   - 按下 `Win + I` 打开系统设置 -> 时间和语言 -> 日期和时间 -> 点击 **“立即同步”** 网络时间。详见 [机场节点全部超时怎么办](/troubleshooting/nodes-timeout/)。
+3. **需要让命令行或游戏走代理**：
+   - 在设置中安装 **Service Mode**，然后开启 **TUN 模式**。详见 [Clash Verge 详细教程](/tutorials/clash-verge-tutorial/)。
+
+---
+
+## 四、本篇常见问题 (Q&A)
+
+### Q1：关闭 Clash Verge 软件前需要注意什么？
+**答**：在彻底退出软件之前，建议先将“系统代理”开关关闭；否则系统可能残留代理设置导致断开软件后打不开国内网页。
+
+### Q2：Windows 上除了 Clash Verge，还有其他轻量客户端吗？
+**答**：还可以选择经典老牌的 v2rayN 或 Sing-box。详细对比请参考 [机场客户端有哪些](/clients/client-overview/)。
+
+### Q3：适合 Windows 电脑使用的稳定月付机场有哪些？
+**答**：推荐选用支持标准 Clash 格式、具备 IEPL 专线的服务商。参考 [2026 机场订阅推荐：新手怎么选](/recommend/best-airport-subscriptions/) 与 [机场套餐怎么选](/plans/how-to-choose-plan/)。
+`
+);
+
+console.log('Finished 21');

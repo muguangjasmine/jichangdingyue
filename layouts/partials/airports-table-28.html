@@ -2,7 +2,7 @@
 <div class="airports-database-wrapper">
   <div class="database-filters-bar">
     <div class="filter-hint">
-      共收录 <strong>{{ len $airports }}</strong> 家机场资料，包含价格、月流量、专线线路与优惠码。点击品牌可进入深度测评。
+      共收录 <strong>{{ len $airports }}</strong> 家常用机场订阅资料，包含价格、月流量、专线类型、优惠码与客户端支持。点击名称可查看详细资料。
     </div>
   </div>
 
@@ -16,8 +16,8 @@
           <th class="col-traffic">月流量</th>
           <th class="col-line">线路类型</th>
           <th class="col-coupon">优惠码</th>
-          <th class="col-ai">AI/ChatGPT支持</th>
-          <th class="col-actions">直达操作</th>
+          <th class="col-features">核心优势与特点</th>
+          <th class="col-actions">订阅与官网</th>
         </tr>
       </thead>
       <tbody>
@@ -29,21 +29,17 @@
               <strong>{{ $a.name }}</strong>
             </a>
             {{- if $a.is_featured -}}
-            <span class="badge-featured-mini">主推</span>
+            <span class="badge-featured-mini" style="background: #ef4444; color: #fff; font-size: 0.68rem; padding: 1px 5px; border-radius: 3px; margin-left: 4px;">精选</span>
             {{- end -}}
           </td>
           <td class="col-price"><span class="price-tag">{{ $a.price }}</span></td>
           <td class="col-traffic">{{ $a.traffic }}</td>
           <td class="col-line"><span class="line-badge">{{ $a.line }}</span></td>
           <td class="col-coupon">
-            <code class="coupon-code-text">{{ $a.coupon }}</code>
+            <code class="coupon-code-text" style="color: #dc2626; font-weight: 700; background: #fee2e2; padding: 2px 6px; border-radius: 4px; border: 1px solid #fca5a5;">{{ $a.coupon }}</code>
           </td>
-          <td class="col-ai">
-            {{- if reflect.IsMap $a.ai_status -}}
-              <span class="ai-status-text">{{ $a.ai_status.chatgpt }}</span>
-            {{- else -}}
-              <span class="ai-status-text">待核实</span>
-            {{- end -}}
+          <td class="col-features">
+            <span class="features-text" style="font-size: 0.82rem; color: #475569;">{{ index $a.pros 0 }}</span>
           </td>
           <td class="col-actions">
             <a href="{{ $a.aff_url }}" target="_blank" rel="sponsored nofollow noopener" class="btn-table-cta">

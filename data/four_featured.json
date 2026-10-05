@@ -10,21 +10,16 @@
     "cycle_type": "monthly",
     "traffic": "125GB/月",
     "traffic_gb": 125,
-    "line": "企业专线资料",
-    "nodes": "常用核心节点（香港、日本、新加坡、美国等，以订阅实际拉取为准）",
-    "clients": "Clash Verge Rev, Shadowrocket, v2rayN, Mihomo Party, sing-box",
-    "ai_status": {
-      "chatgpt": "支持常规Web访问与APP（需选用美/新/日等对应节点）",
-      "claude": "依赖纯净IP，需测试对应节点连通性，以实际拉取为准",
-      "gemini": "支持常规地区节点访问"
-    },
-    "suitable": "第一次买机场、希望月付试水、日常网页浏览与轻量流媒体、需要简单套餐的新手",
-    "not_suitable": "需要海量GB下载、追求超低年付（如十几元包年）的用户",
+    "line": "企业高速专线",
+    "nodes": "主流核心节点（香港、日本、新加坡、美国等，以订阅实际拉取为准）",
+    "clients": "Clash Verge Rev, Shadowrocket, v2rayN, sing-box, Mihomo",
+    "suitable": "第一次买机场订阅、希望月付试水、日常查阅网页与学术办公、需要简单稳定套餐的新手",
+    "not_suitable": "需要几TB海量高频下载、追求十几元超低年付或超大并发团队用户",
     "pros": [
-      "月付25元门槛低，无需一次性承担年付沉没成本",
-      "企业专线线路资料，晚高峰波动相对普通直连更可控",
+      "月付25元门槛低，无需一次性承担年付沉没成本与跑路风险",
+      "企业高速专线线路，晚高峰时段网络稳定性相对普通直连更为平稳",
       "套餐规则简单清晰，125GB月流量适合绝大多数新手日常使用",
-      "全主流客户端通用订阅支持，导入方便"
+      "全主流客户端通用订阅支持，导入方便，更新迅速"
     ],
     "cons": [
       "不提供超大TB级离线下载套餐",
@@ -32,43 +27,39 @@
     ],
     "coupon": "tiziyun",
     "coupon_note": "优惠活动可能调整，请以结算页实际显示为准。",
-    "aff_url": "https://tiziyun3.ladderaff.com/#/?code=KVyNkFYU",
+    "aff_url": "https://varnexa.ladderaff.com/#/?code=7cjKUmW6",
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 1,
-    "positioning": "常规月付入门首选",
+    "positioning": "常规月付入门首选 · 适合新手试水",
     "cta_texts": [
-      "查看梯子云套餐",
+      "查看梯子云订阅套餐",
       "进入梯子云官网",
-      "注册梯子云",
-      "查看当前价格"
+      "注册梯子云账号",
+      "查看当前订阅优惠"
     ]
   },
   {
     "id": "twilight",
     "slug": "twilight",
-    "name": "暮光加速",
-    "shortName": "暮光加速",
+    "name": "暮光网络 Twilight",
+    "shortName": "暮光网络",
     "price": "¥20/月",
     "price_num": 20,
     "cycle": "月付 / 年付",
     "cycle_type": "monthly",
     "traffic": "120GB/月",
     "traffic_gb": 120,
-    "line": "IEPL纯专线资料",
-    "nodes": "常用热门地区节点（以官网订阅为准）",
-    "clients": "Clash, Shadowrocket, v2rayN, sing-box",
-    "ai_status": {
-      "chatgpt": "常用节点可用，以客户端节点状态为准",
-      "claude": "待核实",
-      "gemini": "可用（需对应地区节点）"
-    },
+    "line": "IEPL纯专线",
+    "nodes": "常用亚太热门地区与欧美节点（以官网拉取为准）",
+    "clients": "Clash, Shadowrocket, v2rayN, sing-box, Clash Verge",
     "suitable": "注重预算控制、想要20元档纯专线线路的新手与轻中度用户",
     "not_suitable": "需要无限制并发连接与多公网IP的团队用户",
     "pros": [
-      "20元月付在IEPL专线类型中性价比突出",
-      "纯专线架构，晚高峰网络稳定性表现相对平稳",
-      "120GB流量覆盖日常查资料、追剧与AI交互"
+      "20元月付在IEPL专线类型中性价比突出，适合预算有限的新手",
+      "纯专线架构，晚高峰网络稳定性表现相对平稳，丢包率低",
+      "120GB流量覆盖日常查资料、视频浏览与办公社交需求",
+      "订阅地址兼容性强，支持一键导入主流客户端"
     ],
     "cons": [
       "低价档位同时在线设备数有限制",
@@ -80,12 +71,12 @@
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 2,
-    "positioning": "预算、价格与专线套餐平衡",
+    "positioning": "高性价比IEPL专线 · 预算平衡推荐",
     "cta_texts": [
-      "查看暮光加速",
-      "查看暮光套餐",
-      "注册暮光加速",
-      "查看当前优惠"
+      "查看暮光网络订阅",
+      "查看暮光专线套餐",
+      "注册暮光网络",
+      "查看当前专线优惠"
     ]
   },
   {
@@ -95,27 +86,23 @@
     "shortName": "飞猫云",
     "price": "¥84/年起",
     "price_num": 84,
-    "cycle": "年付（另有其他套餐资料）",
+    "cycle": "年付（折合¥7/月）",
     "cycle_type": "yearly",
-    "traffic": "约50GB/月（年付档）",
+    "traffic": "约50GB/月（年付入门档）",
     "traffic_gb": 50,
-    "line": "IEPL内网专线资料",
+    "line": "IEPL内网专线",
     "nodes": "亚太主流节点与欧美常用节点",
     "clients": "Clash Verge Rev, Shadowrocket, v2rayN, Mihomo Party",
-    "ai_status": {
-      "chatgpt": "支持常规网页端与APP端",
-      "claude": "部分节点支持，以实际拉取为准",
-      "gemini": "支持"
-    },
-    "suitable": "轻量使用、低频上网、查收邮件与海外资讯、希望年付省心不折腾的用户",
-    "not_suitable": "每天重度刷4K长视频、大文件高频下载的用户",
+    "suitable": "轻量使用、低频上网、查收邮件与海外资讯、希望百元年付省心备用的用户",
+    "not_suitable": "每天重度刷高码率视频、大文件高频下载的用户",
     "pros": [
       "年付84元折算每月仅7元，轻量用户试错成本极低",
       "IEPL内网专线，延迟表现平稳，晚高峰丢包少",
-      "年付无需每月手动续费，适合备用与长线轻量使用"
+      "年付无需每月手动续费，适合备用与长线轻量使用",
+      "订阅格式标准，支持小火箭与Clash一键订阅导入"
     ],
     "cons": [
-      "入门档每月约50GB流量，重度流媒体可能不够",
+      "入门档每月约50GB流量，重度视频可能不够",
       "年付属于一次性预付，需先确认自身使用频次"
     ],
     "coupon": "flycat888",
@@ -124,12 +111,12 @@
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 3,
-    "positioning": "轻量年付、低频用户优选",
+    "positioning": "轻量低频年付优选 · 超低试错成本",
     "cta_texts": [
-      "查看飞猫云年付",
-      "进入飞猫云",
-      "注册飞猫云",
-      "查看当前套餐"
+      "查看飞猫云年付订阅",
+      "进入飞猫云官网",
+      "注册飞猫云账号",
+      "查看飞猫云套餐"
     ]
   },
   {
@@ -143,20 +130,16 @@
     "cycle_type": "flexible",
     "traffic": "约200GB/月",
     "traffic_gb": 200,
-    "line": "BGP专线资料",
+    "line": "BGP多线专线",
     "nodes": "亚太高带宽节点、欧美多地节点",
     "clients": "Clash, Shadowrocket, v2rayN, sing-box, Mihomo",
-    "ai_status": {
-      "chatgpt": "大部分主流节点可用",
-      "claude": "待核实",
-      "gemini": "可用"
-    },
-    "suitable": "流量需求较大、经常观看4K流媒体、多设备共用或想买不限时流量包的用户",
+    "suitable": "流量需求较大、经常观看高清视频、多设备共用或想买不限时流量包的用户",
     "not_suitable": "每月仅需10GB以内的极低频用户",
     "pros": [
-      "200GB大月流量配置，视频与多任务并发更从容",
-      "BGP多线接入，国内入口网络自适应良好",
-      "套餐形态多样，提供月付、年付及不限时流量包选择"
+      "200GB大月流量配置，多任务并发与视频使用更从容",
+      "BGP多线接入，国内入口网络自适应良好，连接稳定性高",
+      "套餐形态多样，提供月付、年付及不限时流量包灵活选择",
+      "订阅节点丰富，支持多协议客户端快速拉取"
     ],
     "cons": [
       "月付价格略高于20元入门档",
@@ -168,10 +151,10 @@
     "last_verified": "2026-10-01",
     "is_featured": true,
     "featured_order": 4,
-    "positioning": "大流量、丰富套餐与长期使用",
+    "positioning": "大流量多设备优选 · 丰富套餐形态",
     "cta_texts": [
-      "查看微风网络",
-      "查看Breeze套餐",
+      "查看微风网络订阅",
+      "查看Breeze大流量套餐",
       "注册微风网络",
       "查看当前价格"
     ]

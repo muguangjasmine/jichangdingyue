@@ -1,7 +1,7 @@
-baseURL: "https://jichangreview.cfd/"
+baseURL: "https://jichangdingyue.xyz/"
 locale: "zh-CN"
 defaultContentLanguage: "zh-cn"
-title: "2026机场测评与机场推荐｜新手套餐、节点与机场测评 - 机场检测站"
+title: "2026机场订阅推荐与使用教程｜机场订阅链接导入、套餐选择与节点指南 - 机场订阅网"
 summaryLength: 140
 hasCJKLanguage: true
 pagination:
@@ -33,18 +33,18 @@ markup:
     ordered: false
 
 params:
-  brandName: "机场检测站"
-  brandShort: "机场检测站"
-  brandDomain: "jichangreview.cfd"
-  brandSubtitle: "机场检测站｜机场测评与新手选择指南"
-  siteTopic: "本站定位为‘机场测评 + 机场评测 + 新手选择 + 套餐对比 + 客户端使用教程’的纯静态知识库。重点抢占‘机场测评、机场评测、机场review、机场值不值得买、机场套餐测评、机场怎么选、机场优缺点、机场适合谁’等 Review 型搜索意图。"
-  description: "机场检测站专为第一次使用机场的新手整理2026机场测评、机场推荐、套餐价格、流量、线路节点、优惠码、客户端教程与订阅导入指南，帮助你快速比较不同机场并找到适合自己的方案。"
-  heroH1: "新手怎么选机场？价格、流量、线路一次看懂，不用再到处查资料"
+  brandName: "机场订阅网"
+  brandShort: "机场订阅网"
+  brandDomain: "jichangdingyue.xyz"
+  brandSubtitle: "机场订阅网｜2026机场订阅推荐、订阅链接导入与客户端使用教程"
+  siteTopic: "本站定位为‘机场订阅推荐 + 机场订阅教程 + 客户端配置 + 套餐选择 + 节点指南 + 故障排查’的纯静态知识库。重点围绕‘机场订阅、机场订阅推荐、机场订阅教程、机场订阅链接、机场订阅怎么用、机场订阅地址、机场订阅节点、机场订阅购买、机场订阅套餐、机场订阅客户端’等核心搜索意图，打造从购买机场、获取订阅到导入客户端、排查故障的完整闭环。"
+  description: "机场订阅网（jichangdingyue.xyz）专为新手整理2026最新机场订阅推荐、机场订阅怎么用、机场订阅链接获取与导入教程、Clash/Clash Verge/Shadowrocket客户端配置、机场套餐对比与订阅故障排查指南，帮助第一次接触机场的用户快速上手并稳定连接。"
+  heroH1: "2026机场订阅新手指南：从购买套餐、获取订阅链接到客户端配置一次学会"
   heroTitle: ""
-  heroSubtitle: "从机场价格、套餐流量、线路节点、客户端兼容到AI使用情况，机场检测站把常见机场资料整理成容易看懂的测评与对比，让第一次购买机场也能快速知道该看什么、怎么选。"
-  footerDescription: "机场检测站（jichangreview.cfd）专注2026机场测评、机场评测、梯子推荐、新手机场选择、套餐价格与流量比较，以及Clash Verge Rev、Shadowrocket小火箭、v2rayN等客户端订阅教程。本站持续整理机场价格、节点线路、优惠码、AI使用核验和订阅故障排查资料，帮助第一次接触机场的用户更快了解套餐差异和使用方法。"
+  heroSubtitle: "全面解决‘机场订阅怎么用、机场订阅怎么导入、机场套餐怎么选、节点超时怎么排查’。提供清晰的机场订阅使用流程、精选稳定机场推荐与新手高频故障排查方案。"
+  footerDescription: "机场订阅网（jichangdingyue.xyz）专注2026机场订阅推荐、机场订阅教程、梯子推荐、订阅链接获取与导入、Clash Verge Rev、Shadowrocket小火箭、v2rayN等全平台客户端配置。本站持续更新机场套餐价格、专线节点特点、优惠码与订阅故障排查方案，帮助新手用户轻松掌握机场订阅全流程。"
   telegramUrl: "https://t.me/+w5kTkVtU25UzOTVl"
-  affiliateDisclosureText: "本站部分注册链接可能属于推广链接，我们可能获得佣金。不会增加你的购买价格。套餐、优惠、线路与可用状态可能变化，请以服务商当前页面为准。"
+  affiliateDisclosureText: "本站部分注册链接包含推广邀请参数，我们可能从中获得佣金，但绝不会增加你的购买费用。套餐价格、优惠码与节点状态可能随服务商调整，请以官网结算页为准。"
   lastVerifiedDate: "2026-10-01"
   currentYear: 2026
 
@@ -54,31 +54,39 @@ menu:
       name: "首页"
       url: "/"
       weight: 1
-    - identifier: "reviews"
-      name: "机场测评"
-      url: "/reviews/"
+    - identifier: "recommend"
+      name: "机场订阅推荐"
+      url: "/recommend/"
       weight: 2
+    - identifier: "tutorials"
+      name: "订阅使用教程"
+      url: "/tutorials/"
+      weight: 3
+    - identifier: "clients"
+      name: "客户端配置"
+      url: "/clients/"
+      weight: 4
+    - identifier: "plans"
+      name: "套餐选择"
+      url: "/plans/"
+      weight: 5
+    - identifier: "lines"
+      name: "线路与节点"
+      url: "/lines/"
+      weight: 6
+    - identifier: "troubleshooting"
+      name: "故障排查"
+      url: "/troubleshooting/"
+      weight: 7
+    - identifier: "guide"
+      name: "新手指南"
+      url: "/guide/"
+      weight: 8
     - identifier: "airports"
       name: "机场资料库"
       url: "/airports/"
-      weight: 3
-    - identifier: "choose"
-      name: "新手怎么选"
-      url: "/choose/"
-      weight: 4
-    - identifier: "plans"
-      name: "套餐对比"
-      url: "/plans/"
-      weight: 5
-    - identifier: "clients"
-      name: "客户端教程"
-      url: "/clients/"
-      weight: 6
+      weight: 9
     - identifier: "faq"
       name: "常见问题"
       url: "/faq/"
-      weight: 7
-    - identifier: "contact"
-      name: "联系我们"
-      url: "https://t.me/+w5kTkVtU25UzOTVl"
-      weight: 8
+      weight: 10

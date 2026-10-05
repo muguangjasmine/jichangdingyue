@@ -1,90 +1,71 @@
 <footer class="site-footer">
-  <div class="footer-inner container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="/" class="footer-logo">
-          <span class="logo-badge">REVIEW</span>
+  <div class="footer-top container">
+    <div class="footer-grid">
+      <!-- Col 1: Brand & Bio -->
+      <div class="footer-col footer-col-brand">
+        <a href="/" class="footer-brand-logo">
+          <span class="logo-badge">订阅指南</span>
           <span class="logo-text">{{ site.Params.brandShort }}</span>
         </a>
-        <p class="footer-desc">{{ site.Params.footerDescription | markdownify }}</p>
-        <div class="footer-aff-note">
-          <p><strong>推广说明：</strong>{{ site.Params.affiliateDisclosureText }}</p>
+        <p class="footer-bio">
+          {{ site.Params.footerDescription }}
+        </p>
+        <div class="footer-badges-row">
+          <span class="badge-tag">纯静态知识库</span>
+          <span class="badge-tag">50个新手FAQ</span>
+          <span class="badge-tag">更新于 {{ site.Params.lastVerifiedDate }}</span>
         </div>
       </div>
 
-      <div class="footer-nav-col">
-        <h3 class="footer-heading">核心导航</h3>
+      <!-- Col 2: 核心教程与推荐 -->
+      <div class="footer-col">
+        <h4 class="footer-heading">机场订阅核心导航</h4>
         <ul class="footer-links">
-          <li><a href="/reviews/">机场测评</a></li>
-          <li><a href="/airports/">机场资料库</a></li>
-          <li><a href="/choose/">机场怎么选</a></li>
-          <li><a href="/plans/">套餐对比</a></li>
-          <li><a href="/clients/">客户端教程</a></li>
-          <li><a href="/faq/">常见问题FAQ</a></li>
-          <li><a href="{{ site.Params.telegramUrl | safeURL }}" target="_blank" rel="sponsored nofollow noopener">Telegram联系我们</a></li>
+          <li><a href="/recommend/best-airport-subscriptions/">2026 机场订阅推荐</a></li>
+          <li><a href="/tutorials/clash-verge-tutorial/">Clash Verge Rev 使用教程</a></li>
+          <li><a href="/tutorials/shadowrocket-import-subscription/">Shadowrocket 小火箭导入教程</a></li>
+          <li><a href="/tutorials/clash-import-subscription/">Clash 导入订阅全流程</a></li>
+          <li><a href="/plans/how-to-choose-plan/">机场套餐怎么选与流量规划</a></li>
+          <li><a href="/lines/iepl-vs-iplc/">IEPL 与 IPLC 专线区别</a></li>
         </ul>
       </div>
 
-      <div class="footer-nav-col">
-        <h3 class="footer-heading">客户端教程</h3>
+      <!-- Col 3: 客户端与全平台配置 -->
+      <div class="footer-col">
+        <h4 class="footer-heading">全平台客户端指南</h4>
         <ul class="footer-links">
-          <li><a href="/clients/clash-verge-rev/">Clash Verge Rev教程</a></li>
-          <li><a href="/clients/shadowrocket/">Shadowrocket小火箭教程</a></li>
-          <li><a href="/clients/v2rayn/">v2rayN设置教程</a></li>
-          <li><a href="/clients/android/">Android安卓使用教程</a></li>
-          <li><a href="/clients/iphone/">iPhone苹果手机教程</a></li>
-          <li><a href="/clients/windows/">Windows电脑使用指南</a></li>
+          <li><a href="/clients/windows/">Windows 机场客户端教程</a></li>
+          <li><a href="/clients/android/">Android 安卓手机配置指南</a></li>
+          <li><a href="/clients/iphone/">iPhone / iPad 小火箭使用</a></li>
+          <li><a href="/clients/mac/">macOS 苹果电脑配置教程</a></li>
+          <li><a href="/clients/client-overview/">常用机场客户端对比与下载</a></li>
+          <li><a href="/troubleshooting/subscription-link-failed/">订阅链接打不开排查</a></li>
         </ul>
       </div>
 
-      <div class="footer-nav-col">
-        <h3 class="footer-heading">新手决策指南</h3>
+      <!-- Col 4: 知识库与排障 -->
+      <div class="footer-col">
+        <h4 class="footer-heading">新手指南与排障</h4>
         <ul class="footer-links">
-          <li><a href="/choose/how-to-choose-airport/">新手怎么买机场</a></li>
-          <li><a href="/choose/airport-for-beginners/">小白好上手机场推荐</a></li>
-          <li><a href="/choose/monthly-vs-yearly/">月付还是年付怎么挑</a></li>
-          <li><a href="/choose/how-much-data/">100GB流量够不够用</a></li>
-          <li><a href="/plans/under-20/">20元低预算机场分析</a></li>
-          <li><a href="/plans/monthly/">低风险月付机场清单</a></li>
+          <li><a href="/guide/what-is-airport-subscription/">机场订阅是什么意思</a></li>
+          <li><a href="/guide/what-is-subscription-link/">机场订阅链接是什么</a></li>
+          <li><a href="/guide/how-to-use-subscription-url/">机场订阅地址怎么使用</a></li>
+          <li><a href="/troubleshooting/nodes-timeout/">节点全部超时排障四步法</a></li>
+          <li><a href="/guide/how-to-avoid-pitfalls/">怎么买机场不容易踩坑</a></li>
+          <li><a href="/faq/">50个新手高频问答 (FAQ)</a></li>
         </ul>
       </div>
     </div>
+  </div>
 
-    <div class="footer-bottom">
-      <div class="footer-copy">
-        <p>&copy; {{ site.Params.currentYear }} {{ site.Params.brandShort }} (jichangreview.cfd). 保留所有权利。纯静态知识库架构。</p>
+  <div class="footer-bottom container">
+    <div class="footer-bottom-inner">
+      <div class="footer-copyright">
+        &copy; {{ site.Params.currentYear }} <strong>{{ site.Params.brandShort }}</strong> ({{ site.Params.brandDomain }}). 保留所有权利。
       </div>
-      <div class="footer-bottom-links">
-        <a href="/faq/">使用排障</a>
-        <span class="sep">&middot;</span>
-        <a href="/airports/">28家资料</a>
-        <span class="sep">&middot;</span>
-        <a href="{{ site.Params.telegramUrl | safeURL }}" target="_blank" rel="sponsored nofollow noopener">TG交流频道</a>
+      <div class="footer-disclaimer-text">
+        {{ site.Params.affiliateDisclosureText }} 连接速度与延迟受本地网络运营商及晚高峰影响。
       </div>
     </div>
   </div>
 </footer>
-
-<!-- 全站即时搜索弹窗 (基于 index.json，覆盖标题/摘要/正文/FAQ/机场/客户端) -->
-<div id="search-modal" class="search-modal" style="display: none;" role="dialog" aria-modal="true" aria-label="全站搜索">
-  <div class="search-modal-backdrop"></div>
-  <div class="search-modal-card">
-    <div class="search-modal-header">
-      <svg class="search-modal-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="11" cy="11" r="8"></circle>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-      </svg>
-      <input id="search-modal-input" type="text" placeholder="搜索机场名、套餐、专线、小火箭、Clash、节点全红..." autocomplete="off">
-      <button id="search-modal-close" class="search-close-btn" aria-label="关闭搜索">&times;</button>
-    </div>
-    <div id="search-results-list" class="search-results-list">
-      <div class="search-initial-hint">输入关键词（如：梯子云、专线、Clash、小火箭、月付、全红、ChatGPT...）开始搜索</div>
-    </div>
-    <div class="search-modal-footer">
-      <span>按 <kbd>ESC</kbd> 退出</span>
-      <span>支持文章标题、正文、FAQ及客户端全局检索</span>
-    </div>
-  </div>
-</div>
-
-<script src="/js/main.js"></script>

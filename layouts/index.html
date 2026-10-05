@@ -1,10 +1,10 @@
 {{ define "main" }}
-<!-- 01 Hero Section -->
+<!-- 01 Hero Section: 机场订阅核心定位与行动入口 -->
 <section class="home-hero-section">
   <div class="container hero-container">
     <div class="hero-badge">
       <span class="badge-dot"></span>
-      <span>2026 纯静态客观机场知识库 · 拒绝虚高宣传</span>
+      <span>2026 纯静态机场订阅知识库 · 新手从零上手不踩坑</span>
     </div>
 
     <h1 class="hero-h1">{{ site.Params.heroH1 }}</h1>
@@ -19,23 +19,23 @@
 
     <!-- Natural keyword paragraph for SEO compliance without keyword stuffing -->
     <p class="hero-nlp-text">
-      无论你是寻找适合日常查资料的<strong>新手机场推荐</strong>与<strong>梯子推荐</strong>，还是想比对主流<strong>Clash机场</strong>与<strong>小火箭机场</strong>的<strong>机场套餐对比</strong>、<strong>机场价格</strong>、<strong>机场流量</strong>和<strong>机场节点</strong>延迟，本站通过真实核验数据助你避开虚假跑路陷阱。
+      无论你是第一次接触<strong>机场订阅</strong>，想知道<strong>机场订阅链接怎么用</strong>、<strong>机场订阅怎么导入 Clash 与 Shadowrocket 小火箭</strong>，还是在寻找高性价比的<strong>稳定机场推荐</strong>、<strong>机场套餐选择</strong>与<strong>专线节点指南</strong>，本站为你系统梳理<strong>从购买机场、获取订阅到客户端配置与故障排查</strong>的完整使用流程。
     </p>
 
-    <!-- 5 Hero CTAs (Min touch height 44px) -->
+    <!-- 5 Hero CTAs -->
     <div class="hero-cta-group">
-      <a href="#featured-airports" class="btn-hero-primary">查看2026机场推荐</a>
-      <a href="#featured-airports" class="btn-hero-secondary">查看4家重点机场</a>
-      <a href="/airports/" class="btn-hero-outline">浏览全部28家机场</a>
-      <a href="/choose/" class="btn-hero-outline">新手怎么选机场</a>
-      <a href="/clients/" class="btn-hero-outline">客户端使用教程</a>
+      <a href="#featured-subscriptions" class="btn-hero-primary">2026 精选机场订阅推荐</a>
+      <a href="#subscription-workflow" class="btn-hero-secondary">新手5步订阅使用流程</a>
+      <a href="/tutorials/" class="btn-hero-outline">订阅导入教程大全</a>
+      <a href="/clients/" class="btn-hero-outline">全平台客户端下载与配置</a>
+      <a href="/airports/" class="btn-hero-outline">28家机场资料库</a>
     </div>
 
     <!-- Trust Stats Bar -->
     <div class="hero-stats-bar">
       <div class="stat-item">
         <span class="stat-number">28 家</span>
-        <span class="stat-label">收录核验机场</span>
+        <span class="stat-label">收录核验机场订阅</span>
       </div>
       <div class="stat-item">
         <span class="stat-number">100%</span>
@@ -43,465 +43,202 @@
       </div>
       <div class="stat-item">
         <span class="stat-number">50 个</span>
-        <span class="stat-label">新手高频排障FAQ</span>
+        <span class="stat-label">新手高频订阅排障FAQ</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 02 新手30秒怎么选机场 (4 simple criteria) -->
-<section class="home-section beginner-decision-section">
+<!-- 02 机场订阅完整流程 5 步法 (Workflow) -->
+<section id="subscription-workflow" class="home-section beginner-decision-section">
   <div class="container">
     <div class="section-title-wrap text-center">
-      <h2 class="section-main-title">新手30秒怎么选机场？4个关键维度快速定型</h2>
-      <p class="section-sub-title">不用看复杂的专线术语与代码参数，通过下面4个简单判断，30秒就能明确适合自己的机场类型：</p>
+      <h2 class="section-main-title">新手必读：机场订阅 5 步极简使用流程</h2>
+      <p class="section-sub-title">从选购套餐到顺畅连接，跟着这 5 个步骤，即使第一次使用也能在 3 分钟内轻松上手：</p>
     </div>
 
-    <div class="decision-grid-4">
+    <div class="decision-grid-4" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
       <div class="decision-card">
         <div class="decision-step-num">01</div>
-        <h3 class="decision-title">看每月预算</h3>
+        <h3 class="decision-title">选购月付套餐</h3>
         <p class="decision-desc">
-          <strong>20元左右：</strong>选择常规月付入门（如暮光加速¥20、飞V¥18）；<br>
-          <strong>百元年付：</strong>选择轻量年付方案（如飞猫云¥84/年、极连云¥96/年），低频备用最划算；<br>
-          <strong>严禁碰：</strong>几十元买3年或永久的套路盘。
+          在 <a href="/recommend/best-airport-subscriptions/"><strong>机场订阅推荐</strong></a> 中挑选支持月付的优质专线或中转机场，建议首次选择 ¥20 左右月付试水，在结算页使用优惠码立省。
         </p>
       </div>
 
       <div class="decision-card">
         <div class="decision-step-num">02</div>
-        <h3 class="decision-title">看每月流量</h3>
+        <h3 class="decision-title">复制订阅链接</h3>
         <p class="decision-desc">
-          <strong>50GB以下：</strong>查资料、学术检索、发邮件足够；<br>
-          <strong>100GB-150GB：</strong>个人看YouTube 1080P视频、刷社交媒体首选；<br>
-          <strong>200GB以上：</strong>经常看4K高码率视频、多设备家庭共享推荐微风网络等大流量套餐。
+          登录机场用户中心，找到“快捷导入”或点击“复制订阅链接（Clash/Shadowrocket）”，获取专属节点数据接口。详见 <a href="/guide/what-is-subscription-link/"><strong>订阅链接是什么</strong></a>。
         </p>
       </div>
 
       <div class="decision-card">
         <div class="decision-step-num">03</div>
-        <h3 class="decision-title">看常用设备</h3>
+        <h3 class="decision-title">安装代理客户端</h3>
         <p class="decision-desc">
-          <strong>Windows/Mac：</strong>首选支持 Clash Verge Rev / v2rayN 订阅的机场；<br>
-          <strong>iPhone/iPad：</strong>需确认支持 Shadowrocket 小火箭或 Sing-box；<br>
-          <strong>全平台：</strong>确认机场提供通用订阅接口，无需每次转换格式。
+          根据你的设备下载对应客户端：Windows 推荐 <a href="/tutorials/clash-verge-tutorial/"><strong>Clash Verge Rev</strong></a>，iPhone 推荐 <a href="/tutorials/shadowrocket-import-subscription/"><strong>小火箭 Shadowrocket</strong></a>，安卓推荐 Clash Meta。
         </p>
       </div>
 
       <div class="decision-card">
         <div class="decision-step-num">04</div>
-        <h3 class="decision-title">看主要使用场景</h3>
+        <h3 class="decision-title">导入订阅与选节点</h3>
         <p class="decision-desc">
-          <strong>日常网页社交：</strong>普通中转或专线均可；<br>
-          <strong>晚高峰防卡顿：</strong>首选IEPL或IPLC内网专线线路；<br>
-          <strong>ChatGPT / Claude：</strong>必须选择有新加坡、日本、美国原生IP且维护及时的平台。
+          将订阅链接粘贴进客户端一键下载节点列表，选择延迟较低的香港、日本或新加坡节点。详见 <a href="/guide/hk-jp-sg-nodes/"><strong>热门节点怎么选</strong></a>。
+        </p>
+      </div>
+
+      <div class="decision-card">
+        <div class="decision-step-num">05</div>
+        <h3 class="decision-title">开启规则模式上网</h3>
+        <p class="decision-desc">
+          在客户端中将路由模式保持为“规则模式（Rule）”并开启系统代理。如遇连接异常，参考 <a href="/troubleshooting/nodes-timeout/"><strong>节点超时排查指南</strong></a> 快速自救。
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 03 四家重点机场快速选择 -->
-<section id="featured-airports" class="home-section featured-airports-section bg-alt">
+<!-- 03 四家重点精选机场订阅对比 (高转化入口) -->
+<section id="featured-subscriptions" class="home-section featured-airports-section bg-alt">
   <div class="container">
     <div class="section-title-wrap text-center">
-      <h2 class="section-main-title">四家重点机场快速选择</h2>
-      <p class="section-sub-title">基于价格区间、流量规格、线路类型与用户反馈整理的编辑部对比清单（非速度排名）：</p>
+      <h2 class="section-main-title">2026 四家精选重点机场订阅推荐</h2>
+      <p class="section-sub-title">基于月付门槛、专线稳定性、节点覆盖与新手友好度综合精选的编辑部清单（非绝对排名）：</p>
     </div>
 
     {{ partial "four-featured.html" (dict "mode" "default") }}
   </div>
 </section>
 
-<!-- 04 机场测评最新文章 -->
+<!-- 04 机场订阅教程与知识库精选 -->
 <section class="home-section articles-latest-section">
   <div class="container">
     <div class="section-header-flex">
       <div>
-        <h2 class="section-main-title">机场测评最新深度文章</h2>
-        <p class="section-sub-title">围绕真实购买决策、优缺点核验与适用场景展开的客观测评：</p>
+        <h2 class="section-main-title">机场订阅核心教程与指南</h2>
+        <p class="section-sub-title">为新手解决导入配置、套餐选型与故障排障的实战干货：</p>
       </div>
-      <a href="/reviews/" class="btn-more-link">查看全部评测 &raquo;</a>
+      <a href="/tutorials/" class="btn-more-link">查看全部教程 &raquo;</a>
     </div>
 
     <div class="articles-latest-grid">
       <article class="article-summary-card">
-        <span class="article-tag">品牌测评</span>
-        <h3 class="article-title"><a href="/airports/laddercloud/">梯子云 LadderCloud 测评：25元月付企业专线体验如何？</a></h3>
-        <p class="article-snippet">详细拆解梯子云125GB月付套餐、企业专线网络抖动表现、ChatGPT访问兼容性以及适合新手的四大核心优势。</p>
+        <span class="article-tag">客户端教程</span>
+        <h3 class="article-title"><a href="/tutorials/clash-verge-tutorial/">机场订阅怎么导入 Clash Verge？电脑端配置与节点选择图文教程</a></h3>
+        <p class="article-snippet">从软件下载安装、复制订阅链接导入、开启 Service Mode 到选择香港/日本低延迟节点，一步步带你搞定 Windows 与 Mac 电脑上网。</p>
         <div class="article-footer-meta">
-          <span>资料核验：2026-10-01</span>
-          <a href="/airports/laddercloud/" class="read-link">查看测评 &raquo;</a>
+          <span>阅读时间：约 5 分钟</span>
+          <a href="/tutorials/clash-verge-tutorial/" class="read-link">查看教程 &raquo;</a>
         </div>
       </article>
 
       <article class="article-summary-card">
-        <span class="article-tag">低预算对比</span>
-        <h3 class="article-title"><a href="/plans/under-20/">20元左右机场怎么选？月付套餐横向对比思路</a></h3>
-        <p class="article-snippet">对比暮光加速（¥20/月）、飞V（¥18/月）与边缘节点（¥15/月），分析低价档位专线与中转线路的取舍考量。</p>
+        <span class="article-tag">iOS 苹果指南</span>
+        <h3 class="article-title"><a href="/tutorials/shadowrocket-import-subscription/">机场订阅怎么导入 Shadowrocket？小火箭一键订阅与扫码配置指南</a></h3>
+        <p class="article-snippet">详细介绍苹果 iPhone 安装 Shadowrocket 小火箭的方法、一键唤醒导入订阅、手动添加 Subscribe 节点及开启分流规则全流程。</p>
         <div class="article-footer-meta">
-          <span>资料核验：2026-10-01</span>
-          <a href="/plans/under-20/" class="read-link">查看测评 &raquo;</a>
+          <span>阅读时间：约 4 分钟</span>
+          <a href="/tutorials/shadowrocket-import-subscription/" class="read-link">查看教程 &raquo;</a>
         </div>
       </article>
 
       <article class="article-summary-card">
-        <span class="article-tag">付费周期</span>
-        <h3 class="article-title"><a href="/choose/monthly-vs-yearly/">月付机场还是年付机场？价格、流量和风险怎么比较</a></h3>
-        <p class="article-snippet">从沉没成本、线路波动容灾与商家运营周期出发，为什么新手第一笔账单始终建议坚持月付？</p>
+        <span class="article-tag">套餐选购</span>
+        <h3 class="article-title"><a href="/plans/100g-plan-guide/">100G机场流量够不够？日常查资料、看视频与社交流量测算</a></h3>
+        <p class="article-snippet">从轻度办公、日常社交到 1080P/4K 视频消耗，真实测算 100GB 月流量适合哪些人群，手把手教你如何避免流量提前耗尽。</p>
         <div class="article-footer-meta">
-          <span>资料核验：2026-10-01</span>
-          <a href="/choose/monthly-vs-yearly/" class="read-link">查看测评 &raquo;</a>
+          <span>阅读时间：约 4 分钟</span>
+          <a href="/plans/100g-plan-guide/" class="read-link">查看指南 &raquo;</a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- 05 按需求找机场 (7 big scenarios) -->
+<!-- 05 按使用场景与需求找订阅 (6 Scenarios) -->
 <section class="home-section find-by-need-section bg-alt">
   <div class="container">
     <div class="section-title-wrap text-center">
-      <h2 class="section-main-title">按具体需求找机场</h2>
-      <p class="section-sub-title">根据你的实际预算、流量习惯和使用场景，精准定位目标方案：</p>
+      <h2 class="section-main-title">按需求快速查找机场订阅方案</h2>
+      <p class="section-sub-title">根据你的设备、预算和使用习惯，快速找到针对性的订阅指南：</p>
     </div>
 
     <div class="scenario-chips-grid">
-      <a href="/plans/under-20/" class="scenario-card">
-        <div class="sc-icon">💰</div>
-        <h3 class="sc-title">低预算机场</h3>
-        <p class="sc-desc">15-20元/月，满足学生与预算敏感人群日常查阅</p>
-        <span class="sc-btn">进入专区 &raquo;</span>
+      <a href="/recommend/best-airport-subscriptions/" class="scenario-card">
+        <div class="sc-icon">🌟</div>
+        <h3 class="sc-title">2026 精选订阅推荐</h3>
+        <p class="sc-desc">编辑部精选高性价比、专线稳定、支持月付的优质机场订阅</p>
+        <span class="sc-btn">查看推荐 &raquo;</span>
       </a>
 
-      <a href="/plans/monthly/" class="scenario-card">
-        <div class="sc-icon">📅</div>
-        <h3 class="sc-title">灵活月付</h3>
-        <p class="sc-desc">单月付费试错，用完随时换，无年付沉没成本风险</p>
-        <span class="sc-btn">进入专区 &raquo;</span>
+      <a href="/plans/how-to-choose-plan/" class="scenario-card">
+        <div class="sc-icon">📊</div>
+        <h3 class="sc-title">机场套餐怎么选</h3>
+        <p class="sc-desc">月付、年付、不限时流量包全对比，新手选套餐避坑指南</p>
+        <span class="sc-btn">进入对比 &raquo;</span>
       </a>
 
-      <a href="/plans/yearly/" class="scenario-card">
-        <div class="sc-icon">📦</div>
-        <h3 class="sc-title">轻量年付</h3>
-        <p class="sc-desc">百元内包年，适合低频查阅、长线备用用户省心之选</p>
-        <span class="sc-btn">进入专区 &raquo;</span>
+      <a href="/clients/windows/" class="scenario-card">
+        <div class="sc-icon">💻</div>
+        <h3 class="sc-title">Windows 客户端教程</h3>
+        <p class="sc-desc">Clash Verge Rev、v2rayN 电脑端订阅导入与系统代理配置</p>
+        <span class="sc-btn">查看教程 &raquo;</span>
       </a>
 
-      <a href="/choose/how-much-data/" class="scenario-card">
-        <div class="sc-icon">⚡</div>
-        <h3 class="sc-title">轻量流量</h3>
-        <p class="sc-desc">30GB-60GB，文字与日常浏览不浪费每1GB</p>
-        <span class="sc-btn">进入专区 &raquo;</span>
-      </a>
-
-      <a href="/plans/high-data/" class="scenario-card">
-        <div class="sc-icon">🚀</div>
-        <h3 class="sc-title">大流量流媒体</h3>
-        <p class="sc-desc">200GB以上大配额，畅快追剧4K与多任务并发</p>
-        <span class="sc-btn">进入专区 &raquo;</span>
-      </a>
-
-      <a href="/choose/how-to-choose-airport/" class="scenario-card">
+      <a href="/clients/iphone/" class="scenario-card">
         <div class="sc-icon">📱</div>
-        <h3 class="sc-title">多设备支持</h3>
-        <p class="sc-desc">电脑、手机、平板同时在线，家庭与多终端友好</p>
-        <span class="sc-btn">进入专区 &raquo;</span>
+        <h3 class="sc-title">iPhone 小火箭教程</h3>
+        <p class="sc-desc">iOS 苹果手机使用 Shadowrocket 导入订阅与分流配置</p>
+        <span class="sc-btn">查看教程 &raquo;</span>
       </a>
 
-      <a href="/faq/#cat-21-ai%E6%9C%8D%E5%8A%A1%E4%BD%BF%E7%94%A8%E5%9F%BA%E7%A1%80" class="scenario-card">
-        <div class="sc-icon">🤖</div>
-        <h3 class="sc-title">AI工具使用</h3>
-        <p class="sc-desc">针对ChatGPT、Claude与Gemini的原生节点核验</p>
-        <span class="sc-btn">进入专区 &raquo;</span>
+      <a href="/lines/iepl-vs-iplc/" class="scenario-card">
+        <div class="sc-icon">⚡</div>
+        <h3 class="sc-title">IEPL 专线线路解析</h3>
+        <p class="sc-desc">搞懂直连、中转与 IEPL/IPLC 跨境专线，告别晚高峰卡顿</p>
+        <span class="sc-btn">查看解析 &raquo;</span>
+      </a>
+
+      <a href="/troubleshooting/nodes-timeout/" class="scenario-card">
+        <div class="sc-icon">🔧</div>
+        <h3 class="sc-title">节点超时排查自救</h3>
+        <p class="sc-desc">订阅更新失败、节点全红超时、连不上网络四步黄金排障法</p>
+        <span class="sc-btn">立即排查 &raquo;</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- 06 机场怎么选 (6 criteria) -->
-<section class="home-section airport-criteria-section">
-  <div class="container">
-    <div class="section-title-wrap text-center">
-      <h2 class="section-main-title">机场怎么选？搞懂这6个指标不再被割韭菜</h2>
-      <p class="section-sub-title">看懂专业术语背后的实际意义，自己也能轻松分辨优质服务商与套路平台：</p>
-    </div>
-
-    <div class="criteria-grid-6">
-      <div class="criteria-card">
-        <div class="cr-icon">01</div>
-        <h3 class="cr-title">价格（合理区间）</h3>
-        <p class="cr-desc">月付18-28元、年付70-100元是健康运营基准。低于10元月付的往往存在严重超售或跑路风险。</p>
-      </div>
-
-      <div class="criteria-card">
-        <div class="cr-icon">02</div>
-        <h3 class="cr-title">流量（真实可用）</h3>
-        <p class="cr-desc">看清流量重置周期（自然月）以及是否有高倍率扣除。标榜无限流量的通常会在高峰期实施恶性限速。</p>
-      </div>
-
-      <div class="criteria-card">
-        <div class="cr-icon">03</div>
-        <h3 class="cr-title">线路（专线vs中转）</h3>
-        <p class="cr-desc">IEPL/IPLC内网专线不过公网GFW，晚高峰稳定性最可靠；BGP多线中转次之；尽量避免廉价纯直连。</p>
-      </div>
-
-      <div class="criteria-card">
-        <div class="cr-icon">04</div>
-        <h3 class="cr-title">节点（地区覆盖）</h3>
-        <p class="cr-desc">香港延迟低但部分AI受限；日本与新加坡兼顾低延迟与服务全面；美国适合解锁本土原生流媒体。</p>
-      </div>
-
-      <div class="criteria-card">
-        <div class="cr-icon">05</div>
-        <h3 class="cr-title">客户端（订阅格式）</h3>
-        <p class="cr-desc">必须支持主流标准订阅格式（Clash、V2Ray/Universal），方便在电脑和手机之间一键平滑导入。</p>
-      </div>
-
-      <div class="criteria-card">
-        <div class="cr-icon">06</div>
-        <h3 class="cr-title">套餐周期（安全试水）</h3>
-        <p class="cr-desc">新手首选“月付”或“轻量年付”。先验证晚高峰自己本地宽带的连通性，满意后再考虑长周期。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 07 客户端教程 (6 client cards) -->
-<section class="home-section clients-tutorial-section bg-alt">
-  <div class="container">
-    <div class="section-title-wrap text-center">
-      <h2 class="section-main-title">全平台客户端使用教程</h2>
-      <p class="section-sub-title">从下载准备、导入订阅到开启规则模式，各平台零门槛入门指南：</p>
-    </div>
-
-    <div class="clients-cards-grid">
-      <div class="client-card">
-        <div class="client-logo-icon">🪟</div>
-        <h3 class="client-name">Clash Verge Rev</h3>
-        <p class="client-platform">Windows / macOS / Linux</p>
-        <p class="client-desc">开源现代内核，支持分流规则、TUN虚拟网卡与深色模式，PC端主力推荐。</p>
-        <a href="/clients/clash-verge-rev/" class="client-guide-btn">查看图文教程 &raquo;</a>
-      </div>
-
-      <div class="client-card">
-        <div class="client-logo-icon">🚀</div>
-        <h3 class="client-name">Shadowrocket 小火箭</h3>
-        <p class="client-platform">iPhone / iPad (iOS)</p>
-        <p class="client-desc">iOS平台经久不衰的代理工具，支持扫码导入与Universal订阅，功耗优化出色。</p>
-        <a href="/clients/shadowrocket/" class="client-guide-btn">查看图文教程 &raquo;</a>
-      </div>
-
-      <div class="client-card">
-        <div class="client-logo-icon">💻</div>
-        <h3 class="client-name">v2rayN</h3>
-        <p class="client-platform">Windows 专用</p>
-        <p class="client-desc">老牌极客首选，协议兼容完备（VLESS/Reality/Xray），占用内存极小，老电脑首选。</p>
-        <a href="/clients/v2rayn/" class="client-guide-btn">查看图文教程 &raquo;</a>
-      </div>
-
-      <div class="client-card">
-        <div class="client-logo-icon">🤖</div>
-        <h3 class="client-name">Android 安卓客户端</h3>
-        <p class="client-platform">Android 手机 / 平板</p>
-        <p class="client-desc">推荐使用 ClashMetaForAndroid 或 v2rayNG，支持分应用代理，微信消息不延误。</p>
-        <a href="/clients/android/" class="client-guide-btn">查看图文教程 &raquo;</a>
-      </div>
-
-      <div class="client-card">
-        <div class="client-logo-icon">🍎</div>
-        <h3 class="client-name">iPhone 苹果手机</h3>
-        <p class="client-platform">iOS 移动生态</p>
-        <p class="client-desc">海外Apple ID准备、应用商店下载、小火箭安装与后台保活全流程防踩坑指引。</p>
-        <a href="/clients/iphone/" class="client-guide-btn">查看图文教程 &raquo;</a>
-      </div>
-
-      <div class="client-card">
-        <div class="client-logo-icon">🖥️</div>
-        <h3 class="client-name">Windows 电脑设置</h3>
-        <p class="client-platform">Win 10 / Win 11</p>
-        <p class="client-desc">系统代理配置、TUN网卡冲突排查、休眠唤醒断网修复与日常连通性检测。</p>
-        <a href="/clients/windows/" class="client-guide-btn">查看图文教程 &raquo;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 08 28家机场资料入口 -->
-<section class="home-section database-preview-section">
-  <div class="container">
-    <div class="section-title-wrap text-center">
-      <h2 class="section-main-title">28家机场资料库与参数速查</h2>
-      <p class="section-sub-title">涵盖主流月付、年付、IEPL专线与IPLC线路，点击可直接查看详细测评与官网入口：</p>
-    </div>
-
-    {{ partial "airports-table-28.html" . }}
-
-    <div class="text-center mt-6">
-      <a href="/airports/" class="btn-hero-primary">进入28家完整机场资料库 &raquo;</a>
-    </div>
-  </div>
-</section>
-
-<!-- 09 常见问题FAQ (Default expanded selection on home, full 50 on /faq/) -->
-<section class="home-section faq-preview-section bg-alt">
+<!-- 06 28家常用机场订阅资料库一览表 -->
+<section class="home-section airports-table-section">
   <div class="container">
     <div class="section-header-flex">
       <div>
-        <h2 class="section-main-title">新手常见问题FAQ</h2>
-        <p class="section-sub-title">无需点击折叠，高频疑问直接给出明确答案与排查步骤：</p>
+        <h2 class="section-main-title">28 家常用机场订阅资料库</h2>
+        <p class="section-sub-title">客观展示各机场价格、月流量、线路类型与专属优惠码，点击品牌查看详细参数：</p>
       </div>
-      <a href="/faq/" class="btn-more-link">浏览全部50个FAQ &raquo;</a>
+      <a href="/airports/" class="btn-more-link">进入资料库专区 &raquo;</a>
     </div>
 
-    <div class="home-faq-list">
-      <article class="faq-card-item">
-        <h3 class="faq-question">
-          <span class="faq-q-badge">Q01</span>
-          <span class="faq-q-text">机场是什么？和普通VPN有什么区别？</span>
-        </h3>
-        <div class="faq-answer-block">
-          <p class="faq-direct-ans">机场是指基于特定代理协议（如 Shadowsocks、VLESS、Trojan 等）构建的节点加速服务商，通常通过提供一条订阅链接，将分布在香港、日本、新加坡、美国等地的服务器分发给用户。普通VPN多采用全局强加密隧道，容易被深度特征包检测，而现代机场支持按规则分流，国内流量直连、国外流量走代理，日常打开网页速度更快且更灵活。</p>
-          <div class="faq-steps-box">
-            <strong>核心要点：</strong>
-            <ol class="faq-steps-list">
-              <li>国内网站走本地直连，不耗费机场流量且访问丝滑；</li>
-              <li>国外受限网站自动分流走海外代理节点；</li>
-              <li>使用专属订阅链接一键导入客户端，无需手动逐个输入IP。</li>
-            </ol>
-          </div>
-        </div>
-      </article>
-
-      <article class="faq-card-item">
-        <h3 class="faq-question">
-          <span class="faq-q-badge">Q03</span>
-          <span class="faq-q-text">第一次买机场，怎么判断一个机场是否靠谱？</span>
-        </h3>
-        <div class="faq-answer-block">
-          <p class="faq-direct-ans">判断机场靠谱度核心看四个维度：是否支持月付、线路类型是否标注清晰（IEPL/IPLC专线相对更稳）、文档教程是否健全、客服或群组是否有真实交流。切勿迷信所谓的“永久不封”或一次性买多年包死套餐。</p>
-          <div class="faq-steps-box">
-            <strong>新手避坑三步：</strong>
-            <ol class="faq-steps-list">
-              <li>首月坚持月付（20-25元左右）在本地宽带晚高峰测试；</li>
-              <li>核查节点更新频率与延迟稳定性；</li>
-              <li>避开虚假夸大与100%绝对解锁等噱头宣传。</li>
-            </ol>
-          </div>
-        </div>
-      </article>
-
-      <article class="faq-card-item">
-        <h3 class="faq-question">
-          <span class="faq-q-badge">Q18</span>
-          <span class="faq-q-text">节点测速全红（超时/Timeout）但网页还能打国内网站，是什么原因？</span>
-        </h3>
-        <div class="faq-answer-block">
-          <p class="faq-direct-ans">这说明本地宽带连接正常，但与代理节点服务器的通信受阻。最常见原因有四种：套餐到期流量用尽、系统时间与网络标准时间不同步（导致TLS握手失败）、订阅未更新导致旧节点下线、或者客户端内核被安全软件拦截。</p>
-          <div class="faq-steps-box">
-            <strong>快速修复排障法：</strong>
-            <ol class="faq-steps-list">
-              <li>检查电脑/手机系统设置，开启“自动同步网络时间”；</li>
-              <li>登录机场后台核查流量余额与到期时间；</li>
-              <li>在客户端右键更新订阅并切换到备用地区节点。</li>
-            </ol>
-          </div>
-        </div>
-      </article>
-
-      <article class="faq-card-item">
-        <h3 class="faq-question">
-          <span class="faq-q-badge">Q22</span>
-          <span class="faq-q-text">用机场访问海外 AI 工具（ChatGPT/Claude）经常被拒是什么原因？</span>
-        </h3>
-        <div class="faq-answer-block">
-          <p class="faq-direct-ans">OpenAI 和 Anthropic 对机房服务器 IP 实施了严苛的反欺诈风控。当某个机场节点有成千上万个用户共用同一个 IP 频繁请求时，该 IP 就容易被平台列入风控黑名单，提示 Access Denied 或国家不支持。</p>
-          <div class="faq-steps-box">
-            <strong>解决排查步骤：</strong>
-            <ol class="faq-steps-list">
-              <li>切记不能使用香港节点，改选新加坡、日本或美国专线节点；</li>
-              <li>打开浏览器无痕隐私窗口清除之前的错误缓存；</li>
-              <li>在客户端更新订阅，切换到标有原生IP或AI特化的节点测试。</li>
-            </ol>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <div class="text-center mt-6">
-      <a href="/faq/" class="btn-hero-secondary">查看全部 50 个常见问题解答 &raquo;</a>
-    </div>
+    {{ partial "airports-table-28.html" . }}
   </div>
 </section>
 
-<!-- 10 最新机场Review (Reviews section preview) -->
-<section class="home-section reviews-preview-section">
+<!-- 07 常见问题 FAQ (50问新手问答展示) -->
+<section class="home-section faq-section bg-alt">
   <div class="container">
     <div class="section-title-wrap text-center">
-      <h2 class="section-main-title">最新机场 Review 与套餐横向观察</h2>
-      <p class="section-sub-title">基于客观公开数据与真实结算页核验的评测专栏：</p>
+      <h2 class="section-main-title">机场订阅常见问题 (FAQ 50 问)</h2>
+      <p class="section-sub-title">汇集新手在购买套餐、导入订阅、客户端使用与故障排查中最常遇到的 50 个疑问：</p>
     </div>
 
-    <div class="reviews-preview-grid">
-      <div class="review-box">
-        <h3 class="review-title"><a href="/reviews/laddercloud/">梯子云深度评测：25元月付企业专线体验与适合人群</a></h3>
-        <p class="review-excerpt">梯子云LadderCloud主打25元/月125GB企业专线，支持按月付费试水，专线网络抖动低，适合追求常规月付入门与操作简单的纯新手。</p>
-        <div class="review-meta">
-          <span>分类：常规月付入门</span>
-          <a href="/reviews/laddercloud/" class="link-go">阅读全文 &raquo;</a>
-        </div>
-      </div>
+    {{ partial "faq-list.html" (dict "limit" 15 "showSearch" true) }}
 
-      <div class="review-box">
-        <h3 class="review-title"><a href="/reviews/twilight/">暮光加速深度评测：20元档IEPL纯专线性价比如何？</a></h3>
-        <p class="review-excerpt">暮光加速凭借20元月付120GB的纯专线资料，在入门预算档位中关注度极高。本文详细拆解其网络架构、限制与适用人群。</p>
-        <div class="review-meta">
-          <span>分类：低预算纯专线</span>
-          <a href="/reviews/twilight/" class="link-go">阅读全文 &raquo;</a>
-        </div>
-      </div>
-
-      <div class="review-box">
-        <h3 class="review-title"><a href="/reviews/flycat/">飞猫云深度评测：84元年付轻量低频用户的省心之选</a></h3>
-        <p class="review-excerpt">折合每月仅7元，提供约50GB/月内网专线配额。适合低频资讯查阅与学术检索，无需每月手动续费，作为长效备用机解析。</p>
-        <div class="review-meta">
-          <span>分类：轻量长效年付</span>
-          <a href="/reviews/flycat/" class="link-go">阅读全文 &raquo;</a>
-        </div>
-      </div>
-
-      <div class="review-box">
-        <h3 class="review-title"><a href="/reviews/breezenet/">微风网络深度评测：200GB大月流量与不限时方案解析</a></h3>
-        <p class="review-excerpt">约27元月付对应约200GB流量，BGP多线专线资料。针对高频视频党和有多设备需求的用户，横向分析其实际性价比。</p>
-        <div class="review-meta">
-          <span>分类：大流量多设备</span>
-          <a href="/reviews/breezenet/" class="link-go">阅读全文 &raquo;</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 11 Telegram 联系我们 (Conversion Banner) -->
-<section class="home-section telegram-cta-section">
-  <div class="container">
-    <div class="tg-cta-banner">
-      <div class="tg-cta-content">
-        <div class="tg-badge">官方交流群</div>
-        <h2 class="tg-title">加入 {{ site.Params.brandShort }} 官方 Telegram 频道</h2>
-        <p class="tg-desc">
-          节点状态动态监测、新套餐核验预警、客户端疑难杂症实时排障。与其他用户交流真实网络体验，及时获取最新优惠信息。
-        </p>
-        <div class="tg-action-row">
-          <a href="{{ site.Params.telegramUrl | safeURL }}" target="_blank" rel="sponsored nofollow noopener" class="btn-tg-join">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-            </svg>
-            <span>立即加入 Telegram 交流群</span>
-          </a>
-          <span class="tg-note">点击将安全打开 Telegram 应用程序</span>
-        </div>
-      </div>
+    <div class="text-center" style="margin-top: 32px;">
+      <a href="/faq/" class="btn-hero-primary" style="display: inline-block;">查看全部 50 个高频问答 &raquo;</a>
     </div>
   </div>
 </section>

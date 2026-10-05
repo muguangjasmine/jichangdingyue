@@ -2897,3 +2897,20 @@ button, input {
     gap: 4px;
   }
 }
+
+
+/* 优惠码高亮红色样式 */
+.coupon-code, .coupon-code-text, .coupon-val, .coupon-highlight {
+  color: #dc2626 !important;
+  font-weight: 700 !important;
+  font-family: var(--font-mono);
+}
+.featured-coupon-box {
+  background: #fef2f2 !important;
+  border: 1px dashed #ef4444 !important;
+}
+.btn-copy-mini {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+  border: none !important;
+}

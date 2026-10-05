@@ -1,9 +1,9 @@
 {{- $mode := .mode | default "default" -}}
 {{- $airports := site.Data.four_featured -}}
-<section class="four-featured-section" aria-label="重点推荐机场对比">
+<section class="four-featured-section" aria-label="重点推荐机场订阅对比">
   <div class="featured-header-badge">
     <span class="badge-icon">★</span>
-    <span class="badge-text">2026 编辑部重点核验服务商（按资料展示排序，非绝对速度排名）</span>
+    <span class="badge-text">2026 重点精选机场订阅推荐（按综合配置与新手友好度排序，非绝对速度排名）</span>
   </div>
 
   <div class="featured-grid">
@@ -24,7 +24,7 @@
 
       <div class="card-specs-list">
         <div class="spec-row">
-          <span class="spec-label">线路资料：</span>
+          <span class="spec-label">线路类型：</span>
           <span class="spec-value"><strong>{{ $a.line }}</strong></span>
         </div>
         <div class="spec-row">
@@ -32,7 +32,7 @@
           <span class="spec-value">{{ $a.suitable }}</span>
         </div>
         <div class="spec-row">
-          <span class="spec-label">核心特点：</span>
+          <span class="spec-label">核心优势：</span>
           <span class="spec-value">{{ index $a.pros 0 }}</span>
         </div>
         <div class="spec-row">
@@ -41,19 +41,19 @@
         </div>
       </div>
 
-      <!-- 优惠码区域（严格与注册链接中的邀请code分离） -->
-      <div class="featured-coupon-box">
-        <div class="coupon-display">
-          <span class="coupon-title">优惠码：</span>
-          <strong class="coupon-code">{{ $a.coupon }}</strong>
+      <!-- 优惠码区域（醒目红色样式，严格与注册链接中的邀请参数分离） -->
+      <div class="featured-coupon-box" style="background: #fef2f2; border: 1px dashed #ef4444; border-radius: 8px; padding: 10px 12px; margin-bottom: 14px;">
+        <div class="coupon-display" style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+          <span class="coupon-title" style="font-size: 0.82rem; color: #991b1b; font-weight: 600;">优惠码：</span>
+          <strong class="coupon-code" style="color: #dc2626; font-size: 1.05rem; font-family: monospace; font-weight: 800; letter-spacing: 0.5px;">{{ $a.coupon }}</strong>
           {{- if and $a.coupon (ne $a.coupon "待核实") (ne $a.coupon "以结算页为准") -}}
-          <button type="button" class="btn-copy-mini" data-code="{{ $a.coupon }}" aria-label="复制优惠码">复制</button>
+          <button type="button" class="btn-copy-mini" data-code="{{ $a.coupon }}" aria-label="复制优惠码" style="background: #dc2626; color: #fff; border: none; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; cursor: pointer;">复制</button>
           {{- end -}}
         </div>
-        <div class="coupon-notice">{{ $a.coupon_note }}</div>
+        <div class="coupon-notice" style="font-size: 0.72rem; color: #b91c1c; margin-top: 4px;">{{ $a.coupon_note }}</div>
       </div>
 
-      <!-- CTA 注册按钮（文案区分，触控高度至少44px，带完整rel属性） -->
+      <!-- CTA 注册按钮（文案清晰，带完整 rel="sponsored nofollow noopener" 和 target="_blank"） -->
       <div class="card-cta-row">
         {{- $ctaText := index $a.cta_texts 0 -}}
         {{- if eq $mode "budget" -}}
@@ -76,7 +76,7 @@
     {{- end -}}
   </div>
 
-  <div class="featured-disclaimer">
-    <p><strong>商业与推广披露：</strong>本站部分注册链接包含推广邀请参数，我们可能从中获得佣金，但绝不会增加你的购买费用。展示顺序为编辑部整理对比需要，严禁视为绝对不可撼动的排名。网络线路状态与优惠随时可能调整，请以服务商结算页实时数据为准。</p>
+  <div class="featured-disclaimer" style="margin-top: 16px; font-size: 0.78rem; color: #64748b; background: #f8fafc; padding: 12px 16px; border-radius: 6px; border-left: 3px solid #cbd5e1;">
+    <p><strong>速度与合规披露：</strong>网络连接实际速度与延迟会受本地地区、宽带运营商（电信/联通/移动）及晚高峰骨干网负载影响。本站部分第三方注册链接包含推广邀请参数，我们可能获得佣金，但绝不会增加你的购买费用。套餐价格与优惠以官网实时结算页为准。</p>
   </div>
 </section>

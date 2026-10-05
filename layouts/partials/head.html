@@ -1,65 +1,44 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-{{- $title := "" -}}
-{{- if .IsHome -}}
-  {{- $title = site.Title -}}
-{{- else if .Title -}}
-  {{- $title = printf "%s - %s" .Title site.Params.brandShort -}}
-{{- else -}}
-  {{- $title = site.Title -}}
-{{- end -}}
-<title>{{ $title }}</title>
-
-{{- $desc := "" -}}
-{{- with .Description -}}
-  {{- $desc = . -}}
-{{- else -}}
-  {{- with .Summary -}}
-    {{- $desc = . -}}
+  {{- $seoTitle := "" -}}
+  {{- if .IsHome -}}
+    {{- $seoTitle = site.Title -}}
+  {{- else if .Params.seo_title -}}
+    {{- $seoTitle = printf "%s - %s" .Params.seo_title site.Params.brandShort -}}
   {{- else -}}
-    {{- $desc = site.Params.description -}}
+    {{- $seoTitle = printf "%s - %s" .Title site.Params.brandShort -}}
   {{- end -}}
-{{- end -}}
-<meta name="description" content="{{ $desc | plainify | htmlUnescape | truncate 160 }}">
+  <title>{{ $seoTitle }}</title>
 
-{{- /* Canonical URL: Strictly use https://jichangreview.cfd */ -}}
-{{- $canonical := "" -}}
-{{- if .IsHome -}}
-  {{- $canonical = "https://jichangreview.cfd/" -}}
-{{- else -}}
-  {{- $canonical = printf "https://jichangreview.cfd%s" .RelPermalink -}}
-{{- end -}}
-<link rel="canonical" href="{{ $canonical }}">
+  {{- $metaDesc := .Params.description | default (.Params.seo_description | default site.Params.description) -}}
+  <meta name="description" content="{{ $metaDesc | plainify | truncate 160 }}">
 
-{{- if eq .Kind "404" -}}
-<meta name="robots" content="noindex, follow">
-{{- else -}}
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-{{- end -}}
+  {{- with .Params.keywords -}}
+  <meta name="keywords" content="{{ delimit . ", " }}">
+  {{- else -}}
+  <meta name="keywords" content="机场订阅, 机场订阅推荐, 机场订阅教程, 机场订阅链接, 机场订阅怎么用, 机场订阅地址, 机场订阅节点, 机场订阅购买, 机场订阅套餐, 机场订阅客户端, 机场推荐, 梯子推荐, 科学上网机场, 稳定机场推荐, 便宜机场推荐, Clash导入订阅, Shadowrocket导入订阅">
+  {{- end -}}
 
-<!-- Open Graph -->
-<meta property="og:locale" content="zh_CN">
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:title" content="{{ $title }}">
-<meta property="og:description" content="{{ $desc | plainify | htmlUnescape | truncate 160 }}">
-<meta property="og:url" content="{{ $canonical }}">
-<meta property="og:site_name" content="{{ site.Params.brandShort }}">
-<meta property="og:image" content="https://jichangreview.cfd/favicon.svg">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{{ $title }}">
-<meta name="twitter:description" content="{{ $desc | plainify | htmlUnescape | truncate 160 }}">
-<meta name="twitter:image" content="https://jichangreview.cfd/favicon.svg">
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ $seoTitle }}">
+  <meta property="og:description" content="{{ $metaDesc | plainify | truncate 160 }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ site.Params.brandName }}">
+  <meta property="og:locale" content="zh_CN">
 
-<!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="alternate" type="application/rss+xml" title="{{ site.Params.brandShort }}" href="https://jichangreview.cfd/index.xml">
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
 
-<!-- Styles -->
-<link rel="stylesheet" href="/css/style.css">
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="/css/style.css?v=20261005">
 
-<!-- Structured Data -->
-{{ partial "structured-data.html" . }}
+  {{ partial "structured-data.html" . }}
+</head>
